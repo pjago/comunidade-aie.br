@@ -71,7 +71,7 @@
   }
   .hero h1{
     margin:0 0 1.1rem;font-size:clamp(1.85rem,4.1vw,3rem);line-height:1.14;
-    font-weight:800;letter-spacing:-.015em;max-width:19ch
+    font-weight:800;letter-spacing:-.015em;max-width:26ch
   }
   .hero p.lead{margin:0;max-width:60ch;font-size:clamp(1rem,1.6vw,1.16rem);color:#DCE7FA}
   .facts{display:flex;flex-wrap:wrap;gap:.7rem;margin:2rem 0 0;padding:0;list-style:none}
@@ -84,9 +84,10 @@
   /* ---------- cartão principal ---------- */
   main{padding:0 0 4rem}
   .card{
+    position:relative;z-index:2;min-width:0;
     background:var(--card);border-radius:var(--radius);
     box-shadow:0 2px 4px rgba(7,29,65,.05),0 18px 44px rgba(7,29,65,.09);
-    margin-top:-2.2rem;padding:clamp(1.6rem,4vw,3.2rem)
+    margin-top:2.2rem;padding:clamp(1.6rem,4vw,3.2rem)
   }
   section+section{margin-top:3rem;padding-top:2.6rem;border-top:1px solid var(--line)}
   h2{
@@ -101,7 +102,7 @@
   /* ---------- trilhas ---------- */
   .trilhas{display:grid;gap:1.2rem;grid-template-columns:1fr;margin-top:1.4rem}
   @media(min-width:820px){.trilhas{grid-template-columns:1fr 1fr}}
-  .trilha{border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+  .trilha{min-width:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
   .trilha__top{padding:1rem 1.3rem;color:#fff}
   .trilha--aberta .trilha__top{background:var(--blue)}
   .trilha--restrita .trilha__top{background:var(--green)}

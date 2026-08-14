@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1ª Edição da Comunidade de Práticas Éticas do Núcleo de Inteligência Artificial do Governo Federal</title>
+<meta name="description" content="Evento on-line com duas trilhas: palestras abertas a todo o SISP e oficinas em que órgãos selecionados tornam os seus sistemas de inteligência artificial compreensíveis para o cidadão e para a governança pública. De 28 de setembro a 28 de outubro de 2026.">
+<meta property="og:title" content="1ª Edição da Comunidade de Práticas Éticas do Núcleo de IA do Governo Federal">
+<meta property="og:description" content="Duas trilhas on-line, de 28 de setembro a 28 de outubro de 2026. Palestras abertas a todo o SISP e oficinas de aplicação assistida da AIE.BR.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#071D41;
+    --navy-2:#0B2B5B;
+    --blue:#1351B4;
+    --blue-2:#2670E8;
+    --blue-pale:#D4E5FF;
+    --green:#168821;
+    --green-pale:#E3F5E4;
+    --yellow:#FFCD07;
+    --yellow-pale:#FDF0C9;
+    --ink:#071D41;
+    --muted:#555555;
+    --line:#DCE4F2;
+    --bg:#EEF1F6;
+    --card:#FFFFFF;
+    --radius:14px;
+    --shell:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Raleway",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  .shell{width:min(100% - 2.5rem,var(--shell));margin-inline:auto}
+  a{color:var(--blue);text-underline-offset:.18em}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:4px}
+  .skip{position:absolute;left:-9999px}
+  .skip:focus{left:1rem;top:1rem;z-index:20;background:#fff;padding:.7rem 1rem;border-radius:8px}
+
+  /* ---------- barra de identificação ---------- */
+  .idbar{background:var(--navy);color:#fff;font-size:.8rem;letter-spacing:.04em}
+  .idbar .shell{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;align-items:center;
+    padding:.7rem 0;text-transform:uppercase;font-weight:600}
+  .idbar span{opacity:.82}
+  .idbar .sep{opacity:.35}
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;color:#fff;overflow:hidden;
+    background:linear-gradient(115deg,#04142E 0%,var(--navy) 42%,#123A76 100%);
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='300' viewBox='0 0 420 300'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.16'%3E%3Cpath d='M20 250 L120 190 L96 92 L210 44 L318 96 L400 60'/%3E%3Cpath d='M120 190 L228 214 L318 96'/%3E%3Cpath d='M228 214 L262 288'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.4'%3E%3Ccircle cx='20' cy='250' r='2.4'/%3E%3Ccircle cx='120' cy='190' r='2.4'/%3E%3Ccircle cx='96' cy='92' r='2'/%3E%3Ccircle cx='210' cy='44' r='2.4'/%3E%3Ccircle cx='318' cy='96' r='2.4'/%3E%3Ccircle cx='400' cy='60' r='2'/%3E%3Ccircle cx='228' cy='214' r='2.4'/%3E%3Ccircle cx='262' cy='288' r='2'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero .shell{position:relative;z-index:1;padding:3.4rem 0 3.9rem}
+  .eyebrow{
+    display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--yellow);margin:0 0 1rem
+  }
+  .hero h1{
+    margin:0 0 1.1rem;font-size:clamp(1.85rem,4.1vw,3rem);line-height:1.14;
+    font-weight:800;letter-spacing:-.015em;max-width:19ch
+  }
+  .hero p.lead{margin:0;max-width:60ch;font-size:clamp(1rem,1.6vw,1.16rem);color:#DCE7FA}
+  .facts{display:flex;flex-wrap:wrap;gap:.7rem;margin:2rem 0 0;padding:0;list-style:none}
+  .facts li{
+    background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);
+    border-radius:999px;padding:.5rem 1.05rem;font-size:.92rem;font-weight:600
+  }
+  .facts li b{color:var(--yellow);font-weight:700}
+
+  /* ---------- cartão principal ---------- */
+  main{padding:0 0 4rem}
+  .card{
+    background:var(--card);border-radius:var(--radius);
+    box-shadow:0 2px 4px rgba(7,29,65,.05),0 18px 44px rgba(7,29,65,.09);
+    margin-top:-2.2rem;padding:clamp(1.6rem,4vw,3.2rem)
+  }
+  section+section{margin-top:3rem;padding-top:2.6rem;border-top:1px solid var(--line)}
+  h2{
+    font-size:clamp(1.35rem,2.4vw,1.72rem);line-height:1.25;font-weight:800;
+    color:var(--blue);margin:0 0 .5rem;letter-spacing:-.01em
+  }
+  h3{font-size:1.06rem;font-weight:700;margin:1.8rem 0 .5rem}
+  p{margin:0 0 1rem}
+  .muted{color:var(--muted)}
+  .lede{font-size:1.06rem}
+
+  /* ---------- trilhas ---------- */
+  .trilhas{display:grid;gap:1.2rem;grid-template-columns:1fr;margin-top:1.4rem}
+  @media(min-width:820px){.trilhas{grid-template-columns:1fr 1fr}}
+  .trilha{border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+  .trilha__top{padding:1rem 1.3rem;color:#fff}
+  .trilha--aberta .trilha__top{background:var(--blue)}
+  .trilha--restrita .trilha__top{background:var(--green)}
+  .trilha__top h3{margin:0;font-size:1.15rem;color:#fff}
+  .trilha__top p{margin:.15rem 0 0;font-size:.9rem;opacity:.92}
+  .trilha__body{padding:1.2rem 1.3rem 1.4rem;background:#F8FAFE;flex:1}
+  .trilha__body ul{margin:0;padding-left:1.15rem}
+  .trilha__body li{margin-bottom:.5rem}
+  .trilha__body li:last-child{margin-bottom:0}
+
+  /* ---------- linha do tempo ---------- */
+  .tl{list-style:none;margin:1.4rem 0 0;padding:0 0 0 1.9rem;position:relative}
+  .tl::before{content:"";position:absolute;left:.38rem;top:.55rem;bottom:.55rem;width:2px;background:var(--line)}
+  .tl li{position:relative;margin-bottom:1.35rem}
+  .tl li:last-child{margin-bottom:0}
+  .tl li::before{
+    content:"";position:absolute;left:-1.9rem;top:.42rem;width:.82rem;height:.82rem;
+    border-radius:50%;background:#fff;border:3px solid var(--blue)
+  }
+  .tl .when{display:block;font-size:.8rem;font-weight:700;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--blue)}
+  .tl .what{font-weight:700}
+  .tl .how{color:var(--muted);font-size:.95rem}
+
+  /* ---------- tabelas ---------- */
+  .tablewrap{overflow-x:auto;margin-top:1.1rem;border:1px solid var(--line);border-radius:10px}
+  table{border-collapse:collapse;width:100%;min-width:520px;font-size:.95rem}
+  caption{text-align:left;padding:.9rem 1rem;color:var(--muted);font-size:.9rem}
+  th,td{padding:.68rem 1rem;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  thead th{background:#F4F7FD;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--blue)}
+  tbody tr:last-child td{border-bottom:0}
+  td.pts{white-space:nowrap;font-weight:700}
+  .j{font-weight:700;color:var(--blue);white-space:nowrap}
+
+  /* ---------- destaques ---------- */
+  .note{border-radius:10px;padding:1rem 1.2rem;margin-top:1.3rem;font-size:.97rem}
+  .note--info{background:var(--blue-pale)}
+  .note--warn{background:var(--yellow-pale)}
+  .note strong{display:block;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem}
+  .note p:last-child{margin-bottom:0}
+
+  /* ---------- chamada para ação ---------- */
+  .cta{text-align:center;margin-top:2.4rem}
+  .btns{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center;margin-top:1.3rem}
+  .btn{
+    display:inline-block;padding:.9rem 1.9rem;border-radius:999px;font-weight:700;
+    text-decoration:none;font-size:1rem;border:2px solid transparent
+  }
+  .btn--primary{background:var(--blue);color:#fff}
+  .btn--primary:hover{background:var(--blue-2)}
+  .btn--ghost{border-color:var(--blue);color:var(--blue)}
+  .btn--ghost:hover{background:var(--blue-pale)}
+  .btn[aria-disabled="true"]{background:#E7ECF5;color:#7A889F;border-color:transparent;cursor:not-allowed}
+  .cta .muted{margin-top:1rem;font-size:.92rem}
+
+  /* ---------- rodapé ---------- */
+  footer{background:linear-gradient(115deg,var(--navy) 0%,#123A76 100%);color:#fff}
+  footer .shell{padding:2.8rem 0 1.6rem}
+  .fgrid{display:grid;gap:2rem;grid-template-columns:1fr}
+  @media(min-width:760px){.fgrid{grid-template-columns:1.2fr 1fr 1fr}}
+  footer h2{color:#fff;font-size:1.05rem;margin-bottom:.6rem}
+  footer p,footer li{color:#CBD9F0;font-size:.93rem}
+  footer ul{list-style:none;margin:0;padding:0}
+  footer li{margin-bottom:.4rem}
+  footer a{color:#fff}
+  .fbar{
+    margin-top:2rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.18);
+    font-size:.85rem;color:#AEC1E0;display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;justify-content:space-between
+  }
+  @media print{.hero::after{display:none}body{background:#fff}}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<div class="idbar">
+  <div class="shell">
+    <span>Ministério da Gestão e da Inovação em Serviços Públicos</span>
+    <span class="sep">·</span>
+    <span>Secretaria de Governo Digital</span>
+    <span class="sep">·</span>
+    <span>CPQD · Projeto INSPIRE</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="shell">
+    <p class="eyebrow">Núcleo de IA · Estratégia Federal de Governo Digital</p>
+    <h1>1ª Edição da Comunidade de Práticas Éticas do Núcleo de Inteligência Artificial do Governo Federal</h1>
+    <p class="lead">Duas trilhas on-line: palestras abertas a todo o SISP e oficinas em que
+      órgãos selecionados tornam os seus sistemas de inteligência artificial compreensíveis
+      para o cidadão e para a governança pública.</p>
+    <ul class="facts">
+      <li><b>28/09 a 28/10</b> de 2026</li>
+      <li>Totalmente <b>on-line</b></li>
+      <li>Inscrições de <b>31/08 a 18/09</b></li>
+      <li>Até <b>12 órgãos</b> na trilha restrita</li>
+    </ul>
+  </div>
+</header>
+
+<main id="conteudo">
+  <div class="shell">
+    <div class="card">
+
+      <section>
+        <h2>O que é</h2>
+        <p class="lede">A Comunidade de Práticas Éticas reúne órgãos do SISP para documentar e
+          avaliar, com apoio, os sistemas de inteligência artificial que já usam. O ponto de
+          partida é a <strong>Ficha de Sistema de IA</strong>, que registra o que o sistema faz,
+          com que dados e sob a responsabilidade de quem. Em seguida, cada órgão aplica a
+          <strong>Autoavaliação de Impacto Ético (AIE.BR)</strong> a esse mesmo sistema.</p>
+        <p>A avaliação é do próprio órgão sobre o próprio sistema: não há auditoria externa,
+          não há caso fictício e nada é publicado sem a decisão do órgão. Ao fim do ciclo, a
+          equipe sai capaz de repetir a avaliação nas demais soluções.</p>
+        <p>O evento também é um espaço de escuta. As dificuldades encontradas nas oficinas e as
+          práticas que cada órgão já usa alimentam a revisão dos guias e orientações sobre uso
+          e desenvolvimento responsável de IA no SISP.</p>
+      </section>
+
+      <section>
+        <h2>Duas trilhas</h2>
+        <p class="muted">As trilhas acontecem em paralelo e atendem públicos diferentes.
+          Quem participa da trilha restrita também pode acompanhar a trilha aberta.</p>
+
+        <div class="trilhas">
+          <article class="trilha trilha--aberta">
+            <div class="trilha__top">
+              <h3>Trilha aberta</h3>
+              <p>Aula inaugural, palestras e fechamento · 7h30</p>
+            </div>
+            <div class="trilha__body">
+              <ul>
+                <li><strong>Quem participa:</strong> todo o SISP e demais interessados, sem limite de vagas.</li>
+                <li><strong>Como acessar:</strong> sem inscrição. O link da transmissão é publicado nesta página.</li>
+                <li><strong>Interação:</strong> chat restrito e microfone fechado. As perguntas do
+                  público vão para uma ferramenta de leitura restrita, e os mediadores da DEDIA
+                  selecionam e leem as perguntas ao palestrante.</li>
+                <li><strong>Certificado</strong> por presença, conforme a lista preenchida em cada encontro.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="trilha trilha--restrita">
+            <div class="trilha__top">
+              <h3>Trilha restrita</h3>
+              <p>Estudo dirigido e oficinas da AIE.BR · 11h</p>
+            </div>
+            <div class="trilha__body">
+              <ul>
+                <li><strong>Quem participa:</strong> até 12 órgãos do SISP, com 3 a 5 pessoas cada —
+                  ao menos 1 da governança de TIC e as demais de um projeto de IA implantado no órgão.</li>
+                <li><strong>Vagas:</strong> 8 por convite direcionado e 4 pelo formulário de inscrição.</li>
+                <li><strong>Carga:</strong> até 3 horas por semana, ao longo de 5 semanas.</li>
+                <li><strong>Requisito:</strong> o órgão precisa ter ao menos uma solução de IA em
+                  produção ou em desenvolvimento, porque a avaliação é feita sobre um sistema seu.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Programação</h2>
+        <p class="muted">Cinco semanas, de 28 de setembro a 28 de outubro de 2026.</p>
+        <ol class="tl">
+          <li>
+            <span class="when">28 de setembro · segunda, à tarde</span>
+            <span class="what">Aula inaugural — 1h30</span><br>
+            <span class="how">Como se dará o evento, a sua motivação e o seu caráter colaborativo.
+              Apresentação da Ficha de Sistema de IA e da AIE.BR. Trilha aberta.</span>
+          </li>
+          <li>
+            <span class="when">28 de setembro a 9 de outubro</span>
+            <span class="what">Estudo dirigido — 2 semanas, assíncrono</span><br>
+            <span class="how">Leitura do material de apoio e preenchimento da Ficha de Sistema de IA
+              para um sistema do próprio órgão, com canal aberto para dúvidas. Trilha restrita.</span>
+          </li>
+          <li>
+            <span class="when">5 de outubro · segunda, à tarde</span>
+            <span class="what">Palestras com especialistas convidados — 4h</span><br>
+            <span class="how">Um único turno, transmitido ao vivo. Trilha aberta.</span>
+          </li>
+          <li>
+            <span class="when">13 a 20 de outubro</span>
+            <span class="what">Oficina de aplicação assistida da AIE.BR — 2h30</span><br>
+            <span class="how">Cada órgão participa de uma das doze janelas, com facilitação da equipe
+              e acompanhamento do CPQD. Trilha restrita.</span>
+          </li>
+          <li>
+            <span class="when">16 a 23 de outubro</span>
+            <span class="what">Entrega do relatório — 30 minutos</span><br>
+            <span class="how">Três dias úteis depois da oficina, para conversar sobre o resultado da
+              avaliação. Trilha restrita.</span>
+          </li>
+          <li>
+            <span class="when">28 de outubro · quarta, à tarde</span>
+            <span class="what">Fechamento — 2h</span><br>
+            <span class="how">Espaço para os órgãos que quiserem compartilhar o seu caso de uso e o que
+              aprenderam. Trilha aberta.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Como participar da trilha restrita</h2>
+        <p>As inscrições ficam abertas de <strong>31 de agosto a 18 de setembro de 2026</strong>,
+          por formulário. São 8 vagas reservadas a órgãos convidados e 4 vagas livres. Se as
+          reservadas não forem preenchidas, as vagas remanescentes passam para a lista do formulário.</p>
+
+        <h3>Critérios de seleção das vagas livres</h3>
+        <p class="muted">Todos os critérios são declarados na própria inscrição e verificáveis de
+          forma objetiva. A pontuação máxima é de 5 pontos.</p>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr><th scope="col">Critério</th><th scope="col">Como é verificado</th><th scope="col">Pontos</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>O órgão tem solução de IA em produção (2 pontos) ou em desenvolvimento (1 ponto)</td>
+                <td>Campo obrigatório do formulário, com nome e descrição breve</td>
+                <td class="pts">0 a 2</td>
+              </tr>
+              <tr>
+                <td>O órgão ainda não integrou a avaliação de impacto ético ao ciclo de vida das suas soluções de IA</td>
+                <td>Declaração sim ou não</td>
+                <td class="pts">0 ou 1</td>
+              </tr>
+              <tr>
+                <td>Equipe com ao menos 1 representante da governança de TIC e, entre os demais,
+                  o gestor demandante e um integrante técnico de um projeto de IA</td>
+                <td>Indicação nominal, com área e função</td>
+                <td class="pts">0 ou 2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note note--info">
+          <strong>Empates e suplência</strong>
+          <p>Em caso de empate, decide a ordem de inscrição. Os inscritos que cumpram os requisitos
+            e não fiquem entre os selecionados formam lista de suplentes, na ordem da pontuação.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Janelas da oficina</h2>
+        <p>São doze janelas de 2h30, com no máximo duas por dia. <strong>No formulário, o órgão marca
+          todas as janelas em que a sua equipe pode participar — no mínimo três — e indica a
+          preferida.</strong> A alocação segue a ordem de inscrição. Se nenhuma das janelas marcadas
+          estiver livre na vez do órgão, entramos em contato para tentar reagendar antes de qualquer
+          outra providência.</p>
+        <div class="tablewrap">
+          <table>
+            <caption>Cada órgão ocupa uma janela. A reunião de entrega do relatório acontece três dias úteis depois.</caption>
+            <thead>
+              <tr><th scope="col">Janela</th><th scope="col">Oficina · 2h30</th><th scope="col">Entrega do relatório · 30 min</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="j">J1</td><td>13/10, terça, 9h00–11h30</td><td>16/10, sexta, 17h00</td></tr>
+              <tr><td class="j">J2</td><td>13/10, terça, 14h00–16h30</td><td>16/10, sexta, 17h30</td></tr>
+              <tr><td class="j">J3</td><td>14/10, quarta, 9h00–11h30</td><td>19/10, segunda, 17h00</td></tr>
+              <tr><td class="j">J4</td><td>14/10, quarta, 14h00–16h30</td><td>19/10, segunda, 17h30</td></tr>
+              <tr><td class="j">J5</td><td>15/10, quinta, 9h00–11h30</td><td>20/10, terça, 17h00</td></tr>
+              <tr><td class="j">J6</td><td>15/10, quinta, 14h00–16h30</td><td>20/10, terça, 17h30</td></tr>
+              <tr><td class="j">J7</td><td>16/10, sexta, 9h00–11h30</td><td>21/10, quarta, 17h00</td></tr>
+              <tr><td class="j">J8</td><td>16/10, sexta, 14h00–16h30</td><td>21/10, quarta, 17h30</td></tr>
+              <tr><td class="j">J9</td><td>19/10, segunda, 9h00–11h30</td><td>22/10, quinta, 17h00</td></tr>
+              <tr><td class="j">J10</td><td>19/10, segunda, 14h00–16h30</td><td>22/10, quinta, 17h30</td></tr>
+              <tr><td class="j">J11</td><td>20/10, terça, 9h00–11h30</td><td>23/10, sexta, 17h00</td></tr>
+              <tr><td class="j">J12</td><td>20/10, terça, 14h00–16h30</td><td>23/10, sexta, 17h30</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>Certificados</h2>
+        <p>As duas trilhas emitem certificado por presença. A presença é registrada pelo próprio
+          participante, em um link compartilhado durante cada encontro ao vivo. Na trilha restrita,
+          o certificado exige <strong>frequência mínima de 75%</strong>.</p>
+        <div class="note note--warn">
+          <strong>Guarde o link da presença</strong>
+          <p>O link da lista é compartilhado no início e no fim de cada encontro, e fica aberto até o
+            fim do mesmo dia. Sem esse registro não há como emitir o certificado.</p>
+        </div>
+      </section>
+
+      <section class="cta">
+        <h2>Inscrições</h2>
+        <p class="muted">A trilha aberta não tem inscrição — o link da transmissão é publicado aqui.
+          A trilha restrita é por formulário, de 31 de agosto a 18 de setembro de 2026.</p>
+        <div class="btns">
+          <!-- TODO: trocar href e remover aria-disabled quando o formulário estiver no ar -->
+          <a class="btn btn--primary" href="#" aria-disabled="true">Inscrição da trilha restrita · em breve</a>
+          <!-- TODO: trocar href e remover aria-disabled quando o link da transmissão estiver definido -->
+          <a class="btn btn--ghost" href="#" aria-disabled="true">Link da transmissão · em breve</a>
+        </div>
+        <p class="muted">Dúvidas sobre a participação podem ser enviadas para o contato no rodapé desta página.</p>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="shell">
+    <div class="fgrid">
+      <div>
+        <h2>Condução</h2>
+        <p>Secretaria de Governo Digital (SGD) do Ministério da Gestão e da Inovação em Serviços
+          Públicos (MGI), por meio da Diretoria de Estruturação de Dados e Inteligência Artificial
+          (DEDIA), e CPQD, no âmbito do projeto INSPIRE.</p>
+      </div>
+      <div>
+        <h2>Contexto</h2>
+        <ul>
+          <li>Núcleo de IA</li>
+          <li>Estratégia Federal de Governo Digital (EFGD)</li>
+          <li>Iniciativa 6.10</li>
+          <li>SISP — Sistema de Administração dos Recursos de Tecnologia da Informação</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <ul>
+          <!-- TODO: confirmar o endereço de contato com a ASCOM -->
+          <li>Contato a publicar</li>
+          <li><a href="https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados/inteligencia-artificial-1/publicacoes/framework-aie">Framework AIE</a></li>
+          <li><a href="https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados/inteligencia-artificial-1/publicacoes/ficha-de-sistema-de-ia">Ficha de Sistema de IA</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbar">
+      <span>Página informativa sobre o evento. Conteúdo sujeito a revisão.</span>
+      <span>2026</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

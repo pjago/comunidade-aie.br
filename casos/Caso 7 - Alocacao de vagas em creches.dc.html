@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/fonts.css">
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/colors.css">
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/semantic.css">
+<script src="./doc-page.js"></script>
+<style>
+body{margin:0;}
+doc-page:not(:defined){visibility:hidden;}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+</style>
+</helmet>
+<doc-page margin="0.75in">
+<div slot="footer" style="display:flex;justify-content:space-between;font-family:'rawline',sans-serif;font-size:8.5pt;color:#767676;border-top:1px solid #e6e6e6;padding-top:6pt;">
+  <span>Oficina AIE.BR · Conexão SISP</span>
+  <span>Caso 7 · Alocação de crianças em creches</span>
+</div>
+
+<p style="margin:0 0 6pt;font-family:'rawline',sans-serif;font-size:9.5pt;font-weight:600;color:#1351b4;letter-spacing:.04em;">Avaliação de impacto do sistema de IA</p>
+<h1 style="margin:0 0 8pt;font-family:'rawline',sans-serif;font-size:24pt;font-weight:700;color:#0c326f;line-height:1.15;">Alocação de crianças em creches</h1>
+<p style="margin:0 0 18pt;font-family:'Raleway',sans-serif;font-size:11pt;color:#555555;line-height:1.4;">Caso 7 · modelo de documentação da ABNT NBR ISO/IEC 42005:2025</p>
+<p style="margin:0 0 18pt;padding:10pt 12pt;background:#e8eefb;font-family:'Raleway',sans-serif;font-size:9.5pt;color:#555555;line-height:1.5;font-style:italic;break-inside:avoid;">Documento de simulação, produzido para a oficina de Autoavaliação de Impacto Ético (AIE.BR) do Conexão SISP. O caso de uso é adaptado da ABNT ISO/IEC TR 24030:2024 e o preenchimento é fictício: não representa a avaliação oficial de nenhum órgão nem descreve um sistema em operação.</p>
+
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 16pt;">
+  <tr><td style="width:32%;padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Modelo de referência</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">ABNT NBR ISO/IEC 42005:2025 — Anexo com modelo de documento de avaliação de impacto</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Caso de uso</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">ABNT ISO/IEC TR 24030:2024 — Caso 7</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Domínio de aplicação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Setor público — educação infantil</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Versão e data</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">1.1 — versão de oficina, revisada · 23/08/2026</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Aprovação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Pendente — a aprovação real cabe ao responsável pelo sistema no órgão</td></tr>
+</table>
+
+<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;">Parte I — O caso de uso, conforme a ISO/IEC TR 24030</h2>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.1 Descrição</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">O sistema ordena e distribui as vagas de creche entre as crianças inscritas. Para isso, cruza critérios de prioridade definidos em norma municipal, o endereço da família, a capacidade de cada unidade e as preferências informadas na inscrição. O resultado é uma lista de encaminhamento que substitui a montagem manual da fila, feita antes por cada unidade.</p>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.2 Retrato do sistema em seis respostas</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:38%;">Pergunta</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Resposta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">O que o sistema faz, em uma frase?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Ordena e distribui as vagas de creche entre as crianças inscritas.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem é afetado pela saída dele?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Famílias inscritas, crianças, unidades de ensino e servidores da secretaria.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Que dados usa, e de onde vêm?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Cadastro das famílias, marcador de vulnerabilidade do CadÚnico, endereço e capacidade das unidades.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A saída é sugestão ou decisão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Gera a lista de alocação, homologada por servidor antes da publicação.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Em que fase está?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Produção, em uma capital.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem responde por ele no órgão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Secretaria municipal de educação.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.3 Por que este caso importa no Brasil</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">Levantamento nacional citado pelo Gaepe-Brasil aponta fila de espera por vaga em creche em 44% dos municípios brasileiros, com mais de 630 mil solicitações. O Retrato da Educação Infantil 2024, do Gaepe-Brasil com o MEC e outras instituições, mostra o outro lado do problema: mais da metade das redes municipais não adota critérios de priorização, mesmo mantendo lista de espera — enquanto, segundo a PnadC 2023, 2,3 milhões de crianças de até 3 anos estão fora da creche por dificuldade de acesso (28% no quinto mais pobre da população, contra 7% no mais rico). Sem critérios claros, a fila anda pela ordem de inscrição ou pela judicialização — avança quem conhece os próprios direitos e tem acesso jurídico, aprofundando desigualdades. Por isso, em nota recomendatória assinada por 13 instituições, o Gaepe-Brasil recomenda exatamente o que este sistema se propõe a operacionalizar: centrais de vagas com informação digitalizada, transparência das listas de espera e critérios que priorizem as crianças em maior vulnerabilidade — baixa renda, famílias monoparentais, risco social, deficiência, vítimas de violência doméstica, inscritas no Cadastro Único.</p>
+
+<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;break-before:page;">Parte II — Avaliação de impacto preenchida</h2>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.1 Escopo e critérios da avaliação (cl. 5)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Objeto avaliado: o componente de ordenação e encaminhamento de vagas, incluindo as regras de prioridade e a interface usada pela secretaria.</li>
+  <li style="margin-bottom:4pt;">Fora do escopo: o cadastro de inscrição das famílias e o sistema de matrícula, avaliados separadamente.</li>
+  <li style="margin-bottom:4pt;">Gatilho da avaliação: sistema em produção que afeta acesso a serviço público essencial. Reavaliação a cada mudança nos critérios de prioridade ou a cada 12 meses.</li>
+  <li style="margin-bottom:4pt;">Limiar de uso sensível: qualquer alteração que mude a posição relativa de grupos prioritários exige nova avaliação antes de entrar em produção.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.2 Informações sobre o sistema (cl. 6.2)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:28%;">Item</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Descrição</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Finalidade pretendida</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Aplicar, de forma previsível e rastreável, os critérios de prioridade da norma municipal de matrícula — que concretizam o direito à educação infantil (CF, art. 208, IV) e a prioridade da primeira infância (Lei nº 13.257/2016) — e reduzir a desigualdade de acesso às vagas entre famílias e regiões.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Uso pretendido</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Apoio à decisão da secretaria: o sistema produz a lista; o servidor homologa e publica.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Usos não pretendidos</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Priorizar unidades por conveniência administrativa; abrir exceções fora dos critérios normativos; usar os dados para outra política.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Contexto de implantação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Rede municipal de uma capital, com demanda maior que a oferta em parte dos distritos.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Grau de autonomia</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Baixo. Não há decisão final automatizada; há forte dependência prática da sugestão.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.3 Informações sobre os dados (cl. 6.3)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Origem: cadastro de inscrição preenchido pela família, consulta ao CadÚnico para aferição da vulnerabilidade socioeconômica, base de endereços do município e cadastro de capacidade das unidades.</li>
+  <li style="margin-bottom:4pt;">Dados pessoais: nome, data de nascimento da criança, endereço, composição familiar e o marcador de vulnerabilidade socioeconômica obtido do CadÚnico. Há dado de criança e adolescente, com proteção reforçada.</li>
+  <li style="margin-bottom:4pt;">Qualidade: o marcador de vulnerabilidade depende da atualização do CadÚnico, que pode estar defasada em relação à situação real da família; o endereço é declarado e pode estar desatualizado. As duas coisas mudam a posição na fila.</li>
+  <li style="margin-bottom:4pt;">Retenção: os dados ficam ativos enquanto a criança estiver na fila e por cinco anos depois, para fins de auditoria.</li>
+  <li style="margin-bottom:4pt;">Base legal: execução de política pública de educação — dever do município na educação infantil (CF, art. 208, IV; LDB, art. 11, V), com prioridade da primeira infância (Lei nº 13.257/2016) e critérios de prioridade fixados na norma municipal de matrícula —, com tratamento de dado de criança no melhor interesse (LGPD, art. 14).</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.4 Informações sobre o algoritmo e o modelo (cl. 6.4)</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">Não há aprendizado de máquina. O sistema aplica regras determinísticas de ordenação, na sequência fixada pela norma municipal de matrícula: critérios legais de prioridade (criança com deficiência, vulnerabilidade socioeconômica aferida no CadÚnico, medida protetiva ou determinação judicial), tempo de espera, distância entre residência e unidade e preferência declarada. É um sistema algorítmico auditável linha a linha — o que facilita a explicação, mas não elimina o impacto: a escolha dos pesos entre os critérios é uma decisão de política pública, que se apoia em estudo técnico, mas envolve escolhas de valor que a técnica sozinha não resolve.</p>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.5 Partes interessadas (cl. 6.6)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:34%;">Parte interessada</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Interesse no sistema</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Famílias inscritas</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Entender por que a criança foi ou não chamada e poder contestar.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Crianças</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Acesso à vaga no tempo certo do desenvolvimento.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Unidades de ensino</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Receber encaminhamentos compatíveis com a capacidade real.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Secretaria</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Distribuir vaga escassa com critério defensável.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Ministério Público e Defensoria</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Verificar cumprimento do direito à educação infantil.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.6 Benefícios reais e potenciais (cl. 6.7)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Para as pessoas: fila única e consultável, no lugar de listas separadas por unidade.</li>
+  <li style="margin-bottom:4pt;">Para a organização: redução do tempo de montagem da lista e rastreabilidade de cada encaminhamento.</li>
+  <li style="margin-bottom:4pt;">Para a sociedade: possibilidade de publicar os critérios e o tamanho da fila por região, o que sustenta o planejamento de novas unidades.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.7 Danos reais e potenciais (cl. 6.8)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:26%;">Dano</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:24%;">Quem sofre</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Como se manifesta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Perda de vaga por dado errado</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Criança e família</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Endereço desatualizado ou cadastro social defasado rebaixa a posição na fila.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Desigualdade territorial</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Famílias de bairros com menos unidades</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">O critério de distância favorece quem mora perto de creche — quem mora longe espera mais.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Opacidade da decisão</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Família</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A pessoa recebe a negativa sem entender qual critério pesou.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Judicialização seletiva</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Famílias sem acesso a advogado</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem consegue acionar a Justiça avança na fila; quem não consegue, não.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Dependência acrítica</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Servidor</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A homologação vira carimbo e o erro do sistema sai na lista divulgada às famílias.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.8 Falhas do sistema e uso indevido previsível (cl. 6.8.3)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Falha silenciosa na atualização da capacidade das unidades, gerando encaminhamento para vaga inexistente.</li>
+  <li style="margin-bottom:4pt;">Empate mal resolvido entre crianças com o mesmo critério, decidido por ordem de registro no banco.</li>
+  <li style="margin-bottom:4pt;">Uso indevido previsível: informar endereço de conveniência (casa de parente ou local de trabalho) para melhorar a posição no critério de distância.</li>
+  <li style="margin-bottom:4pt;">Uso indevido previsível: reaproveitamento dos dados de vulnerabilidade das famílias para outra finalidade, sem nova base legal.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.9 Verificação por tema de documentação (cl. 6)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:22%;">Tema</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:39%;">Situação hoje</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">O que falta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Responsabilização</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Há responsável formal na secretaria.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Registrar quem aprova mudanças de critério e em que ato.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Transparência</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Critérios publicados em norma.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Publicar, junto com a chamada, qual critério determinou a posição.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Equidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Critérios de vulnerabilidade previstos em norma e aplicados na ordenação; a secretaria acompanha o tempo de espera por critério.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Publicar a medição, por região e por perfil, do tempo médio de espera até o encaminhamento.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Privacidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Base legal definida.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Revisar a retenção e restringir o acesso ao marcador de vulnerabilidade do CadÚnico.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Confiabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Regras determinísticas e testáveis.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Teste automatizado de regressão a cada mudança de regra.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Segurança</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Acesso por perfil.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Registro de auditoria de alteração manual de posição na fila.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Explicabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Regras conhecidas internamente.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Explicação em linguagem simples para a família, no próprio comprovante.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Impacto ambiental</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Não significativo.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Sem ação.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.10 Resultado da avaliação</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <tr><td style="width:34%;padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Grau de risco (pré-triagem AIE.BR)</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Justificativa</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">O sistema determina o acesso a um serviço público essencial, afeta crianças e trata dado de grupo vulnerável.</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Enquadramento no PL 2338/2023</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto risco — acesso a serviços essenciais e uso em educação.</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Impacto residual após medidas</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Médio</td></tr>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.11 Medidas de tratamento</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:48%;">Medida</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:30%;">Responsável</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Prazo</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Publicar a explicação do critério aplicado em cada encaminhamento</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Coordenação de educação infantil</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">90 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Painel público de tempo de espera por distrito e faixa etária</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Equipe de dados da secretaria</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">120 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Canal de contestação com prazo de resposta declarado</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Ouvidoria</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">60 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Teste de regressão obrigatório antes de mudar peso de critério</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Fornecedor e equipe de TI</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A cada versão</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Revisão anual dos critérios com participação de conselhos</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Secretaria</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Anual</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.12 Aprovação e monitoramento</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">A avaliação é a fotografia de hoje. Ela deve ser refeita quando os critérios de prioridade mudarem, quando novas fontes de dados forem incorporadas ou a cada 12 meses, o que ocorrer primeiro. O relatório não certifica conformidade: ele organiza o que precisa entrar na próxima reunião de gestão.</p>
+
+</doc-page>
+<!-- caso-toc:start -->
+<style>
+  x-dc h1, x-dc h2, x-dc h3, #dc-root h1, #dc-root h2, #dc-root h3 { scroll-margin-top: 12px; }
+  #caso-toc-toggle { position: fixed; top: 14px; left: 14px; z-index: 1001; font-family: 'rawline', sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; background: #1351b4; border: 0; border-radius: 20px; padding: 8px 14px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+  #caso-toc-toggle:hover { background: #0c326f; }
+  #caso-toc { position: fixed; top: 54px; left: 14px; z-index: 1000; width: 260px; max-height: calc(100vh - 70px); overflow-y: auto; background: #ffffff; border: 1px solid #e6e6e6; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.18); padding: 8px 0 10px; font-family: 'rawline', 'Raleway', sans-serif; }
+  #caso-toc.caso-toc-fechado { display: none; }
+  #caso-toc .caso-toc-titulo { margin: 4px 14px 6px; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #767676; }
+  #caso-toc a { display: block; padding: 4px 14px; font-size: 12.5px; line-height: 1.35; color: #333333; text-decoration: none; border-left: 3px solid transparent; }
+  #caso-toc a.caso-toc-h1 { font-weight: 700; color: #0c326f; }
+  #caso-toc a.caso-toc-h2 { font-weight: 700; color: #0c326f; margin-top: 6px; }
+  #caso-toc a.caso-toc-h3 { padding-left: 24px; }
+  #caso-toc a:hover { background: #e8eefb; }
+  #caso-toc a.caso-toc-ativo { border-left-color: #1351b4; background: #e8eefb; color: #1351b4; }
+  @media print { #caso-toc, #caso-toc-toggle { display: none !important; } }
+</style>
+<script>
+(function () {
+  // O runtime (support.js) pode re-montar o documento (substitui <x-dc> por #dc-root via React).
+  // Por isso os titulos sao resolvidos NO MOMENTO do clique/rolagem, no DOM atual, por posicao+texto.
+  var SEL = 'x-dc h1, x-dc h2, x-dc h3, #dc-root h1, #dc-root h2, #dc-root h3';
+  function norm(t) { return (t || '').replace(/\s+/g, ' ').trim(); }
+  function resolveHeads() { return Array.prototype.slice.call(document.querySelectorAll(SEL)); }
+  var items = null;
+  function slug(text, i) { return 'sec-' + i + '-' + text.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60); }
+  function buildNav() {
+    if (document.getElementById('caso-toc')) return true;
+    var heads = resolveHeads();
+    if (!heads.length) return false;
+    items = heads.map(function (h) { return { text: norm(h.textContent), tag: h.tagName.toLowerCase() }; });
+    var nav = document.createElement('nav'); nav.id = 'caso-toc'; nav.setAttribute('aria-label', 'Sumário');
+    var title = document.createElement('p'); title.className = 'caso-toc-titulo'; title.textContent = 'Sumário'; nav.appendChild(title);
+    items.forEach(function (it, i) {
+      var a = document.createElement('a');
+      a.href = '#' + slug(it.text, i);
+      a.textContent = it.text;
+      a.className = 'caso-toc-' + it.tag;
+      a.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        var hs = resolveHeads();
+        var target = (hs[i] && norm(hs[i].textContent) === it.text) ? hs[i] : hs.filter(function (x) { return norm(x.textContent) === it.text; })[0];
+        if (!target) return;
+        if (!target.id) target.id = slug(it.text, i);
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', '#' + target.id);
+      });
+      nav.appendChild(a);
+    });
+    var btn = document.createElement('button'); btn.id = 'caso-toc-toggle'; btn.type = 'button'; btn.textContent = 'Sumário';
+    btn.setAttribute('aria-expanded', 'true');
+    btn.addEventListener('click', function () { var fechado = nav.classList.toggle('caso-toc-fechado'); btn.setAttribute('aria-expanded', String(!fechado)); });
+    if (window.innerWidth < 1100) { nav.classList.add('caso-toc-fechado'); btn.setAttribute('aria-expanded', 'false'); }
+    document.body.appendChild(btn); document.body.appendChild(nav);
+    return true;
+  }
+  var spyScheduled = false;
+  function spyNow() {
+    spyScheduled = false;
+    var nav = document.getElementById('caso-toc');
+    if (!nav || !items) return;
+    var heads = resolveHeads();
+    if (!heads.length) return;
+    var cur = 0;
+    for (var i = 0; i < heads.length; i++) { var r = heads[i].getBoundingClientRect(); if (r.height > 0 && r.top <= 90) cur = i; }
+    var links = nav.querySelectorAll('a');
+    for (var j = 0; j < links.length; j++) links[j].classList.toggle('caso-toc-ativo', j === cur);
+  }
+  function spy() { if (spyScheduled) return; spyScheduled = true; setTimeout(spyNow, 60); }
+  function start() {
+    buildNav();
+    // capture: pega o scroll da janela E de scrollers internos (o evento scroll nao borbulha, mas captura desce)
+    document.addEventListener('scroll', spy, { capture: true, passive: true });
+    window.addEventListener('resize', spy);
+    window.addEventListener('load', function () { buildNav(); spy(); });
+    // re-montagem pelo runtime: reconsti o painel se sumir e reavalia o destaque (childList apenas; sem loop com classes)
+    if (window.MutationObserver) new MutationObserver(function () { buildNav(); spy(); }).observe(document.body, { childList: true, subtree: true });
+    setTimeout(function () { buildNav(); spy(); }, 800);
+    setTimeout(function () { buildNav(); spy(); }, 2400);
+    spy();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
+<!-- caso-toc:end -->
+</x-dc>
+</body>
+</html>

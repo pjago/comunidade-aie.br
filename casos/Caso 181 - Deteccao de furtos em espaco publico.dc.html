@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/fonts.css">
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/colors.css">
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/semantic.css">
+<script src="./doc-page.js"></script>
+<style>
+body{margin:0;}
+doc-page:not(:defined){visibility:hidden;}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+</style>
+</helmet>
+<doc-page margin="0.75in">
+<div slot="footer" style="display:flex;justify-content:space-between;font-family:'rawline',sans-serif;font-size:8.5pt;color:#767676;border-top:1px solid #e6e6e6;padding-top:6pt;">
+  <span>Oficina AIE.BR · Conexão SISP</span>
+  <span>Caso 181 · Detecção de furtos em espaço público</span>
+</div>
+
+<p style="margin:0 0 6pt;font-family:'rawline',sans-serif;font-size:9.5pt;font-weight:600;color:#1351b4;letter-spacing:.04em;">Avaliação de impacto do sistema de IA</p>
+<h1 style="margin:0 0 8pt;font-family:'rawline',sans-serif;font-size:24pt;font-weight:700;color:#0c326f;line-height:1.15;">Detecção de furtos em espaço público movimentado</h1>
+<p style="margin:0 0 18pt;font-family:'Raleway',sans-serif;font-size:11pt;color:#555555;line-height:1.4;">Caso 181 · modelo de documentação da ABNT NBR ISO/IEC 42005:2025</p>
+<p style="margin:0 0 18pt;padding:10pt 12pt;background:#e8eefb;font-family:'Raleway',sans-serif;font-size:9.5pt;color:#555555;line-height:1.5;font-style:italic;break-inside:avoid;">Documento de simulação, produzido para a oficina de Autoavaliação de Impacto Ético (AIE.BR) do Conexão SISP. O caso de uso é adaptado da ABNT ISO/IEC TR 24030:2024 e o preenchimento é fictício: não representa a avaliação oficial de nenhum órgão nem descreve um sistema em operação.</p>
+
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 16pt;">
+  <tr><td style="width:32%;padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Modelo de referência</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">ABNT NBR ISO/IEC 42005:2025 — Anexo com modelo de documento de avaliação de impacto</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Caso de uso</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">ABNT ISO/IEC TR 24030:2024 — Caso 181</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Domínio de aplicação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Segurança pública</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Versão e data</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">1.0 — versão de oficina · 12/08/2026</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Aprovação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Pendente — a aprovação real cabe ao responsável pelo sistema no órgão</td></tr>
+</table>
+
+<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;">Parte I — O caso de uso, conforme a ISO/IEC TR 24030</h2>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.1 Descrição</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">O sistema analisa imagens de espaço público movimentado para identificar comportamento associado a furto e emite alerta para a equipe de segurança, que decide se aborda a pessoa. A imagem captada inclui rosto e corpo de qualquer pessoa presente no local, e não apenas de quem é objeto do alerta.</p>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.2 Retrato do sistema em seis respostas</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:38%;">Pergunta</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Resposta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">O que o sistema faz, em uma frase?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Identifica comportamento associado a furto em imagens de espaço público movimentado.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem é afetado pela saída dele?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Qualquer pessoa no local, equipes de segurança e pessoas abordadas.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Que dados usa, e de onde vêm?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Vídeo de espaço público, incluindo imagem de rosto e de corpo.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A saída é sugestão ou decisão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Emite alerta para a equipe, que decide abordar.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Em que fase está?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Desenvolvimento.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem responde por ele no órgão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Secretaria de segurança pública.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.3 Por que este caso importa no Brasil</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">É o caso com o histórico documentado mais duro. No Smart Sampa, em São Paulo, a nota técnica do LAPIN e o estudo do CESeC registram conduções indevidas a partir de alerta de reconhecimento facial, erros que atingem de forma desproporcional pessoas negras, bases de mandados desatualizadas e baixa transparência sobre o perfil das pessoas abordadas. A prefeitura contesta os estudos e sustenta que não houve prisão indevida decorrente do sistema. A divergência em si já é matéria de avaliação de impacto: sem métrica pública e auditável, não há como sustentar nenhuma das duas versões.</p>
+<p style="margin:0 0 10pt;padding:10pt 12pt;background:#fdf2f0;font-family:'Raleway',sans-serif;font-size:10pt;line-height:1.5;color:#555555;break-inside:avoid;">Atenção: este caso avalia detecção de comportamento, não identificação biométrica de pessoas. Se o sistema incluir reconhecimento facial em tempo real em espaço público, a avaliação muda de patamar e deve considerar as vedações e as obrigações reforçadas discutidas no PL 2338/2023.</p>
+
+<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;break-before:page;">Parte II — Avaliação de impacto preenchida</h2>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.1 Escopo e critérios da avaliação (cl. 5)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Objeto avaliado: o módulo de detecção de comportamento, a regra de emissão de alerta e o protocolo de abordagem associado.</li>
+  <li style="margin-bottom:4pt;">Fora do escopo: o parque de câmeras e o sistema de registro de ocorrência.</li>
+  <li style="margin-bottom:4pt;">Gatilho da avaliação: sistema em desenvolvimento com potencial de restringir a liberdade de pessoas.</li>
+  <li style="margin-bottom:4pt;">Limiar de uso sensível: qualquer integração com base biométrica ou com base de mandados exige nova avaliação, parecer jurídico e decisão formal da autoridade.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.2 Informações sobre o sistema (cl. 6.2)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:28%;">Item</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Descrição</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Finalidade pretendida</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Reduzir furtos em local de grande circulação, com resposta mais rápida da equipe.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Uso pretendido</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alerta para equipe humana presente no local, que verifica a cena antes de qualquer ação.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Usos não pretendidos</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Abordagem automática por alerta; integração silenciosa com reconhecimento facial; uso do histórico de alertas como prova de autoria.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Contexto de implantação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Espaço público movimentado, com circulação de pessoas em situação de rua, crianças e trabalhadores informais.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Grau de autonomia</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Médio. O sistema não age, mas dirige a atenção da equipe — e atenção dirigida é o começo da abordagem.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.3 Informações sobre os dados (cl. 6.3)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Origem: vídeo de espaço público, capturado de forma contínua.</li>
+  <li style="margin-bottom:4pt;">Dados pessoais: imagem de rosto e de corpo de todas as pessoas no local, inclusive de quem não é alvo de nenhum alerta. É dado pessoal e, no contexto, sensível.</li>
+  <li style="margin-bottom:4pt;">Consentimento: não há e não é aplicável; o tratamento depende de base legal de segurança pública, com dever reforçado de necessidade e proporcionalidade.</li>
+  <li style="margin-bottom:4pt;">Qualidade e viés: bases de treinamento com pouca diversidade produzem erro concentrado em grupos já mais abordados pela polícia.</li>
+  <li style="margin-bottom:4pt;">Retenção: definir prazo curto para imagens sem alerta e prazo declarado para as demais, com descarte auditável.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.4 Informações sobre o algoritmo e o modelo (cl. 6.4)</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">O modelo classifica padrões de movimento como “associados a furto”. O rótulo não descreve um fato, e sim uma suspeita — e suspeita treinada sobre registros históricos de abordagem reproduz o padrão de quem foi abordado no passado. A avaliação precisa registrar como o conjunto de treino foi rotulado, quem rotulou e com que critério.</p>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.5 Partes interessadas (cl. 6.6)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:34%;">Parte interessada</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Interesse no sistema</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Pessoas que circulam no local</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Não serem abordadas por engano nem vigiadas de forma permanente.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Pessoas em situação de vulnerabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Não se tornarem alvo preferencial por aparência ou permanência no local.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Equipes de segurança</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alerta confiável, com protocolo claro de verificação.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Secretaria</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Sustentar tecnicamente e juridicamente cada abordagem.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Sociedade civil e Ministério Público</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Fiscalizar proporcionalidade e transparência.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.6 Benefícios reais e potenciais (cl. 6.7)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Para as pessoas: resposta mais rápida a furtos em local de grande circulação.</li>
+  <li style="margin-bottom:4pt;">Para a organização: direcionamento das equipes em áreas extensas.</li>
+  <li style="margin-bottom:4pt;">Para a sociedade: eventual redução de furtos — benefício que precisa ser medido, não presumido. Estudo do CESeC sobre o Smart Sampa não encontrou redução dos principais indicadores de criminalidade após a implantação.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.7 Danos reais e potenciais (cl. 6.8)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:26%;">Dano</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:24%;">Quem sofre</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Como se manifesta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Abordagem indevida</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Pessoa inocente</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alerta falso positivo tratado como confirmação de suspeita.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Discriminação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Pessoas negras e em situação de rua</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Erro concentrado em grupos sub-representados no treino e sobre-representados na base histórica.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Constrangimento público</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Pessoa abordada</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Abordagem diante de outras pessoas, com exposição e dano à imagem.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Afastamento de serviços públicos</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">População local</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Vigilância intensa perto de unidades de saúde e escolas afasta quem mais precisa delas.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Vigilância generalizada</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Toda a população do local</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Captura contínua de imagem de quem não é suspeito de nada.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Perda de confiança institucional</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Órgão e sociedade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Erros noticiados sem dados públicos para contraditório.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.8 Falhas do sistema e uso indevido previsível (cl. 6.8.3)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Falso positivo em situação corriqueira: pessoa esperando alguém, ambulante arrumando mercadoria, criança correndo.</li>
+  <li style="margin-bottom:4pt;">Degradação por mudança de iluminação, ângulo ou densidade da multidão.</li>
+  <li style="margin-bottom:4pt;">Uso indevido previsível: acoplar o alerta comportamental a base biométrica para identificar quem foi apontado.</li>
+  <li style="margin-bottom:4pt;">Uso indevido previsível: divulgação institucional de imagens de abordagem antes de qualquer confirmação.</li>
+  <li style="margin-bottom:4pt;">Uso indevido previsível: uso do sistema para monitorar manifestação ou aglomeração política.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.9 Verificação por tema de documentação (cl. 6)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:22%;">Tema</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:39%;">Situação hoje</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">O que falta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Responsabilização</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Decisão de abordar é da equipe.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Registrar em cada abordagem se houve alerta do sistema e qual foi o desfecho.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Transparência</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Nenhuma publicação prevista.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Relatório público periódico: alertas, abordagens, desfechos e perfil agregado.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Equidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Não medida.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Medir taxa de falso positivo por raça, gênero e faixa etária, com auditoria externa.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Privacidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Base legal a definir.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Relatório de impacto à proteção de dados (LGPD) antes da implantação.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Confiabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Métrica de laboratório.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Teste em campo, no local real, antes de qualquer operação.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Segurança</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Acesso ao vídeo pouco restrito.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Trilha de auditoria de acesso e vedação de exportação de imagem sem autorização.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Explicabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alerta sem justificativa.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Mostrar ao operador a cena e o motivo do alerta, com registro da decisão.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Impacto ambiental</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Inferência contínua de vídeo.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Estimar consumo e avaliar processamento na borda.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.10 Resultado da avaliação</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <tr><td style="width:34%;padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Grau de risco (pré-triagem AIE.BR)</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Justificativa</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Trata imagem de pessoas em espaço público de forma contínua, produz suspeita sobre indivíduos e pode levar à restrição de liberdade.</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Enquadramento no PL 2338/2023</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto risco em segurança pública. Se houver identificação biométrica à distância em espaço público, verificar as hipóteses de risco excessivo do art. 13.</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Impacto residual após medidas</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto — recomenda-se não implantar sem auditoria externa e relatório de impacto à proteção de dados concluídos.</td></tr>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.11 Medidas de tratamento</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:48%;">Medida</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:30%;">Responsável</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Prazo</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Relatório de impacto à proteção de dados antes da implantação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Encarregado de dados</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Antes do piloto</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Auditoria externa de viés, com recorte racial e etário</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Secretaria e instituição independente</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Antes do piloto</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Protocolo de abordagem que proíbe ação apenas com base no alerta</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Comando operacional</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Antes do piloto</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Relatório público trimestral de alertas, abordagens e desfechos</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Secretaria</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A cada trimestre</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Vedação formal de integração com base biométrica sem nova avaliação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Autoridade máxima do órgão</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Imediato</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Canal de reparação para quem for abordado por erro</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Ouvidoria</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Antes do piloto</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.12 Aprovação e monitoramento</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">Este é o caso em que a avaliação pode concluir pela não implantação. Se as medidas anteriores ao piloto não forem cumpridas, a recomendação é não seguir. Havendo piloto, reavaliar a cada trimestre e a cada mudança de local, de modelo ou de protocolo de abordagem.</p>
+
+</doc-page>
+<!-- caso-toc:start -->
+<style>
+  x-dc h1, x-dc h2, x-dc h3, #dc-root h1, #dc-root h2, #dc-root h3 { scroll-margin-top: 12px; }
+  #caso-toc-toggle { position: fixed; top: 14px; left: 14px; z-index: 1001; font-family: 'rawline', sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; background: #1351b4; border: 0; border-radius: 20px; padding: 8px 14px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+  #caso-toc-toggle:hover { background: #0c326f; }
+  #caso-toc { position: fixed; top: 54px; left: 14px; z-index: 1000; width: 260px; max-height: calc(100vh - 70px); overflow-y: auto; background: #ffffff; border: 1px solid #e6e6e6; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.18); padding: 8px 0 10px; font-family: 'rawline', 'Raleway', sans-serif; }
+  #caso-toc.caso-toc-fechado { display: none; }
+  #caso-toc .caso-toc-titulo { margin: 4px 14px 6px; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #767676; }
+  #caso-toc a { display: block; padding: 4px 14px; font-size: 12.5px; line-height: 1.35; color: #333333; text-decoration: none; border-left: 3px solid transparent; }
+  #caso-toc a.caso-toc-h1 { font-weight: 700; color: #0c326f; }
+  #caso-toc a.caso-toc-h2 { font-weight: 700; color: #0c326f; margin-top: 6px; }
+  #caso-toc a.caso-toc-h3 { padding-left: 24px; }
+  #caso-toc a:hover { background: #e8eefb; }
+  #caso-toc a.caso-toc-ativo { border-left-color: #1351b4; background: #e8eefb; color: #1351b4; }
+  @media print { #caso-toc, #caso-toc-toggle { display: none !important; } }
+</style>
+<script>
+(function () {
+  // O runtime (support.js) pode re-montar o documento (substitui <x-dc> por #dc-root via React).
+  // Por isso os titulos sao resolvidos NO MOMENTO do clique/rolagem, no DOM atual, por posicao+texto.
+  var SEL = 'x-dc h1, x-dc h2, x-dc h3, #dc-root h1, #dc-root h2, #dc-root h3';
+  function norm(t) { return (t || '').replace(/\s+/g, ' ').trim(); }
+  function resolveHeads() { return Array.prototype.slice.call(document.querySelectorAll(SEL)); }
+  var items = null;
+  function slug(text, i) { return 'sec-' + i + '-' + text.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60); }
+  function buildNav() {
+    if (document.getElementById('caso-toc')) return true;
+    var heads = resolveHeads();
+    if (!heads.length) return false;
+    items = heads.map(function (h) { return { text: norm(h.textContent), tag: h.tagName.toLowerCase() }; });
+    var nav = document.createElement('nav'); nav.id = 'caso-toc'; nav.setAttribute('aria-label', 'Sumário');
+    var title = document.createElement('p'); title.className = 'caso-toc-titulo'; title.textContent = 'Sumário'; nav.appendChild(title);
+    items.forEach(function (it, i) {
+      var a = document.createElement('a');
+      a.href = '#' + slug(it.text, i);
+      a.textContent = it.text;
+      a.className = 'caso-toc-' + it.tag;
+      a.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        var hs = resolveHeads();
+        var target = (hs[i] && norm(hs[i].textContent) === it.text) ? hs[i] : hs.filter(function (x) { return norm(x.textContent) === it.text; })[0];
+        if (!target) return;
+        if (!target.id) target.id = slug(it.text, i);
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', '#' + target.id);
+      });
+      nav.appendChild(a);
+    });
+    var btn = document.createElement('button'); btn.id = 'caso-toc-toggle'; btn.type = 'button'; btn.textContent = 'Sumário';
+    btn.setAttribute('aria-expanded', 'true');
+    btn.addEventListener('click', function () { var fechado = nav.classList.toggle('caso-toc-fechado'); btn.setAttribute('aria-expanded', String(!fechado)); });
+    if (window.innerWidth < 1100) { nav.classList.add('caso-toc-fechado'); btn.setAttribute('aria-expanded', 'false'); }
+    document.body.appendChild(btn); document.body.appendChild(nav);
+    return true;
+  }
+  var spyScheduled = false;
+  function spyNow() {
+    spyScheduled = false;
+    var nav = document.getElementById('caso-toc');
+    if (!nav || !items) return;
+    var heads = resolveHeads();
+    if (!heads.length) return;
+    var cur = 0;
+    for (var i = 0; i < heads.length; i++) { var r = heads[i].getBoundingClientRect(); if (r.height > 0 && r.top <= 90) cur = i; }
+    var links = nav.querySelectorAll('a');
+    for (var j = 0; j < links.length; j++) links[j].classList.toggle('caso-toc-ativo', j === cur);
+  }
+  function spy() { if (spyScheduled) return; spyScheduled = true; setTimeout(spyNow, 60); }
+  function start() {
+    buildNav();
+    // capture: pega o scroll da janela E de scrollers internos (o evento scroll nao borbulha, mas captura desce)
+    document.addEventListener('scroll', spy, { capture: true, passive: true });
+    window.addEventListener('resize', spy);
+    window.addEventListener('load', function () { buildNav(); spy(); });
+    // re-montagem pelo runtime: reconsti o painel se sumir e reavalia o destaque (childList apenas; sem loop com classes)
+    if (window.MutationObserver) new MutationObserver(function () { buildNav(); spy(); }).observe(document.body, { childList: true, subtree: true });
+    setTimeout(function () { buildNav(); spy(); }, 800);
+    setTimeout(function () { buildNav(); spy(); }, 2400);
+    spy();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
+<!-- caso-toc:end -->
+</x-dc>
+</body>
+</html>

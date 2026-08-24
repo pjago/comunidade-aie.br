@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/fonts.css">
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/colors.css">
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/semantic.css">
+<script src="./doc-page.js"></script>
+<style>
+body{margin:0;}
+doc-page:not(:defined){visibility:hidden;}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+</style>
+</helmet>
+<doc-page margin="0.75in">
+<div slot="footer" style="display:flex;justify-content:space-between;font-family:'rawline',sans-serif;font-size:8.5pt;color:#767676;border-top:1px solid #e6e6e6;padding-top:6pt;">
+  <span>Oficina AIE.BR · Conexão SISP</span>
+  <span>Caso 29 · Fiscalização de trânsito por vídeo</span>
+</div>
+
+<p style="margin:0 0 6pt;font-family:'rawline',sans-serif;font-size:9.5pt;font-weight:600;color:#1351b4;letter-spacing:.04em;">Avaliação de impacto do sistema de IA</p>
+<h1 style="margin:0 0 8pt;font-family:'rawline',sans-serif;font-size:24pt;font-weight:700;color:#0c326f;line-height:1.15;">Fiscalização de trânsito por vídeo</h1>
+<p style="margin:0 0 18pt;font-family:'Raleway',sans-serif;font-size:11pt;color:#555555;line-height:1.4;">Caso 29 · modelo de documentação da ABNT NBR ISO/IEC 42005:2025</p>
+<p style="margin:0 0 18pt;padding:10pt 12pt;background:#e8eefb;font-family:'Raleway',sans-serif;font-size:9.5pt;color:#555555;line-height:1.5;font-style:italic;break-inside:avoid;">Documento de simulação, produzido para a oficina de Autoavaliação de Impacto Ético (AIE.BR) do Conexão SISP. O caso de uso é adaptado da ABNT ISO/IEC TR 24030:2024 e o preenchimento é fictício: não representa a avaliação oficial de nenhum órgão nem descreve um sistema em operação.</p>
+
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 16pt;">
+  <tr><td style="width:32%;padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Modelo de referência</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">ABNT NBR ISO/IEC 42005:2025 — Anexo com modelo de documento de avaliação de impacto</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Caso de uso</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">ABNT ISO/IEC TR 24030:2024 — Caso 29</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Domínio de aplicação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Transporte</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Versão e data</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">1.0 — versão de oficina · 12/08/2026</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Aprovação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Pendente — a aprovação real cabe ao responsável pelo sistema no órgão</td></tr>
+</table>
+
+<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;">Parte I — O caso de uso, conforme a ISO/IEC TR 24030</h2>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.1 Descrição</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">O sistema analisa imagens de câmeras de via para detectar indícios de infração — falta de cinto, uso de celular ao volante, conversão proibida, ocupação de faixa exclusiva — e para medir o fluxo de veículos. A saída é uma seleção de cenas suspeitas, encaminhada a um agente de trânsito, que valida ou descarta antes da emissão do auto de infração.</p>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.2 Retrato do sistema em seis respostas</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:38%;">Pergunta</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Resposta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">O que o sistema faz, em uma frase?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Analisa imagens de câmeras de via para detectar infrações e medir o fluxo.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem é afetado pela saída dele?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Condutores autuados, pedestres e agentes de trânsito.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Que dados usa, e de onde vêm?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Vídeo de via pública, leitura de placas e base de veículos.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A saída é sugestão ou decisão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Sugere a autuação; um agente valida antes da emissão.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Em que fase está?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Produção.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem responde por ele no órgão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Departamento estadual de trânsito.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.3 Por que este caso importa no Brasil</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">A fiscalização remota por vídeo é regulamentada desde 2013 e a Resolução Contran nº 909/2022 disciplina o videomonitoramento; nela, a lavratura do auto continua sendo ato da autoridade de trânsito, que deve registrar como a infração foi constatada. Não existe, hoje, regulamentação específica sobre o uso de IA nessa fiscalização — o que empurra a responsabilidade pela qualidade da detecção para o desenho do próprio sistema e para a etapa de validação humana.</p>
+
+<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;break-before:page;">Parte II — Avaliação de impacto preenchida</h2>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.1 Escopo e critérios da avaliação (cl. 5)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Objeto avaliado: o módulo de visão computacional que pré-seleciona cenas e a fila de validação usada pelo agente.</li>
+  <li style="margin-bottom:4pt;">Fora do escopo: o sistema de emissão e cobrança de multas e o parque de câmeras contratado.</li>
+  <li style="margin-bottom:4pt;">Gatilho da avaliação: sistema em produção que produz efeito sancionatório sobre o cidadão.</li>
+  <li style="margin-bottom:4pt;">Limiar de uso sensível: qualquer configuração que dispense a validação humana antes da autuação exige nova avaliação e decisão formal da autoridade.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.2 Informações sobre o sistema (cl. 6.2)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:28%;">Item</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Descrição</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Finalidade pretendida</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Ampliar a cobertura da fiscalização de condutas de risco e reduzir acidentes.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Uso pretendido</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Triagem de imagens: separar cenas suspeitas do fluxo total para análise humana.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Usos não pretendidos</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Autuação automática sem validação; rastreamento de deslocamento de pessoa determinada; uso das imagens para outra finalidade de segurança pública.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Contexto de implantação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Vias urbanas e rodovias com câmeras fixas de alta resolução.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Grau de autonomia</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Médio. O sistema não autua, mas define o que o agente vê — e o que ele nunca verá.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.3 Informações sobre os dados (cl. 6.3)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Origem: vídeo contínuo de via pública, leitura automática de placas (ALPR) e consulta à base de veículos.</li>
+  <li style="margin-bottom:4pt;">Dados pessoais: imagem de condutor e passageiro, placa e vínculo com o proprietário. Imagem do interior do veículo é dado sensível pelo contexto.</li>
+  <li style="margin-bottom:4pt;">Qualidade: o desempenho cai à noite, com chuva, com película nos vidros e com placas sujas ou danificadas.</li>
+  <li style="margin-bottom:4pt;">Retenção: imagens sem indício de infração devem ser descartadas em prazo curto e declarado; as demais seguem o prazo do processo administrativo.</li>
+  <li style="margin-bottom:4pt;">Base legal: exercício de competência de fiscalização de trânsito, com os limites da LGPD para tratamento por órgão público.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.4 Informações sobre o algoritmo e o modelo (cl. 6.4)</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">Modelos de visão computacional treinados para reconhecer padrões associados a infrações. O ponto crítico da avaliação não é a acurácia média divulgada, e sim a distribuição do erro: falso positivo gera autuação indevida contra o cidadão; falso negativo é invisível e não gera reclamação. Sem medir os dois separadamente, o órgão só enxerga metade do impacto.</p>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.5 Partes interessadas (cl. 6.6)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:34%;">Parte interessada</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Interesse no sistema</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Condutores</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Não ser autuado por erro e poder se defender com a prova em mãos.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Pedestres e ciclistas</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Redução efetiva de conduta de risco na via.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Agentes de trânsito</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Fila de validação em volume que permita análise real de cada cena.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Órgão de trânsito</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Sustentar a autuação em processo administrativo e judicial.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Fornecedor</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Manutenção e evolução do modelo.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.6 Benefícios reais e potenciais (cl. 6.7)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Para as pessoas: fiscalização de condutas que antes só eram flagradas por acaso, como uso de celular ao volante.</li>
+  <li style="margin-bottom:4pt;">Para a organização: uma câmera opera de forma contínua e separa, entre milhares de veículos, apenas as cenas suspeitas — ganho direto de produtividade da equipe.</li>
+  <li style="margin-bottom:4pt;">Para a sociedade: dados de fluxo que apoiam decisões de engenharia de tráfego.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.7 Danos reais e potenciais (cl. 6.8)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:26%;">Dano</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:24%;">Quem sofre</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Como se manifesta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Autuação indevida</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Condutor</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Falso positivo validado por agente sobrecarregado.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Custo de defesa desigual</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Condutor de baixa renda</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Recorrer exige tempo, acesso digital e, às vezes, advogado.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Vigilância excessiva</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Qualquer pessoa na via</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Captura contínua de imagem do interior do veículo.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Desvio de finalidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">População monitorada</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Uso das imagens e das placas para rastreamento não previsto.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Validação de fachada</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Condutor e órgão</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Volume alto transforma a análise humana em confirmação automática.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.8 Falhas do sistema e uso indevido previsível (cl. 6.8.3)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Queda de desempenho não detectada após troca de lente, mudança de ângulo ou de iluminação da via.</li>
+  <li style="margin-bottom:4pt;">Erro de leitura de placa que atribui a infração a veículo de terceiro.</li>
+  <li style="margin-bottom:4pt;">Uso indevido previsível: consulta ao histórico de passagens de um veículo específico sem autorização.</li>
+  <li style="margin-bottom:4pt;">Uso indevido previsível: ativação de detecção automática sem validação para “desafogar a fila”.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.9 Verificação por tema de documentação (cl. 6)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:22%;">Tema</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:39%;">Situação hoje</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">O que falta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Responsabilização</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Autuação é ato do agente, previsto em resolução.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Registrar no auto que houve pré-seleção automática.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Transparência</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Sinalização da via informa videomonitoramento.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Informar ao autuado que a cena foi pré-selecionada por sistema automatizado.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Equidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Não medido.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Verificar se a taxa de falso positivo varia por tipo de veículo, região ou horário.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Privacidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Prazo de retenção contratado.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Descarte automático e auditável das imagens sem indício de infração.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Confiabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Acurácia informada pelo fornecedor.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Medição independente, separando falso positivo de falso negativo.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Segurança</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Acesso restrito ao sistema.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Trilha de auditoria para consulta por placa.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Explicabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Imagem anexada ao auto.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Disponibilizar a imagem que fundamenta a autuação junto com a notificação.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Impacto ambiental</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Consumo de processamento contínuo.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Estimar consumo e avaliar processamento na borda.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.10 Resultado da avaliação</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <tr><td style="width:34%;padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Grau de risco (pré-triagem AIE.BR)</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Justificativa</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Produz efeito sancionatório sobre o cidadão, opera sobre imagem de pessoas em espaço público e funciona de forma contínua.</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Enquadramento no PL 2338/2023</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto risco — uso pela administração pública com efeito direto sobre direitos.</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Impacto residual após medidas</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Médio</td></tr>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.11 Medidas de tratamento</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:48%;">Medida</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:30%;">Responsável</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Prazo</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Publicar relatório trimestral com taxa de descarte na validação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Diretoria de fiscalização</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">90 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Anexar à notificação a imagem que fundamenta a autuação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Área de processamento de autos</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">60 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Auditoria independente do modelo, com corte por região e horário</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Órgão de trânsito e universidade parceira</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">180 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Descarte automático de imagens sem indício de infração</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">TI e fornecedor</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">120 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Limite de cenas por agente e por turno na fila de validação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Gestão operacional</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Imediato</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.12 Aprovação e monitoramento</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">Reavaliar a cada nova versão do modelo, a cada ampliação do rol de infrações detectadas e sempre que a taxa de descarte na validação humana variar mais de cinco pontos percentuais entre trimestres.</p>
+
+</doc-page>
+<!-- caso-toc:start -->
+<style>
+  x-dc h1, x-dc h2, x-dc h3, #dc-root h1, #dc-root h2, #dc-root h3 { scroll-margin-top: 12px; }
+  #caso-toc-toggle { position: fixed; top: 14px; left: 14px; z-index: 1001; font-family: 'rawline', sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; background: #1351b4; border: 0; border-radius: 20px; padding: 8px 14px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+  #caso-toc-toggle:hover { background: #0c326f; }
+  #caso-toc { position: fixed; top: 54px; left: 14px; z-index: 1000; width: 260px; max-height: calc(100vh - 70px); overflow-y: auto; background: #ffffff; border: 1px solid #e6e6e6; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.18); padding: 8px 0 10px; font-family: 'rawline', 'Raleway', sans-serif; }
+  #caso-toc.caso-toc-fechado { display: none; }
+  #caso-toc .caso-toc-titulo { margin: 4px 14px 6px; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #767676; }
+  #caso-toc a { display: block; padding: 4px 14px; font-size: 12.5px; line-height: 1.35; color: #333333; text-decoration: none; border-left: 3px solid transparent; }
+  #caso-toc a.caso-toc-h1 { font-weight: 700; color: #0c326f; }
+  #caso-toc a.caso-toc-h2 { font-weight: 700; color: #0c326f; margin-top: 6px; }
+  #caso-toc a.caso-toc-h3 { padding-left: 24px; }
+  #caso-toc a:hover { background: #e8eefb; }
+  #caso-toc a.caso-toc-ativo { border-left-color: #1351b4; background: #e8eefb; color: #1351b4; }
+  @media print { #caso-toc, #caso-toc-toggle { display: none !important; } }
+</style>
+<script>
+(function () {
+  // O runtime (support.js) pode re-montar o documento (substitui <x-dc> por #dc-root via React).
+  // Por isso os titulos sao resolvidos NO MOMENTO do clique/rolagem, no DOM atual, por posicao+texto.
+  var SEL = 'x-dc h1, x-dc h2, x-dc h3, #dc-root h1, #dc-root h2, #dc-root h3';
+  function norm(t) { return (t || '').replace(/\s+/g, ' ').trim(); }
+  function resolveHeads() { return Array.prototype.slice.call(document.querySelectorAll(SEL)); }
+  var items = null;
+  function slug(text, i) { return 'sec-' + i + '-' + text.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60); }
+  function buildNav() {
+    if (document.getElementById('caso-toc')) return true;
+    var heads = resolveHeads();
+    if (!heads.length) return false;
+    items = heads.map(function (h) { return { text: norm(h.textContent), tag: h.tagName.toLowerCase() }; });
+    var nav = document.createElement('nav'); nav.id = 'caso-toc'; nav.setAttribute('aria-label', 'Sumário');
+    var title = document.createElement('p'); title.className = 'caso-toc-titulo'; title.textContent = 'Sumário'; nav.appendChild(title);
+    items.forEach(function (it, i) {
+      var a = document.createElement('a');
+      a.href = '#' + slug(it.text, i);
+      a.textContent = it.text;
+      a.className = 'caso-toc-' + it.tag;
+      a.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        var hs = resolveHeads();
+        var target = (hs[i] && norm(hs[i].textContent) === it.text) ? hs[i] : hs.filter(function (x) { return norm(x.textContent) === it.text; })[0];
+        if (!target) return;
+        if (!target.id) target.id = slug(it.text, i);
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', '#' + target.id);
+      });
+      nav.appendChild(a);
+    });
+    var btn = document.createElement('button'); btn.id = 'caso-toc-toggle'; btn.type = 'button'; btn.textContent = 'Sumário';
+    btn.setAttribute('aria-expanded', 'true');
+    btn.addEventListener('click', function () { var fechado = nav.classList.toggle('caso-toc-fechado'); btn.setAttribute('aria-expanded', String(!fechado)); });
+    if (window.innerWidth < 1100) { nav.classList.add('caso-toc-fechado'); btn.setAttribute('aria-expanded', 'false'); }
+    document.body.appendChild(btn); document.body.appendChild(nav);
+    return true;
+  }
+  var spyScheduled = false;
+  function spyNow() {
+    spyScheduled = false;
+    var nav = document.getElementById('caso-toc');
+    if (!nav || !items) return;
+    var heads = resolveHeads();
+    if (!heads.length) return;
+    var cur = 0;
+    for (var i = 0; i < heads.length; i++) { var r = heads[i].getBoundingClientRect(); if (r.height > 0 && r.top <= 90) cur = i; }
+    var links = nav.querySelectorAll('a');
+    for (var j = 0; j < links.length; j++) links[j].classList.toggle('caso-toc-ativo', j === cur);
+  }
+  function spy() { if (spyScheduled) return; spyScheduled = true; setTimeout(spyNow, 60); }
+  function start() {
+    buildNav();
+    // capture: pega o scroll da janela E de scrollers internos (o evento scroll nao borbulha, mas captura desce)
+    document.addEventListener('scroll', spy, { capture: true, passive: true });
+    window.addEventListener('resize', spy);
+    window.addEventListener('load', function () { buildNav(); spy(); });
+    // re-montagem pelo runtime: reconsti o painel se sumir e reavalia o destaque (childList apenas; sem loop com classes)
+    if (window.MutationObserver) new MutationObserver(function () { buildNav(); spy(); }).observe(document.body, { childList: true, subtree: true });
+    setTimeout(function () { buildNav(); spy(); }, 800);
+    setTimeout(function () { buildNav(); spy(); }, 2400);
+    spy();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
+<!-- caso-toc:end -->
+</x-dc>
+</body>
+</html>

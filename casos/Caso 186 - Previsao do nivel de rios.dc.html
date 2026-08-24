@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/fonts.css">
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/colors.css">
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/semantic.css">
+<script src="./doc-page.js"></script>
+<style>
+body{margin:0;}
+doc-page:not(:defined){visibility:hidden;}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+</style>
+</helmet>
+<doc-page margin="0.75in">
+<div slot="footer" style="display:flex;justify-content:space-between;font-family:'rawline',sans-serif;font-size:8.5pt;color:#767676;border-top:1px solid #e6e6e6;padding-top:6pt;">
+  <span>Oficina AIE.BR · Conexão SISP</span>
+  <span>Caso 186 · Previsão do nível de rios em enchentes</span>
+</div>
+
+<p style="margin:0 0 6pt;font-family:'rawline',sans-serif;font-size:9.5pt;font-weight:600;color:#1351b4;letter-spacing:.04em;">Avaliação de impacto do sistema de IA</p>
+<h1 style="margin:0 0 8pt;font-family:'rawline',sans-serif;font-size:24pt;font-weight:700;color:#0c326f;line-height:1.15;">Previsão do nível de rios em enchentes</h1>
+<p style="margin:0 0 18pt;font-family:'Raleway',sans-serif;font-size:11pt;color:#555555;line-height:1.4;">Caso 186 · modelo de documentação da ABNT NBR ISO/IEC 42005:2025</p>
+<p style="margin:0 0 18pt;padding:10pt 12pt;background:#e8eefb;font-family:'Raleway',sans-serif;font-size:9.5pt;color:#555555;line-height:1.5;font-style:italic;break-inside:avoid;">Documento de simulação, produzido para a oficina de Autoavaliação de Impacto Ético (AIE.BR) do Conexão SISP. O caso de uso é adaptado da ABNT ISO/IEC TR 24030:2024 e o preenchimento é fictício: não representa a avaliação oficial de nenhum órgão nem descreve um sistema em operação.</p>
+
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 16pt;">
+  <tr><td style="width:32%;padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Modelo de referência</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">ABNT NBR ISO/IEC 42005:2025 — Anexo com modelo de documento de avaliação de impacto</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Caso de uso</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">ABNT ISO/IEC TR 24030:2024 — Caso 186</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Domínio de aplicação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Transporte e defesa civil</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Versão e data</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">1.0 — versão de oficina · 12/08/2026</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Aprovação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Pendente — a aprovação real cabe ao responsável pelo sistema no órgão</td></tr>
+</table>
+
+<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;">Parte I — O caso de uso, conforme a ISO/IEC TR 24030</h2>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.1 Descrição</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">O sistema prevê o nível dos rios para as próximas horas a partir de chuva observada, vazão e série histórica. A previsão embasa o alerta emitido às prefeituras e à defesa civil. A decisão de evacuar uma área é sempre humana.</p>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.2 Retrato do sistema em seis respostas</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:38%;">Pergunta</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Resposta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">O que o sistema faz, em uma frase?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Prevê o nível dos rios nas próximas horas a partir de chuva, vazão e histórico.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem é afetado pela saída dele?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Moradores de área de risco, defesa civil e prefeituras.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Que dados usa, e de onde vêm?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Estações telemétricas, radar meteorológico e série histórica.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A saída é sugestão ou decisão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Produz a previsão que embasa o alerta; a decisão de evacuar é humana.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Em que fase está?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Produção.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem responde por ele no órgão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Centro de monitoramento e alertas de desastres.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.3 Por que este caso importa no Brasil</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">É o caso em que o dano do erro é simétrico e grave nos dois sentidos: alerta que não vem custa vidas; alerta que vem sem necessidade custa credibilidade — e a próxima evacuação encontra menos gente disposta a sair de casa. Pesquisa recente do Cemaden, do INPE e do Serpro trata exatamente disso ao incorporar a análise de incerteza aos modelos de aprendizado de máquina, para que o alerta informe não só o nível previsto, mas o grau de confiança daquela previsão.</p>
+
+<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;break-before:page;">Parte II — Avaliação de impacto preenchida</h2>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.1 Escopo e critérios da avaliação (cl. 5)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Objeto avaliado: o modelo de previsão de nível e a regra de disparo do alerta a partir da previsão.</li>
+  <li style="margin-bottom:4pt;">Fora do escopo: a rede de estações telemétricas e os canais de comunicação com a população.</li>
+  <li style="margin-bottom:4pt;">Gatilho da avaliação: sistema em produção cuja saída embasa decisão sobre vida e integridade física.</li>
+  <li style="margin-bottom:4pt;">Limiar de uso sensível: qualquer mudança de limiar de disparo do alerta exige nova avaliação e registro da decisão.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.2 Informações sobre o sistema (cl. 6.2)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:28%;">Item</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Descrição</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Finalidade pretendida</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Ampliar o tempo de reação da defesa civil e da população antes da cheia.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Uso pretendido</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Previsão horária de nível por estação, com faixa de incerteza, para apoiar a decisão de alerta.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Usos não pretendidos</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Uso da previsão para autorizar ou negar licenciamento e para decidir cobertura de seguro; uso fora das bacias em que o modelo foi validado.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Contexto de implantação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Bacias monitoradas com estação telemétrica ativa e cobertura de radar.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Grau de autonomia</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Baixo na decisão, alto na influência: na urgência, a previsão costuma ser aceita sem contestação.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.3 Informações sobre os dados (cl. 6.3)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Origem: estações telemétricas de nível e chuva, radar meteorológico e séries históricas de vazão.</li>
+  <li style="margin-bottom:4pt;">Dados pessoais: não há. O impacto recai sobre territórios e populações, não sobre indivíduos identificados.</li>
+  <li style="margin-bottom:4pt;">Qualidade: estação com falha, assoreamento ou corrosão degrada a entrada sem aviso; bacias sem estação ficam sem previsão.</li>
+  <li style="margin-bottom:4pt;">Cobertura desigual: as bacias mais instrumentadas tendem a ser as de maior interesse econômico, não necessariamente as de maior vulnerabilidade social.</li>
+  <li style="margin-bottom:4pt;">Retenção: séries mantidas de forma permanente, por valor científico e operacional.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.4 Informações sobre o algoritmo e o modelo (cl. 6.4)</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">Modelos de aprendizado de máquina treinados sobre séries hidrometeorológicas, combinados a modelos hidrológicos tradicionais. Dois pontos merecem registro na avaliação. Primeiro: eventos extremos são raros na série histórica, então o modelo é menos confiável exatamente na situação em que mais importa. Segundo: previsões determinísticas informam um único resultado possível — declarar a incerteza junto com o número é o que permite ao gestor decidir com consciência do erro.</p>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.5 Partes interessadas (cl. 6.6)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:34%;">Parte interessada</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Interesse no sistema</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Moradores de área de risco</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Receber o alerta com antecedência útil e em linguagem compreensível.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Defesa civil municipal</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Saber o grau de confiança da previsão antes de acionar a evacuação.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Prefeituras</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Planejar abrigo, rota e transporte.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Órgão de monitoramento</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Manter a credibilidade do sistema de alerta ao longo do tempo.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Comunidade científica</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Reproduzir e criticar o modelo.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.6 Benefícios reais e potenciais (cl. 6.7)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Para as pessoas: horas de antecedência que permitem sair de casa com documentos e com os idosos da família.</li>
+  <li style="margin-bottom:4pt;">Para a organização: priorização das equipes de campo onde o risco é maior.</li>
+  <li style="margin-bottom:4pt;">Para a sociedade: redução de perdas materiais e de mortes evitáveis em eventos extremos.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.7 Danos reais e potenciais (cl. 6.8)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:26%;">Dano</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:24%;">Quem sofre</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Como se manifesta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alerta que não vem</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Moradores de área de risco</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Evento extremo fora do padrão histórico não é previsto.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alerta em excesso</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Moradores e defesa civil</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Evacuações desnecessárias corroem a adesão ao próximo alerta.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Desigualdade de cobertura</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Comunidades em bacias sem estação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem não é monitorado não é alertado.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Excesso de confiança no número</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Gestor da defesa civil</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Previsão sem faixa de incerteza é lida como certeza.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Falha em cascata</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Toda a área monitorada</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Queda da rede telemétrica durante a chuva, justamente quando o dado é crítico.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.8 Falhas do sistema e uso indevido previsível (cl. 6.8.3)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Degradação silenciosa por sensor descalibrado ou submerso.</li>
+  <li style="margin-bottom:4pt;">Extrapolação do modelo para bacia em que não foi validado.</li>
+  <li style="margin-bottom:4pt;">Uso indevido previsível: divulgação da previsão bruta ao público sem tradução e sem faixa de incerteza.</li>
+  <li style="margin-bottom:4pt;">Uso indevido previsível: uso do histórico de alertas para negar responsabilidade do poder público em ação judicial.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.9 Verificação por tema de documentação (cl. 6)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:22%;">Tema</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:39%;">Situação hoje</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">O que falta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Responsabilização</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Decisão de alerta é do órgão, registrada em ata.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Registrar qual previsão embasou cada alerta emitido.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Transparência</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Metodologia publicada em artigo científico.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Resumo público em linguagem simples, para prefeituras e comunidades.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Equidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Não avaliado por território.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Mapear as áreas de risco sem cobertura de estação e priorizar instalação.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Privacidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Sem dado pessoal.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Sem ação.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Confiabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Desempenho medido em bacias selecionadas.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Publicar acerto por bacia e por faixa de antecedência, separando eventos extremos.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Segurança</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Infraestrutura crítica com redundância parcial.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Plano de contingência para queda da telemetria durante o evento.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Explicabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Saída numérica.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Entregar a previsão sempre com a faixa de incerteza associada.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Impacto ambiental</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Processamento contínuo em nuvem.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Estimar consumo do treinamento e da operação.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.10 Resultado da avaliação</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <tr><td style="width:34%;padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Grau de risco (pré-triagem AIE.BR)</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Justificativa</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A saída embasa decisão sobre vida e integridade física de população em área de risco e opera em infraestrutura crítica.</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Enquadramento no PL 2338/2023</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto risco — gestão e operação de infraestrutura crítica e proteção da vida.</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Impacto residual após medidas</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Médio</td></tr>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.11 Medidas de tratamento</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:48%;">Medida</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:30%;">Responsável</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Prazo</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Entregar toda previsão com faixa de incerteza explícita</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Equipe de modelagem</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">90 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Publicar desempenho por bacia, com recorte de eventos extremos</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Divisão de produtos</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">180 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Mapa público das áreas de risco sem cobertura telemétrica</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Monitoramento e parceiros municipais</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">120 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Protocolo de contingência para queda de estações durante evento</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Operação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">60 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Material em linguagem simples para defesa civil municipal</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Comunicação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">90 dias</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.12 Aprovação e monitoramento</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">Reavaliar a cada retreinamento do modelo, a cada inclusão de nova bacia e após todo evento extremo em que a previsão divergiu do observado.</p>
+
+</doc-page>
+<!-- caso-toc:start -->
+<style>
+  x-dc h1, x-dc h2, x-dc h3, #dc-root h1, #dc-root h2, #dc-root h3 { scroll-margin-top: 12px; }
+  #caso-toc-toggle { position: fixed; top: 14px; left: 14px; z-index: 1001; font-family: 'rawline', sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; background: #1351b4; border: 0; border-radius: 20px; padding: 8px 14px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+  #caso-toc-toggle:hover { background: #0c326f; }
+  #caso-toc { position: fixed; top: 54px; left: 14px; z-index: 1000; width: 260px; max-height: calc(100vh - 70px); overflow-y: auto; background: #ffffff; border: 1px solid #e6e6e6; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.18); padding: 8px 0 10px; font-family: 'rawline', 'Raleway', sans-serif; }
+  #caso-toc.caso-toc-fechado { display: none; }
+  #caso-toc .caso-toc-titulo { margin: 4px 14px 6px; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #767676; }
+  #caso-toc a { display: block; padding: 4px 14px; font-size: 12.5px; line-height: 1.35; color: #333333; text-decoration: none; border-left: 3px solid transparent; }
+  #caso-toc a.caso-toc-h1 { font-weight: 700; color: #0c326f; }
+  #caso-toc a.caso-toc-h2 { font-weight: 700; color: #0c326f; margin-top: 6px; }
+  #caso-toc a.caso-toc-h3 { padding-left: 24px; }
+  #caso-toc a:hover { background: #e8eefb; }
+  #caso-toc a.caso-toc-ativo { border-left-color: #1351b4; background: #e8eefb; color: #1351b4; }
+  @media print { #caso-toc, #caso-toc-toggle { display: none !important; } }
+</style>
+<script>
+(function () {
+  // O runtime (support.js) pode re-montar o documento (substitui <x-dc> por #dc-root via React).
+  // Por isso os titulos sao resolvidos NO MOMENTO do clique/rolagem, no DOM atual, por posicao+texto.
+  var SEL = 'x-dc h1, x-dc h2, x-dc h3, #dc-root h1, #dc-root h2, #dc-root h3';
+  function norm(t) { return (t || '').replace(/\s+/g, ' ').trim(); }
+  function resolveHeads() { return Array.prototype.slice.call(document.querySelectorAll(SEL)); }
+  var items = null;
+  function slug(text, i) { return 'sec-' + i + '-' + text.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60); }
+  function buildNav() {
+    if (document.getElementById('caso-toc')) return true;
+    var heads = resolveHeads();
+    if (!heads.length) return false;
+    items = heads.map(function (h) { return { text: norm(h.textContent), tag: h.tagName.toLowerCase() }; });
+    var nav = document.createElement('nav'); nav.id = 'caso-toc'; nav.setAttribute('aria-label', 'Sumário');
+    var title = document.createElement('p'); title.className = 'caso-toc-titulo'; title.textContent = 'Sumário'; nav.appendChild(title);
+    items.forEach(function (it, i) {
+      var a = document.createElement('a');
+      a.href = '#' + slug(it.text, i);
+      a.textContent = it.text;
+      a.className = 'caso-toc-' + it.tag;
+      a.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        var hs = resolveHeads();
+        var target = (hs[i] && norm(hs[i].textContent) === it.text) ? hs[i] : hs.filter(function (x) { return norm(x.textContent) === it.text; })[0];
+        if (!target) return;
+        if (!target.id) target.id = slug(it.text, i);
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', '#' + target.id);
+      });
+      nav.appendChild(a);
+    });
+    var btn = document.createElement('button'); btn.id = 'caso-toc-toggle'; btn.type = 'button'; btn.textContent = 'Sumário';
+    btn.setAttribute('aria-expanded', 'true');
+    btn.addEventListener('click', function () { var fechado = nav.classList.toggle('caso-toc-fechado'); btn.setAttribute('aria-expanded', String(!fechado)); });
+    if (window.innerWidth < 1100) { nav.classList.add('caso-toc-fechado'); btn.setAttribute('aria-expanded', 'false'); }
+    document.body.appendChild(btn); document.body.appendChild(nav);
+    return true;
+  }
+  var spyScheduled = false;
+  function spyNow() {
+    spyScheduled = false;
+    var nav = document.getElementById('caso-toc');
+    if (!nav || !items) return;
+    var heads = resolveHeads();
+    if (!heads.length) return;
+    var cur = 0;
+    for (var i = 0; i < heads.length; i++) { var r = heads[i].getBoundingClientRect(); if (r.height > 0 && r.top <= 90) cur = i; }
+    var links = nav.querySelectorAll('a');
+    for (var j = 0; j < links.length; j++) links[j].classList.toggle('caso-toc-ativo', j === cur);
+  }
+  function spy() { if (spyScheduled) return; spyScheduled = true; setTimeout(spyNow, 60); }
+  function start() {
+    buildNav();
+    // capture: pega o scroll da janela E de scrollers internos (o evento scroll nao borbulha, mas captura desce)
+    document.addEventListener('scroll', spy, { capture: true, passive: true });
+    window.addEventListener('resize', spy);
+    window.addEventListener('load', function () { buildNav(); spy(); });
+    // re-montagem pelo runtime: reconsti o painel se sumir e reavalia o destaque (childList apenas; sem loop com classes)
+    if (window.MutationObserver) new MutationObserver(function () { buildNav(); spy(); }).observe(document.body, { childList: true, subtree: true });
+    setTimeout(function () { buildNav(); spy(); }, 800);
+    setTimeout(function () { buildNav(); spy(); }, 2400);
+    spy();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
+<!-- caso-toc:end -->
+</x-dc>
+</body>
+</html>

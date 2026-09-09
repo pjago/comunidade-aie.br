@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1ª Edição da Comunidade de Práticas Éticas do Núcleo de Inteligência Artificial do Governo Federal</title>
-<meta name="description" content="Evento on-line com duas trilhas: palestras abertas a todo o SISP e oficinas em que órgãos selecionados tornam os seus sistemas de inteligência artificial compreensíveis para o cidadão e para a governança pública. De 28 de setembro a 28 de outubro de 2026.">
-<meta property="og:title" content="1ª Edição da Comunidade de Práticas Éticas do Núcleo de IA do Governo Federal">
-<meta property="og:description" content="Duas trilhas on-line, de 28 de setembro a 28 de outubro de 2026. Palestras abertas a todo o SISP e oficinas de aplicação assistida da AIE.BR.">
+<title>Imersão Ética em IA do Núcleo de IA</title>
+<meta name="description" content="Equipes de órgãos públicos aplicam a Autoavaliação de Impacto Ético (AIE) a um sistema de inteligência artificial do próprio órgão, com acompanhamento do Núcleo de Inteligência Artificial. De outubro a novembro de 2026.">
+<meta property="og:title" content="Imersão Ética em IA do Núcleo de IA">
+<meta property="og:description" content="Equipes aplicam a Autoavaliação de Impacto Ético a um sistema de IA do próprio órgão, com acompanhamento do Núcleo de IA. Inscrições de 16 a 30 de setembro de 2026.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,6 @@
 <style>
   :root{
     --navy:#071D41;
-    --navy-2:#0B2B5B;
     --blue:#1351B4;
     --blue-2:#2670E8;
     --blue-pale:#D4E5FF;
@@ -70,10 +69,10 @@
     text-transform:uppercase;color:var(--yellow);margin:0 0 1rem
   }
   .hero h1{
-    margin:0 0 1.1rem;font-size:clamp(1.85rem,4.1vw,3rem);line-height:1.14;
-    font-weight:800;letter-spacing:-.015em;max-width:26ch
+    margin:0 0 1.1rem;font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.12;
+    font-weight:800;letter-spacing:-.015em;max-width:20ch
   }
-  .hero p.lead{margin:0;max-width:60ch;font-size:clamp(1rem,1.6vw,1.16rem);color:#DCE7FA}
+  .hero p.lead{margin:0;max-width:58ch;font-size:clamp(1.02rem,1.6vw,1.2rem);color:#DCE7FA}
   .facts{display:flex;flex-wrap:wrap;gap:.7rem;margin:2rem 0 0;padding:0;list-style:none}
   .facts li{
     background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);
@@ -98,34 +97,41 @@
   p{margin:0 0 1rem}
   .muted{color:var(--muted)}
   .lede{font-size:1.06rem}
+  .step{display:block;font-size:.74rem;font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);margin-bottom:.3rem}
 
-  /* ---------- trilhas ---------- */
-  .trilhas{display:grid;gap:1.2rem;grid-template-columns:1fr;margin-top:1.4rem}
-  @media(min-width:820px){.trilhas{grid-template-columns:1fr 1fr}}
-  .trilha{min-width:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
-  .trilha__top{padding:1rem 1.3rem;color:#fff}
-  .trilha--aberta .trilha__top{background:var(--blue)}
-  .trilha--restrita .trilha__top{background:var(--green)}
-  .trilha__top h3{margin:0;font-size:1.15rem;color:#fff}
-  .trilha__top p{margin:.15rem 0 0;font-size:.9rem;opacity:.92}
-  .trilha__body{padding:1.2rem 1.3rem 1.4rem;background:#F8FAFE;flex:1}
-  .trilha__body ul{margin:0;padding-left:1.15rem}
-  .trilha__body li{margin-bottom:.5rem}
-  .trilha__body li:last-child{margin-bottom:0}
+  /* ---------- formatos ---------- */
+  .formatos{display:grid;gap:1.2rem;grid-template-columns:1fr;margin-top:1.4rem}
+  @media(min-width:820px){.formatos{grid-template-columns:1fr 1fr}}
+  .formato{min-width:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+  .formato__top{padding:1rem 1.3rem;color:#fff}
+  .formato--imersao .formato__top{background:var(--green)}
+  .formato--aberto .formato__top{background:var(--blue)}
+  .formato__top h3{margin:0;font-size:1.15rem;color:#fff}
+  .formato__top p{margin:.15rem 0 0;font-size:.9rem;opacity:.92}
+  .formato__body{padding:1.2rem 1.3rem 1.4rem;background:#F8FAFE;flex:1}
+  .formato__body ul{margin:0;padding-left:1.15rem}
+  .formato__body li{margin-bottom:.5rem}
+  .formato__body li:last-child{margin-bottom:0}
 
   /* ---------- linha do tempo ---------- */
-  .tl{list-style:none;margin:1.4rem 0 0;padding:0 0 0 1.9rem;position:relative}
-  .tl::before{content:"";position:absolute;left:.38rem;top:.55rem;bottom:.55rem;width:2px;background:var(--line)}
+  .tl{list-style:none;margin:1.4rem 0 0;padding:0 0 0 28px;position:relative}
+  .tl::before{content:"";position:absolute;left:6px;top:.6rem;bottom:.6rem;width:2px;background:var(--line)}
   .tl li{position:relative;margin-bottom:1.35rem}
   .tl li:last-child{margin-bottom:0}
   .tl li::before{
-    content:"";position:absolute;left:-1.9rem;top:.42rem;width:.82rem;height:.82rem;
+    content:"";position:absolute;left:-28px;top:.45rem;width:14px;height:14px;
     border-radius:50%;background:#fff;border:3px solid var(--blue)
   }
   .tl .when{display:block;font-size:.8rem;font-weight:700;letter-spacing:.06em;
     text-transform:uppercase;color:var(--blue)}
   .tl .what{font-weight:700}
   .tl .how{color:var(--muted);font-size:.95rem}
+  .tl .tag{display:inline-block;margin-left:.45rem;font-size:.7rem;font-weight:700;
+    letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:.1rem .55rem;
+    vertical-align:.12em}
+  .tag--imersao{background:var(--green-pale);color:#0F6318}
+  .tag--aberto{background:var(--blue-pale);color:#0E3E8C}
 
   /* ---------- tabelas ---------- */
   .tablewrap{overflow-x:auto;margin-top:1.1rem;border:1px solid var(--line);border-radius:10px}
@@ -141,21 +147,29 @@
   .note{border-radius:10px;padding:1rem 1.2rem;margin-top:1.3rem;font-size:.97rem}
   .note--info{background:var(--blue-pale)}
   .note--warn{background:var(--yellow-pale)}
-  .note strong{display:block;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem}
+  .note--green{background:var(--green-pale)}
+  .note strong.lbl{display:block;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem}
   .note p:last-child{margin-bottom:0}
+
+  /* ---------- vagas em destaque ---------- */
+  .vagas{display:grid;gap:1rem;grid-template-columns:1fr;margin-top:1.4rem}
+  @media(min-width:700px){.vagas{grid-template-columns:repeat(3,1fr)}}
+  .vaga{border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem;background:#F8FAFE}
+  .vaga b{display:block;font-size:1.9rem;line-height:1.1;color:var(--blue);font-weight:800}
+  .vaga span{display:block;font-size:.95rem;color:var(--muted);margin-top:.25rem}
 
   /* ---------- chamada para ação ---------- */
   .cta{text-align:center;margin-top:2.4rem}
   .btns{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center;margin-top:1.3rem}
   .btn{
-    display:inline-block;padding:.9rem 1.9rem;border-radius:999px;font-weight:700;
-    text-decoration:none;font-size:1rem;border:2px solid transparent
+    display:inline-block;padding:1rem 2.2rem;border-radius:999px;font-weight:700;
+    text-decoration:none;font-size:1.05rem;border:2px solid transparent
   }
-  .btn--primary{background:var(--blue);color:#fff}
-  .btn--primary:hover{background:var(--blue-2)}
+  .btn--primary{background:var(--green);color:#fff;box-shadow:0 6px 18px rgba(22,136,33,.28)}
+  .btn--primary:hover{background:#12701C}
   .btn--ghost{border-color:var(--blue);color:var(--blue)}
   .btn--ghost:hover{background:var(--blue-pale)}
-  .btn[aria-disabled="true"]{background:#E7ECF5;color:#7A889F;border-color:transparent;cursor:not-allowed}
+  .btn[aria-disabled="true"]{background:#E7ECF5;color:#7A889F;border-color:transparent;box-shadow:none;cursor:not-allowed}
   .cta .muted{margin-top:1rem;font-size:.92rem}
 
   /* ---------- rodapé ---------- */
@@ -184,22 +198,22 @@
     <span class="sep">·</span>
     <span>Secretaria de Governo Digital</span>
     <span class="sep">·</span>
-    <span>CPQD · Projeto INSPIRE</span>
+    <span>Núcleo de Inteligência Artificial</span>
   </div>
 </div>
 
 <header class="hero">
   <div class="shell">
-    <p class="eyebrow">Núcleo de IA · Estratégia Federal de Governo Digital</p>
-    <h1>1ª Edição da Comunidade de Práticas Éticas do Núcleo de Inteligência Artificial do Governo Federal</h1>
-    <p class="lead">Duas trilhas on-line: palestras abertas a todo o SISP e oficinas em que
-      órgãos selecionados tornam os seus sistemas de inteligência artificial compreensíveis
-      para o cidadão e para a governança pública.</p>
+    <p class="eyebrow">Núcleo de Inteligência Artificial</p>
+    <h1>Imersão Ética em IA</h1>
+    <p class="lead">Sua equipe avalia o impacto ético de um sistema de inteligência artificial
+      do próprio órgão e sai com um relatório de recomendações — com o acompanhamento do
+      Núcleo de IA, em um prazo definido.</p>
     <ul class="facts">
-      <li><b>28/09 a 28/10</b> de 2026</li>
+      <li>Inscrições de <b>16 a 30/09</b></li>
+      <li>Imersão de <b>05/10 a 04/11</b> de 2026</li>
       <li>Totalmente <b>on-line</b></li>
-      <li>Inscrições de <b>31/08 a 18/09</b></li>
-      <li>Até <b>12 órgãos</b> na trilha restrita</li>
+      <li><b>12 equipes</b> selecionadas</li>
     </ul>
   </div>
 </header>
@@ -208,114 +222,151 @@
   <div class="shell">
     <div class="card">
 
+      <!-- ============ CONHECER ============ -->
       <section>
-        <h2>O que é</h2>
-        <p class="lede">A Comunidade de Práticas Éticas reúne órgãos do SISP para documentar e
-          avaliar, com apoio, os sistemas de inteligência artificial que já usam. O ponto de
-          partida é a <strong>Ficha de Sistema de IA</strong>, que registra o que o sistema faz,
-          com que dados e sob a responsabilidade de quem. Em seguida, cada órgão aplica a
-          <strong>Autoavaliação de Impacto Ético (AIE.BR)</strong> a esse mesmo sistema.</p>
-        <p>A avaliação é do próprio órgão sobre o próprio sistema: não há auditoria externa,
-          não há caso fictício e nada é publicado sem a decisão do órgão. Ao fim do ciclo, a
-          equipe sai capaz de repetir a avaliação nas demais soluções.</p>
-        <p>O evento também é um espaço de escuta. As dificuldades encontradas nas oficinas e as
-          práticas que cada órgão já usa alimentam a revisão dos guias e orientações sobre uso
-          e desenvolvimento responsável de IA no SISP.</p>
+        <span class="step">Conhecer</span>
+        <h2>O que é a imersão</h2>
+        <p class="lede">A Imersão Ética em IA do Núcleo de IA acompanha equipes de órgãos
+          públicos na avaliação de um sistema de inteligência artificial que elas mesmas
+          desenvolvem ou operam. Não é um curso: é <strong>acompanhamento sobre um projeto
+          seu</strong>, com começo, meio e fim marcados no calendário.</p>
+        <p>Cada equipe percorre três passos. Primeiro descreve o sistema na
+          <strong>Ficha de Sistema de IA</strong> — o que ele faz, com que dados e sob a
+          responsabilidade de quem. Depois aplica a <strong>Autoavaliação de Impacto Ético
+          (AIE)</strong> a esse mesmo sistema, em uma oficina de duas horas e meia com
+          facilitação do Núcleo de IA. Por fim conversa sobre o relatório que a própria
+          avaliação gerou, com as recomendações de melhoria.</p>
+        <p>A avaliação é do próprio órgão sobre o próprio sistema: não há auditoria externa
+          nem caso fictício. Ao fim do ciclo, a equipe sai capaz de repetir a avaliação nas
+          demais soluções.</p>
+        <p>A imersão também é um espaço de escuta. As dificuldades encontradas nas oficinas e
+          as práticas que cada equipe já usa alimentam a revisão dos guias e orientações sobre
+          uso e desenvolvimento responsável de IA.</p>
       </section>
 
       <section>
-        <h2>Duas trilhas</h2>
-        <p class="muted">As trilhas acontecem em paralelo e atendem públicos diferentes.
-          Quem participa da trilha restrita também pode acompanhar a trilha aberta.</p>
+        <h2>O Núcleo de Inteligência Artificial</h2>
+        <p>O <strong>Núcleo de Inteligência Artificial (NIA)</strong> é a estrutura da
+          Secretaria de Governo Digital, no Ministério da Gestão e da Inovação em Serviços
+          Públicos, dedicada a apoiar o desenvolvimento e o uso responsável de inteligência
+          artificial na administração pública. Funciona no âmbito da Diretoria de Estruturação
+          de Dados e Inteligência Artificial (DEDIA) e integra a Estratégia Federal de Governo
+          Digital.</p>
+        <h3>O que o Núcleo faz</h3>
+        <ul>
+          <li>Publica instrumentos de governança de IA, entre eles a
+            <a href="https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados/inteligencia-artificial-1/publicacoes/ficha-de-sistema-de-ia">Ficha
+            de Sistema de IA</a> e o
+            <a href="https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados/inteligencia-artificial-1/publicacoes/framework-aie">Framework
+            de Autoavaliação de Impacto Ético</a>.</li>
+          <li>Acompanha equipes de órgãos públicos na aplicação desses instrumentos a sistemas
+            reais — é o que esta imersão faz.</li>
+          <li>Reúne boas práticas encontradas nos órgãos e devolve o aprendizado em forma de
+            orientação.</li>
+        </ul>
+        <h3>Quem integra</h3>
+        <p>Equipes técnicas da DEDIA e da Coordenação-Geral de Governança de Inteligência
+          Artificial, com apoio do CPQD no âmbito do projeto INSPIRE.</p>
+        <h3>Como acionar</h3>
+        <p>Pelo portal do Núcleo de IA, em
+          <a href="https://www.gov.br/nia">www.gov.br/nia</a>, ou pelo contato no rodapé desta
+          página. Órgãos que queiram apoio fora do calendário da imersão também podem escrever.</p>
+      </section>
 
-        <div class="trilhas">
-          <article class="trilha trilha--aberta">
-            <div class="trilha__top">
-              <h3>Trilha aberta</h3>
-              <p>Aula inaugural, palestras e fechamento · 7h30</p>
+      <!-- ============ ESCOLHER ============ -->
+      <section>
+        <span class="step">Escolher</span>
+        <h2>Duas formas de participar</h2>
+        <p class="muted">Uma exige inscrição e seleção; a outra é aberta a qualquer pessoa. Quem
+          participa da imersão também é convidado aos encontros abertos.</p>
+
+        <div class="formatos">
+          <article class="formato formato--imersao">
+            <div class="formato__top">
+              <h3>Imersão · com inscrição</h3>
+              <p>Estudo dirigido, oficina da AIE e reunião de relatório · 11h</p>
             </div>
-            <div class="trilha__body">
+            <div class="formato__body">
               <ul>
-                <li><strong>Quem participa:</strong> todo o SISP e demais interessados, sem limite de vagas.</li>
-                <li><strong>Como acessar:</strong> sem inscrição. O link da transmissão é publicado nesta página.</li>
-                <li><strong>Interação:</strong> chat restrito e microfone fechado. As perguntas do
-                  público vão para uma ferramenta de leitura restrita, e os mediadores da DEDIA
-                  selecionam e leem as perguntas ao palestrante.</li>
-                <li><strong>Certificado</strong> por presença, conforme a lista preenchida em cada encontro.</li>
+                <li><strong>Quem participa:</strong> 12 equipes selecionadas, de 2 a 3 pessoas
+                  inscritas cada.</li>
+                <li><strong>Requisito:</strong> a equipe precisa ter um sistema de IA em
+                  produção ou em desenvolvimento, porque a avaliação é feita sobre um sistema
+                  seu.</li>
+                <li><strong>Carga:</strong> até 3 horas por semana, ao longo de 5 semanas.</li>
+                <li><strong>O que a equipe leva:</strong> a Ficha preenchida, o relatório da AIE
+                  sobre o seu sistema e a capacidade de repetir a avaliação sozinha.</li>
               </ul>
             </div>
           </article>
 
-          <article class="trilha trilha--restrita">
-            <div class="trilha__top">
-              <h3>Trilha restrita</h3>
-              <p>Estudo dirigido e oficinas da AIE.BR · 11h</p>
+          <article class="formato formato--aberto">
+            <div class="formato__top">
+              <h3>Encontros abertos · sem inscrição</h3>
+              <p>Aula inaugural, palestras e fechamento · 7h30</p>
             </div>
-            <div class="trilha__body">
+            <div class="formato__body">
               <ul>
-                <li><strong>Quem participa:</strong> até 12 órgãos do SISP, com 3 a 5 pessoas cada —
-                  ao menos 1 da governança de TIC e as demais de um projeto de IA implantado no órgão.</li>
-                <li><strong>Vagas:</strong> 8 por convite direcionado e 4 pelo formulário de inscrição.</li>
-                <li><strong>Carga:</strong> até 3 horas por semana, ao longo de 5 semanas.</li>
-                <li><strong>Requisito:</strong> o órgão precisa ter ao menos uma solução de IA em
-                  produção ou em desenvolvimento, porque a avaliação é feita sobre um sistema seu.</li>
+                <li><strong>Quem participa:</strong> qualquer pessoa interessada, sem limite de
+                  vagas.</li>
+                <li><strong>Como acessar:</strong> o link da transmissão é publicado nesta
+                  página. Não há formulário.</li>
+                <li><strong>O que acontece:</strong> a abertura da imersão, uma tarde de
+                  palestras com especialistas convidados e o encontro de fechamento.</li>
+                <li><strong>Certificado</strong> por presença, conforme a lista preenchida em
+                  cada encontro.</li>
               </ul>
             </div>
           </article>
         </div>
       </section>
 
+      <!-- ============ PARTICIPAR ============ -->
       <section>
-        <h2>Programação</h2>
-        <p class="muted">Cinco semanas, de 28 de setembro a 28 de outubro de 2026.</p>
-        <ol class="tl">
-          <li>
-            <span class="when">28 de setembro · segunda, à tarde</span>
-            <span class="what">Aula inaugural — 1h30</span><br>
-            <span class="how">Como se dará o evento, a sua motivação e o seu caráter colaborativo.
-              Apresentação da Ficha de Sistema de IA e da AIE.BR. Trilha aberta.</span>
-          </li>
-          <li>
-            <span class="when">28 de setembro a 9 de outubro</span>
-            <span class="what">Estudo dirigido — 2 semanas, assíncrono</span><br>
-            <span class="how">Leitura do material de apoio e preenchimento da Ficha de Sistema de IA
-              para um sistema do próprio órgão, com canal aberto para dúvidas. Trilha restrita.</span>
-          </li>
-          <li>
-            <span class="when">5 de outubro · segunda, à tarde</span>
-            <span class="what">Palestras com especialistas convidados — 4h</span><br>
-            <span class="how">Um único turno, transmitido ao vivo. Trilha aberta.</span>
-          </li>
-          <li>
-            <span class="when">13 a 20 de outubro</span>
-            <span class="what">Oficina de aplicação assistida da AIE.BR — 2h30</span><br>
-            <span class="how">Cada órgão participa de uma das doze janelas, com facilitação da equipe
-              e acompanhamento do CPQD. Trilha restrita.</span>
-          </li>
-          <li>
-            <span class="when">16 a 23 de outubro</span>
-            <span class="what">Entrega do relatório — 30 minutos</span><br>
-            <span class="how">Três dias úteis depois da oficina, para conversar sobre o resultado da
-              avaliação. Trilha restrita.</span>
-          </li>
-          <li>
-            <span class="when">28 de outubro · quarta, à tarde</span>
-            <span class="what">Fechamento — 2h</span><br>
-            <span class="how">Espaço para os órgãos que quiserem compartilhar o seu caso de uso e o que
-              aprenderam. Trilha aberta.</span>
-          </li>
-        </ol>
-      </section>
+        <span class="step">Participar</span>
+        <h2>Como se inscrever</h2>
+        <p>As inscrições ficam abertas de <strong>16 a 30 de setembro de 2026</strong>. Quem se
+          inscreve é a <strong>equipe do projeto</strong>, e não o órgão: cada equipe inscreve
+          <strong>um sistema de IA</strong> e o descreve no formulário.</p>
 
-      <section>
-        <h2>Como participar da trilha restrita</h2>
-        <p>As inscrições ficam abertas de <strong>31 de agosto a 18 de setembro de 2026</strong>,
-          por formulário. São 8 vagas reservadas a órgãos convidados e 4 vagas livres. Se as
-          reservadas não forem preenchidas, as vagas remanescentes passam para a lista do formulário.</p>
+        <div class="vagas">
+          <div class="vaga">
+            <b>12</b>
+            <span>equipes ao todo — 8 por convite direcionado e 4 por inscrição livre</span>
+          </div>
+          <div class="vaga">
+            <b>2 a 3</b>
+            <span>pessoas inscritas por equipe, participando de toda a imersão</span>
+          </div>
+          <div class="vaga">
+            <b>até 2</b>
+            <span>equipes do mesmo órgão, para que a imersão alcance mais instituições</span>
+          </div>
+        </div>
 
-        <h3>Critérios de seleção das vagas livres</h3>
-        <p class="muted">Todos os critérios são declarados na própria inscrição e verificáveis de
-          forma objetiva. A pontuação máxima é de 5 pontos.</p>
+        <div class="note note--info">
+          <strong class="lbl">Se as vagas por convite não forem preenchidas</strong>
+          <p>As vagas reservadas que sobrarem passam para a lista de inscrição livre, na ordem
+            da pontuação. Divulgação do resultado em <strong>1º de outubro</strong>.</p>
+        </div>
+
+        <h3>Quem deve compor a equipe</h3>
+        <p>A imersão é desenhada para reunir olhares diferentes sobre o mesmo sistema. A
+          composição ideal tem três atores, e <strong>reuni-los pontua na seleção</strong> —
+          mas não é requisito de entrada:</p>
+        <ul>
+          <li><strong>Gestor demandante</strong> — quem responde pela política pública ou pelo
+            serviço que o sistema apoia.</li>
+          <li><strong>Desenvolvedor</strong> — quem constrói ou sustenta o sistema.</li>
+          <li><strong>Governança de TIC</strong> — quem responde pela governança de tecnologia
+            no órgão.</li>
+        </ul>
+        <p class="muted">Na oficina de aplicação da AIE, o convite se estende aos demais
+          responsáveis da equipe, mesmo que não estejam entre os inscritos.</p>
+
+        <h3>Critérios de seleção</h3>
+        <p class="muted">Todos os critérios são declarados na própria inscrição e verificáveis
+          de forma objetiva. A pontuação máxima é de 7 pontos.</p>
         <div class="tablewrap">
           <table>
             <thead>
@@ -323,85 +374,205 @@
             </thead>
             <tbody>
               <tr>
-                <td>O órgão tem solução de IA em produção (2 pontos) ou em desenvolvimento (1 ponto)</td>
-                <td>Campo obrigatório do formulário, com nome e descrição breve</td>
+                <td>O sistema de IA está em produção (2 pontos) ou em desenvolvimento (1 ponto)</td>
+                <td>Campo obrigatório do formulário, com nome e descrição do projeto</td>
                 <td class="pts">0 a 2</td>
               </tr>
               <tr>
-                <td>O órgão ainda não integrou a avaliação de impacto ético ao ciclo de vida das suas soluções de IA</td>
+                <td>A equipe ainda não integrou a avaliação de impacto ético ao ciclo de vida
+                  das suas soluções de IA</td>
                 <td>Declaração sim ou não</td>
                 <td class="pts">0 ou 1</td>
               </tr>
               <tr>
-                <td>Equipe com ao menos 1 representante da governança de TIC e, entre os demais,
-                  o gestor demandante e um integrante técnico de um projeto de IA</td>
+                <td>A equipe reúne os três atores: gestor demandante, desenvolvedor e
+                  representante da governança de TIC</td>
                 <td>Indicação nominal, com área e função</td>
                 <td class="pts">0 ou 2</td>
+              </tr>
+              <tr>
+                <td>Impacto do projeto: afeta público externo ao órgão (1 ponto) e trata de
+                  assunto sensível — benefícios, saúde, segurança, educação ou seleção de
+                  pessoas (1 ponto)</td>
+                <td>Declaração no bloco do projeto, com número estimado de pessoas afetadas</td>
+                <td class="pts">0 a 2</td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="note note--info">
-          <strong>Empates e suplência</strong>
-          <p>Em caso de empate, decide a ordem de inscrição. Os inscritos que cumpram os requisitos
-            e não fiquem entre os selecionados formam lista de suplentes, na ordem da pontuação.</p>
+          <strong class="lbl">Empates e suplência</strong>
+          <p>Em caso de empate decide, nesta ordem: o maior número estimado de pessoas afetadas;
+            depois, a equipe cujo órgão ainda não tenha equipe selecionada; e por último a
+            <strong>ordem de inscrição</strong>. As equipes que cumpram os requisitos e não
+            fiquem entre as selecionadas formam lista de suplentes, na
+            <strong>ordem de pontuação</strong>.</p>
+        </div>
+
+        <div class="note note--warn">
+          <strong class="lbl">O que a equipe precisa ter no dia da oficina</strong>
+          <p>Login gov.br funcionando, testado na véspera, e a Ficha de Sistema de IA preenchida
+            no estudo dirigido. <strong>O cadastro do sistema na ferramenta é feito na própria
+            oficina</strong>, nos primeiros minutos: a Ficha já traz tudo o que ele pede, e o
+            formulário de inscrição já coletou os mesmos campos.</p>
         </div>
       </section>
 
       <section>
-        <h2>Janelas da oficina</h2>
-        <p>São doze janelas de 2h30, com no máximo duas por dia. <strong>No formulário, o órgão marca
-          todas as janelas em que a sua equipe pode participar — no mínimo três — e indica a
-          preferida.</strong> A alocação segue a ordem de inscrição. Se nenhuma das janelas marcadas
-          estiver livre na vez do órgão, entramos em contato para tentar reagendar antes de qualquer
-          outra providência.</p>
+        <h2>Programação</h2>
+        <p class="muted">Cinco semanas, de 5 de outubro a 4 de novembro de 2026. Todos os
+          encontros ao vivo acontecem à tarde.</p>
+        <ol class="tl">
+          <li>
+            <span class="when">5 de outubro · 14h00</span>
+            <span class="what">Aula inaugural — 1h30</span>
+            <span class="tag tag--aberto">Aberto</span><br>
+            <span class="how">Como se dará a imersão, a sua motivação e o seu caráter
+              colaborativo. Apresentação da Ficha de Sistema de IA e da AIE.</span>
+          </li>
+          <li>
+            <span class="when">5 a 16 de outubro · assíncrono</span>
+            <span class="what">Estudo dirigido — 2 semanas</span>
+            <span class="tag tag--imersao">Imersão</span><br>
+            <span class="how">Leitura do material de apoio e preenchimento da Ficha de Sistema
+              de IA para o sistema da equipe, com canal aberto para dúvidas.</span>
+          </li>
+          <li>
+            <span class="when">13 de outubro · 14h00</span>
+            <span class="what">Palestras com especialistas convidados — 4h</span>
+            <span class="tag tag--aberto">Aberto</span><br>
+            <span class="how">Um único turno, transmitido ao vivo. A participação é opcional
+              e não conta para a frequência da imersão.</span>
+          </li>
+          <li>
+            <span class="when">20 a 27 de outubro · 9h00 ou 14h00</span>
+            <span class="what">Oficina de aplicação da AIE — 2h30</span>
+            <span class="tag tag--imersao">Imersão</span><br>
+            <span class="how">Cada equipe participa de uma das doze janelas, com facilitação do
+              Núcleo de IA. É nesta sessão que o relatório é gerado.</span>
+          </li>
+          <li>
+            <span class="when">23 a 30 de outubro · 17h00 ou 17h30</span>
+            <span class="what">Reunião de relatório — 30 min</span>
+            <span class="tag tag--imersao">Imersão</span><br>
+            <span class="how">Três dias úteis depois da oficina, para conversar sobre o resultado
+              da avaliação.</span>
+          </li>
+          <li>
+            <span class="when">4 de novembro · 14h00</span>
+            <span class="what">Fechamento — 2h</span>
+            <span class="tag tag--aberto">Aberto</span><br>
+            <span class="how">Espaço para as equipes que quiserem compartilhar o seu caso de uso
+              e o que aprenderam. É também quando são anunciadas as três equipes selecionadas
+              para a Semana Dados BR.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>A oficina e as doze janelas</h2>
+        <p>A oficina de aplicação da AIE dura <strong>2h30</strong> e acontece em janela própria
+          para cada equipe, com no máximo duas janelas por dia. <strong>No formulário, a equipe
+          marca todas as janelas em que pode participar — no mínimo três — e indica a
+          preferida.</strong> A alocação segue a <strong>ordem de inscrição</strong>. Se nenhuma
+          das janelas marcadas estiver livre na vez da equipe, entramos em contato para tentar
+          reagendar antes de qualquer outra providência.</p>
         <div class="tablewrap">
           <table>
-            <caption>Cada órgão ocupa uma janela. A reunião de entrega do relatório acontece três dias úteis depois.</caption>
+            <caption>Cada equipe ocupa uma janela. A reunião de relatório acontece três dias
+              úteis depois, às 17h00 ou às 17h30.</caption>
             <thead>
-              <tr><th scope="col">Janela</th><th scope="col">Oficina · 2h30</th><th scope="col">Entrega do relatório · 30 min</th></tr>
+              <tr><th scope="col">Janela</th><th scope="col">Oficina · 2h30</th><th scope="col">Reunião de relatório · 30 min</th></tr>
             </thead>
             <tbody>
-              <tr><td class="j">J1</td><td>13/10, terça, 9h00–11h30</td><td>16/10, sexta, 17h00</td></tr>
-              <tr><td class="j">J2</td><td>13/10, terça, 14h00–16h30</td><td>16/10, sexta, 17h30</td></tr>
-              <tr><td class="j">J3</td><td>14/10, quarta, 9h00–11h30</td><td>19/10, segunda, 17h00</td></tr>
-              <tr><td class="j">J4</td><td>14/10, quarta, 14h00–16h30</td><td>19/10, segunda, 17h30</td></tr>
-              <tr><td class="j">J5</td><td>15/10, quinta, 9h00–11h30</td><td>20/10, terça, 17h00</td></tr>
-              <tr><td class="j">J6</td><td>15/10, quinta, 14h00–16h30</td><td>20/10, terça, 17h30</td></tr>
-              <tr><td class="j">J7</td><td>16/10, sexta, 9h00–11h30</td><td>21/10, quarta, 17h00</td></tr>
-              <tr><td class="j">J8</td><td>16/10, sexta, 14h00–16h30</td><td>21/10, quarta, 17h30</td></tr>
-              <tr><td class="j">J9</td><td>19/10, segunda, 9h00–11h30</td><td>22/10, quinta, 17h00</td></tr>
-              <tr><td class="j">J10</td><td>19/10, segunda, 14h00–16h30</td><td>22/10, quinta, 17h30</td></tr>
-              <tr><td class="j">J11</td><td>20/10, terça, 9h00–11h30</td><td>23/10, sexta, 17h00</td></tr>
-              <tr><td class="j">J12</td><td>20/10, terça, 14h00–16h30</td><td>23/10, sexta, 17h30</td></tr>
+              <tr><td class="j">J1</td><td>20/10, terça, 9h00–11h30</td><td>23/10, sexta, 17h00</td></tr>
+              <tr><td class="j">J2</td><td>20/10, terça, 14h00–16h30</td><td>23/10, sexta, 17h30</td></tr>
+              <tr><td class="j">J3</td><td>21/10, quarta, 9h00–11h30</td><td>26/10, segunda, 17h00</td></tr>
+              <tr><td class="j">J4</td><td>21/10, quarta, 14h00–16h30</td><td>26/10, segunda, 17h30</td></tr>
+              <tr><td class="j">J5</td><td>22/10, quinta, 9h00–11h30</td><td>27/10, terça, 17h00</td></tr>
+              <tr><td class="j">J6</td><td>22/10, quinta, 14h00–16h30</td><td>27/10, terça, 17h30</td></tr>
+              <tr><td class="j">J7</td><td>23/10, sexta, 9h00–11h30</td><td>28/10, quarta, 17h00</td></tr>
+              <tr><td class="j">J8</td><td>23/10, sexta, 14h00–16h30</td><td>28/10, quarta, 17h30</td></tr>
+              <tr><td class="j">J9</td><td>26/10, segunda, 9h00–11h30</td><td>29/10, quinta, 17h00</td></tr>
+              <tr><td class="j">J10</td><td>26/10, segunda, 14h00–16h30</td><td>29/10, quinta, 17h30</td></tr>
+              <tr><td class="j">J11</td><td>27/10, terça, 9h00–11h30</td><td>30/10, sexta, 17h00</td></tr>
+              <tr><td class="j">J12</td><td>27/10, terça, 14h00–16h30</td><td>30/10, sexta, 17h30</td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
       <section>
+        <h2>A reunião de relatório</h2>
+        <p>Três dias úteis depois da oficina, a equipe volta para uma conversa de
+          <strong>30 minutos</strong> sobre o relatório que a própria avaliação gerou. É a
+          etapa que transforma o resultado em pauta de trabalho.</p>
+        <p>Entre a oficina e a reunião, quem facilitou a sessão lê o relatório da equipe com
+          calma. Na reunião, a conversa é sobre três coisas: <strong>o que o resultado diz</strong>
+          sobre o sistema hoje, <strong>quais recomendações são aplicáveis</strong> na etapa atual
+          do desenvolvimento, e <strong>o que a equipe faria a seguir</strong> — o que dá para
+          fazer agora, o que depende de quem não estava na sala e o que fica para outra fase.</p>
+        <p class="muted">A reunião é conduzida por quem facilitou a oficina da mesma equipe, e
+          acontece no fim da tarde, às 17h00 ou às 17h30.</p>
+      </section>
+
+      <section>
+        <h2>Três projetos na Semana Dados BR</h2>
+        <p>Ao fim da imersão, <strong>três equipes são escolhidas para apresentar os seus
+          projetos na Semana Dados BR</strong>, em novembro de 2026. O critério está publicado
+          aqui desde a abertura das inscrições.</p>
+        <h3>Quem concorre</h3>
+        <p>Concorre a equipe que cumprir os <strong>quatro requisitos</strong>:</p>
+        <ol>
+          <li><strong>Ficha de Sistema de IA</strong> preenchida em todos os campos obrigatórios.</li>
+          <li><strong>AIE aplicada ao mesmo sistema</strong>, com relatório entregue no prazo da
+            sua janela.</li>
+          <li><strong>Frequência mínima de 75%</strong>, a mesma exigida para o certificado.</li>
+          <li><strong>Autorização do órgão</strong> para a apresentação pública do caso, marcada
+            no formulário de inscrição e confirmada por escrito na entrega do relatório.</li>
+        </ol>
+        <div class="note note--green">
+          <strong class="lbl">Por que a autorização é obrigatória</strong>
+          <p>Uma apresentação pública do caso depende de autorização formal do órgão. Sem a
+            autorização por escrito, a equipe não concorre, ainda que cumpra os outros três
+            requisitos.</p>
+        </div>
+        <h3>Como são escolhidas</h3>
+        <p>A avaliação é feita por uma <strong>comissão do Núcleo de IA, com no mínimo três
+          pessoas</strong>. Em caso de empate decide, nesta ordem: garantir órgãos diferentes
+          entre as três selecionadas; depois, a maior pontuação no segundo requisito; e por
+          último a <strong>ordem de inscrição</strong>.</p>
+        <p>O resultado é anunciado no encontro de fechamento, em 4 de novembro, com prazo para o
+          órgão confirmar a participação. Se um órgão desistir, entra a quarta colocada.</p>
+      </section>
+
+      <!-- ============ CONCLUIR E CERTIFICAR ============ -->
+      <section>
+        <span class="step">Concluir e certificar</span>
         <h2>Certificados</h2>
-        <p>As duas trilhas emitem certificado por presença. A presença é registrada pelo próprio
-          participante, em um link compartilhado durante cada encontro ao vivo. Na trilha restrita,
-          o certificado exige <strong>frequência mínima de 75%</strong>.</p>
+        <p>Os dois formatos emitem certificado por presença. A presença é registrada pelo próprio
+          participante, em um link compartilhado durante cada encontro ao vivo. Na imersão, o
+          certificado exige <strong>frequência mínima de 75%</strong> — a mesma exigência do
+          primeiro filtro para a Semana Dados BR.</p>
         <div class="note note--warn">
-          <strong>Guarde o link da presença</strong>
-          <p>O link da lista é compartilhado no início e no fim de cada encontro, e fica aberto até o
-            fim do mesmo dia. Sem esse registro não há como emitir o certificado.</p>
+          <strong class="lbl">Guarde o link da presença</strong>
+          <p>O link da lista é compartilhado no início e no fim de cada encontro, e fica aberto
+            até o fim do mesmo dia. Sem esse registro não há como emitir o certificado.</p>
         </div>
       </section>
 
       <section class="cta">
         <h2>Inscrições</h2>
-        <p class="muted">A trilha aberta não tem inscrição — o link da transmissão é publicado aqui.
-          A trilha restrita é por formulário, de 31 de agosto a 18 de setembro de 2026.</p>
+        <p class="muted">A inscrição da imersão é feita por formulário, de 16 a 30 de setembro de
+          2026. Os encontros abertos não têm inscrição — o link da transmissão é publicado aqui.</p>
         <div class="btns">
           <!-- TODO: trocar href e remover aria-disabled quando o formulário estiver no ar -->
-          <a class="btn btn--primary" href="#" aria-disabled="true">Inscrição da trilha restrita · em breve</a>
+          <a class="btn btn--primary" href="#" aria-disabled="true">Inscrever a minha equipe · em breve</a>
           <!-- TODO: trocar href e remover aria-disabled quando o link da transmissão estiver definido -->
           <a class="btn btn--ghost" href="#" aria-disabled="true">Link da transmissão · em breve</a>
         </div>
-        <p class="muted">Dúvidas sobre a participação podem ser enviadas para o contato no rodapé desta página.</p>
+        <p class="muted">Dúvidas sobre a participação podem ser enviadas para o contato no rodapé
+          desta página.</p>
       </section>
 
     </div>
@@ -413,31 +584,33 @@
     <div class="fgrid">
       <div>
         <h2>Condução</h2>
-        <p>Secretaria de Governo Digital (SGD) do Ministério da Gestão e da Inovação em Serviços
-          Públicos (MGI), por meio da Diretoria de Estruturação de Dados e Inteligência Artificial
-          (DEDIA), e CPQD, no âmbito do projeto INSPIRE.</p>
+        <p>Núcleo de Inteligência Artificial (NIA), da Secretaria de Governo Digital (SGD) do
+          Ministério da Gestão e da Inovação em Serviços Públicos (MGI), por meio da Diretoria
+          de Estruturação de Dados e Inteligência Artificial (DEDIA), com apoio do CPQD no
+          âmbito do projeto INSPIRE.</p>
       </div>
       <div>
         <h2>Contexto</h2>
         <ul>
-          <li>Núcleo de IA</li>
+          <li><a href="https://www.gov.br/nia">Núcleo de IA</a></li>
           <li>Estratégia Federal de Governo Digital (EFGD)</li>
           <li>Iniciativa 6.10</li>
-          <li>SISP — Sistema de Administração dos Recursos de Tecnologia da Informação</li>
         </ul>
       </div>
       <div>
         <h2>Contato</h2>
         <ul>
-          <!-- TODO: confirmar o endereço de contato com a ASCOM -->
-          <li>Contato a publicar</li>
+          <!-- TODO: confirmar o endereço com a ASCOM e trocar a linha abaixo por:
+               <li><a href="mailto:ENDERECO">ENDERECO</a></li>
+               O designer pediu explicitamente um mailto no lugar de "contato a publicar". -->
+          <li>Endereço de contato a publicar</li>
           <li><a href="https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados/inteligencia-artificial-1/publicacoes/framework-aie">Framework AIE</a></li>
           <li><a href="https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados/inteligencia-artificial-1/publicacoes/ficha-de-sistema-de-ia">Ficha de Sistema de IA</a></li>
         </ul>
       </div>
     </div>
     <div class="fbar">
-      <span>Página informativa sobre o evento. Conteúdo sujeito a revisão.</span>
+      <span>Página informativa sobre a imersão. Conteúdo sujeito a revisão.</span>
       <span>2026</span>
     </div>
   </div>

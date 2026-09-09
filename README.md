@@ -83,8 +83,10 @@ Pontos em que os dois revisores divergiram e como ficou:
 - **Ordem dos formatos** — a imersão vem primeiro, e não os encontros abertos. É o inverso da
   versão anterior: a imersão é o que exige decisão do leitor, e os encontros abertos não
   dependem de nada além do link.
-- **Janelas da oficina** — permanecem em tabela na página, e não em PDF para baixar. Fazer o
-  leitor baixar um arquivo para conferir um horário é atrito desnecessário.
+- **Janelas da oficina** — na página longa (`index.html`) permanecem em tabela, e não em PDF
+  para baixar: fazer o leitor baixar um arquivo para conferir um horário é atrito
+  desnecessário. Na saída Plone, a decisão de setembro de 2026 prioriza a notícia curta no
+  padrão gov.br — lá as janelas vivem no edital simplificado.
 - **Linha do tempo** — sem ícones, para manter o layout simples, mas com dia da semana e horário
   padronizados em todos os itens, que era a inconsistência apontada.
 

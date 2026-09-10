@@ -125,7 +125,7 @@ Imersão Ética em IA do Núcleo de IA
   <div style="flex:1 1 30%; min-width:220px; padding:14px 16px; background:#ffffff; box-shadow:3px 3px 12px 0 rgba(0,0,0,.25);">
     <p style="margin:0 0 6px;"><i class="fa-solid fa-users" style="color:#1351b4;"></i>
       <strong style="font-size:20px; border-bottom:2px solid yellow;">Público-alvo</strong></p>
-    <p style="margin:0;">Equipes de 2 a 3 pessoas, de órgãos públicos federais, com um sistema de IA em produção ou em desenvolvimento. Com participação de até 2 equipes por órgão.</p>
+    <p style="margin:0;">Equipes de 2 a 4 pessoas, de órgãos públicos federais, com um sistema de IA em produção ou em desenvolvimento. Com participação de até 2 equipes por órgão.</p>
   </div>
   <div style="flex:1 1 30%; min-width:220px; padding:14px 16px; background:#ffffff; box-shadow:3px 3px 12px 0 rgba(0,0,0,.25);">
     <p style="margin:0 0 6px;"><i class="fa-solid fa-list-check" style="color:#1351b4;"></i>
@@ -289,7 +289,7 @@ Inscrições
       <span style="color:#1351b4 !important; font-weight:600;">Link da transmissão</span>
     </a>
   </div>
-  <p style="font-size:15px; color:#555555;">Dúvidas sobre a participação podem ser enviadas para cggia@gestao.gov.br.</p>
+  <p style="font-size:15px; color:#555555;">Dúvidas sobre a participação podem ser enviadas para <a href="mailto:cggia@gestao.gov.br" style="color:#1351b4;">cggia@gestao.gov.br</a>.</p>
 </div>
 ```
 
@@ -330,8 +330,8 @@ O botão "Edital (PDF)" aponta para um **Arquivo** hospedado no próprio Plone:
 
 - [ ] Trocar `URL_DO_FORMULARIO`, `URL_DO_EDITAL` e `URL_DA_TRANSMISSAO` no TEXTO RICO 3 —
       removendo o `<a>` de qualquer um que ainda não exista.
-- [ ] Recolar o TEXTO RICO 1 na página publicada: o card Público-alvo mudou para "de órgãos
-      públicos federais" (sem "qualquer").
+- [ ] Recolar o TEXTO RICO 1 na página publicada: o card Público-alvo mudou para "Equipes de
+      2 a 4 pessoas, de órgãos públicos federais" (sem "qualquer").
 - [ ] Conferir as datas contra o `plano.md`: inscrições 16/09–30/09, resultado 01/10, aula
       inaugural 05/10, estudo 05–16/10, palestras 13/10, oficinas 20–27/10, relatórios
       23–30/10, fechamento 04/11.

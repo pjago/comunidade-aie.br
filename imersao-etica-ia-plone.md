@@ -76,12 +76,17 @@ vai pegar nos outros, e aí o caminho é abrir chamado na DTIC.
 
 ## Mapa de blocos
 
-| Bloco | Conteúdo |
-|---|---|
-| **CABEÇALHO 0** | Título e descrição da notícia — o tema já centraliza |
-| **TEXTO RICO 1** | Chips de datas + 3 cards: O que é · Público-alvo · Objetivo |
-| **TEXTO RICO 2** | Como funciona — linha do tempo das cinco semanas |
-| **TEXTO RICO 3** | Inscrições — datas, botões e link do edital simplificado |
+A página tem **seis tiles**: os títulos de seção ("Como funciona" e "Inscrições") são tiles
+**Cabeçalho** próprios, e não `<h2>` dentro do texto rico — o tema já centraliza e dimensiona.
+
+| # | Tile | Conteúdo |
+|---|---|---|
+| 1 | **CABEÇALHO 0** | Título da notícia |
+| 2 | **TEXTO RICO 1** | Chips de datas + 3 cards: O que é · Público-alvo · Objetivos |
+| 3 | **CABEÇALHO 1** | "Como funciona" |
+| 4 | **TEXTO RICO 2** | Linha do tempo das cinco semanas |
+| 5 | **CABEÇALHO 2** | "Inscrições" |
+| 6 | **TEXTO RICO 3** | Datas, botões e link do edital |
 
 O que **saiu da página** e agora está no edital: tabela de critérios (7 pontos), empates e
 suplência, janelas J1–J12 com a reunião de relatório, requisitos da Semana Dados BR,
@@ -97,12 +102,6 @@ Título da notícia, sem HTML:
 Imersão Ética em IA do Núcleo de IA
 ```
 
-Linha de apoio, no campo de descrição/resumo da notícia:
-
-```
-Equipes de órgãos públicos aplicam a Autoavaliação de Impacto Ético a um sistema de inteligência artificial do próprio órgão, com acompanhamento do Núcleo de IA. Inscrições de 16 a 30 de setembro de 2026.
-```
-
 ---
 
 ## TEXTO RICO 1 — O que é, público-alvo e objetivo
@@ -115,23 +114,23 @@ Equipes de órgãos públicos aplicam a Autoavaliação de Impacto Ético a um s
   <span class="br-tag" style="background:#edf5ff; color:#1351b4; padding:4px 12px; border-radius:999px; font-weight:600;">12 equipes selecionadas</span>
 </div>
 
-<p style="font-size:1.05em;">A Imersão Ética em IA acompanha equipes de órgãos públicos na avaliação de um sistema de inteligência artificial que elas mesmas desenvolvem ou operam. Não é um curso: é <strong>acompanhamento sobre um projeto seu</strong>, com começo, meio e fim marcados no calendário.</p>
+<p style="font-size:1.05em;">A Imersão Ética em IA acompanha equipes de órgãos públicos na avaliação de um sistema de inteligência artificial que elas mesmas desenvolvem ou operam. Não é só treinamento: é acompanhamento sobre um projeto seu, com começo, meio e fim marcados no calendário.</p>
 
 <div class="d-flex flex-wrap" style="gap:16px; margin:16px 0 20px;">
   <div style="flex:1 1 30%; min-width:220px; padding:14px 16px; background:#ffffff; box-shadow:3px 3px 12px 0 rgba(0,0,0,.25);">
     <p style="margin:0 0 6px;"><i class="fa-solid fa-file-lines" style="color:#1351b4;"></i>
       <strong style="font-size:20px; border-bottom:2px solid yellow;">O que é</strong></p>
-    <p style="margin:0;">Um ciclo de cinco semanas em que a equipe <strong>descreve</strong> o seu sistema na Ficha de Sistema de IA, <strong>avalia</strong> esse mesmo sistema com a Autoavaliação de Impacto Ético (AIE), numa oficina de 2h30 facilitada pelo Núcleo de IA, e <strong>decide</strong> o que fazer com o relatório de recomendações gerado.</p>
+    <p style="margin:0;">Um ciclo de cinco semanas em que a equipe descreve o seu sistema na Ficha de Sistema de IA e avalia esse mesmo sistema com a Autoavaliação de Impacto Ético (AIE).</p>
   </div>
   <div style="flex:1 1 30%; min-width:220px; padding:14px 16px; background:#ffffff; box-shadow:3px 3px 12px 0 rgba(0,0,0,.25);">
     <p style="margin:0 0 6px;"><i class="fa-solid fa-users" style="color:#1351b4;"></i>
       <strong style="font-size:20px; border-bottom:2px solid yellow;">Público-alvo</strong></p>
-    <p style="margin:0;">Equipes de <strong>2 a 3 pessoas</strong>, de qualquer órgão público, com um sistema de IA <strong>em produção ou em desenvolvimento</strong> — a avaliação é feita sobre um sistema seu. Até 2 equipes por órgão, com projetos diferentes.</p>
+    <p style="margin:0;">Equipes de 2 a 3 pessoas, de órgãos públicos federais, com um sistema de IA em produção ou em desenvolvimento. Com participação de até 2 equipes por órgão.</p>
   </div>
   <div style="flex:1 1 30%; min-width:220px; padding:14px 16px; background:#ffffff; box-shadow:3px 3px 12px 0 rgba(0,0,0,.25);">
     <p style="margin:0 0 6px;"><i class="fa-solid fa-list-check" style="color:#1351b4;"></i>
-      <strong style="font-size:20px; border-bottom:2px solid yellow;">Objetivo</strong></p>
-    <p style="margin:0;">A equipe sai com a Ficha preenchida, o relatório da AIE sobre o seu sistema e a <strong>capacidade de repetir a avaliação</strong> nas demais soluções do órgão. A avaliação é do próprio órgão sobre o próprio sistema: não há auditoria externa nem caso fictício.</p>
+      <strong style="font-size:20px; border-bottom:2px solid yellow;">Objetivos</strong></p>
+    <p style="margin:0;">Observar questões éticas no desenvolvimento de sistemas de IA para serviços públicos. Registrar a finalidade, a lógica de processamento e os limites técnicos. Classificar o risco ético e receber recomendações do que melhorar.</p>
   </div>
 </div>
 
@@ -150,12 +149,20 @@ Equipes de órgãos públicos aplicam a Autoavaliação de Impacto Ético a um s
 
 ---
 
+## CABEÇALHO 1 — Como funciona
+
+Tile **Cabeçalho**, texto puro, sem HTML:
+
+```
+Como funciona
+```
+
+---
+
 ## TEXTO RICO 2 — Como funciona
 
 ```html
-<h2 style="text-align:center; color:#333333;">Como funciona</h2>
-
-<p>Cinco semanas, de 5 de outubro a 4 de novembro de 2026, totalmente on-line, com carga de até <strong>3 horas por semana</strong>. Todos os encontros ao vivo acontecem à tarde.</p>
+<p>Cinco semanas, de 5 de outubro a 4 de novembro de 2026, totalmente on-line, com carga de até 3 horas por semana.</p>
 
 <div style="padding:20px 22px; background:#ffffff; box-shadow:3px 3px 12px 0 rgba(0,0,0,.25); margin-top:16px;">
   <div style="width:fit-content; margin:0 auto;">
@@ -193,9 +200,9 @@ Equipes de órgãos públicos aplicam a Autoavaliação de Impacto Ético a um s
       </div>
       <div style="padding-bottom:18px;">
         <p style="margin:0; font-size:13px; font-weight:600; color:#1351b4;">13 de outubro &middot; 14h00</p>
-        <p style="margin:0;"><strong>Palestras com especialistas convidados — 4h</strong>
+        <p style="margin:0;"><strong>Palestras com especialistas convidados — 3h</strong>
           <span style="background:#edf5ff; color:#1351b4; font-size:12px; font-weight:600; padding:2px 8px; border-radius:999px;">Aberto</span></p>
-        <p style="margin:0; font-size:15px; color:#555555;">Um único turno, transmitido ao vivo. A participação é opcional e não conta para a frequência da imersão.</p>
+        <p style="margin:0; font-size:15px; color:#555555;">Especialistas apresentam conceitos de governança de IA e discutem estruturas, ferramentas e formas de mitigar riscos éticos.</p>
       </div>
     </div>
 
@@ -208,7 +215,7 @@ Equipes de órgãos públicos aplicam a Autoavaliação de Impacto Ético a um s
         <p style="margin:0; font-size:13px; font-weight:600; color:#1351b4;">20 a 27 de outubro &middot; 9h00 ou 14h00</p>
         <p style="margin:0;"><strong>Oficina de aplicação da AIE — 2h30</strong>
           <span style="background:#ebf7ed; color:#0d5b16; font-size:12px; font-weight:600; padding:2px 8px; border-radius:999px;">Imersão</span></p>
-        <p style="margin:0; font-size:15px; color:#555555;">Cada equipe participa de uma das doze janelas, com facilitação do Núcleo de IA. As janelas estão no edital simplificado e no formulário.</p>
+        <p style="margin:0; font-size:15px; color:#555555;">Cada equipe participa de uma das doze janelas, facilitada pelo Núcleo de IA.</p>
       </div>
     </div>
 
@@ -233,7 +240,7 @@ Equipes de órgãos públicos aplicam a Autoavaliação de Impacto Ético a um s
         <p style="margin:0; font-size:13px; font-weight:600; color:#1351b4;">4 de novembro &middot; 14h00</p>
         <p style="margin:0;"><strong>Fechamento — 2h</strong>
           <span style="background:#edf5ff; color:#1351b4; font-size:12px; font-weight:600; padding:2px 8px; border-radius:999px;">Aberto</span></p>
-        <p style="margin:0; font-size:15px; color:#555555;">Espaço para as equipes que quiserem compartilhar o seu caso de uso e o que aprenderam. É também quando são anunciadas as três equipes selecionadas para a Semana Dados BR.</p>
+        <p style="margin:0; font-size:15px; color:#555555;">Espaço para as equipes que quiserem compartilhar o seu sistema de IA e as suas considerações éticas.</p>
       </div>
     </div>
 
@@ -253,28 +260,36 @@ Equipes de órgãos públicos aplicam a Autoavaliação de Impacto Ético a um s
 
 ---
 
+## CABEÇALHO 2 — Inscrições
+
+Tile **Cabeçalho**, texto puro, sem HTML:
+
+```
+Inscrições
+```
+
+---
+
 ## TEXTO RICO 3 — Inscrições e edital
 
 ```html
-<div style="background:#f8f8f8; border-radius:8px; padding:24px 20px; text-align:center;">
-  <h2 style="text-align:center; color:#333333;">Inscrições</h2>
-  <p>A inscrição é feita por formulário, de <strong>16 a 30 de setembro de 2026</strong>. Quem se inscreve é a <strong>equipe do projeto</strong>: cada equipe inscreve um sistema de IA e o descreve no formulário. O resultado da seleção é divulgado em <strong>1º de outubro</strong>.</p>
-  <p>São <strong>12 vagas de equipe</strong> — 8 por convite direcionado e 4 por inscrição livre. Critérios de seleção, janelas de oficina e programação detalhada estão no <strong>edital simplificado</strong>.</p>
-  <div class="p-3 d-flex flex-wrap justify-content-center" style="gap:12px;">
+<div style="background:#f8f8f8; border-radius:8px; padding:24px 20px; text-align:left;">
+  <p>A inscrição é feita por formulário, de <strong>16 a 30 de setembro de 2026</strong>. Cada equipe inscreve um sistema de IA e o descreve no formulário. O resultado da seleção é divulgado em <strong>1º de outubro</strong>. Critérios de seleção e programação detalhada estão no edital.</p>
+  <div class="py-3 d-flex flex-wrap justify-content-start" style="gap:12px;">
     <a class="br-button primary" style="display:inline-flex; align-items:center; gap:8px; padding:12px 28px; background-color:#1351b4 !important; border:none; border-radius:100em; text-decoration:none;" href="URL_DO_FORMULARIO">
       <i class="fa-solid fa-user-plus" style="color:#fff !important;">&nbsp;</i>
       <span style="color:#fff !important; font-weight:600;">Inscrever a minha equipe</span>
     </a>
     <a class="br-button" style="display:inline-flex; align-items:center; gap:8px; padding:12px 28px; border:2px solid #1351b4; border-radius:100em; text-decoration:none;" href="URL_DO_EDITAL">
       <i class="fa-solid fa-file-pdf" style="color:#1351b4 !important;">&nbsp;</i>
-      <span style="color:#1351b4 !important; font-weight:600;">Edital simplificado (PDF)</span>
+      <span style="color:#1351b4 !important; font-weight:600;">Edital (PDF)</span>
     </a>
     <a class="br-button" style="display:inline-flex; align-items:center; gap:8px; padding:12px 28px; border:2px solid #1351b4; border-radius:100em; text-decoration:none;" href="URL_DA_TRANSMISSAO">
       <i class="fa-solid fa-video" style="color:#1351b4 !important;">&nbsp;</i>
       <span style="color:#1351b4 !important; font-weight:600;">Link da transmissão</span>
     </a>
   </div>
-  <p style="font-size:15px; color:#555555;">Dúvidas sobre a participação podem ser enviadas para o contato do Núcleo de IA.</p>
+  <p style="font-size:15px; color:#555555;">Dúvidas sobre a participação podem ser enviadas para cggia@gestao.gov.br.</p>
 </div>
 ```
 
@@ -289,7 +304,7 @@ Equipes de órgãos públicos aplicam a Autoavaliação de Impacto Ético a um s
 
 ## O edital simplificado como Arquivo no Plone
 
-O botão "Edital simplificado (PDF)" aponta para um **Arquivo** hospedado no próprio Plone:
+O botão "Edital (PDF)" aponta para um **Arquivo** hospedado no próprio Plone:
 
 1. Gere o PDF a partir de `artefatos/Edital_Simplificado_Imersao_Etica_IA.md` (via .docx).
 2. No Plone, em **Adicionar item → Arquivo**, envie o PDF **antes** de montar o TEXTO RICO 3.
@@ -315,6 +330,8 @@ O botão "Edital simplificado (PDF)" aponta para um **Arquivo** hospedado no pr�
 
 - [ ] Trocar `URL_DO_FORMULARIO`, `URL_DO_EDITAL` e `URL_DA_TRANSMISSAO` no TEXTO RICO 3 —
       removendo o `<a>` de qualquer um que ainda não exista.
+- [ ] Recolar o TEXTO RICO 1 na página publicada: o card Público-alvo mudou para "de órgãos
+      públicos federais" (sem "qualquer").
 - [ ] Conferir as datas contra o `plano.md`: inscrições 16/09–30/09, resultado 01/10, aula
       inaugural 05/10, estudo 05–16/10, palestras 13/10, oficinas 20–27/10, relatórios
       23–30/10, fechamento 04/11.

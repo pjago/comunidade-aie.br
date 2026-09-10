@@ -66,9 +66,8 @@ Procure por `TODO` no `index.html`:
    com `aria-disabled="true"` e o rótulo "em breve".
 2. **Link da transmissão** dos encontros abertos, no botão secundário. Depende da decisão entre
    Teams e YouTube.
-3. **Endereço de contato**, no rodapé, a confirmar com a ASCOM. A equipe de design pediu
-   explicitamente um `mailto:` no lugar de "contato a publicar" — o gabarito do link está no
-   comentário, basta preencher o endereço.
+3. ~~Endereço de contato, no rodapé~~ — **resolvida**: cggia@gestao.gov.br, já aplicado como
+   `mailto:` no rodapé do `index.html`, na página do Plone e nas peças de divulgação.
 4. **URL do PDF do edital no Plone** (`URL_DO_EDITAL`) — placeholder no guia
    `imersao-etica-ia-plone.md`, a preencher depois que o PDF do edital simplificado for
    publicado como Arquivo no Plone.

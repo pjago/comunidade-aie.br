@@ -58,14 +58,16 @@ doc-page:not(:defined){visibility:hidden;}
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.3 Por que este caso importa no Brasil</h3>
 <p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">A fiscalização remota por vídeo é regulamentada desde 2013 e a Resolução Contran nº 909/2022 disciplina o videomonitoramento; nela, a lavratura do auto continua sendo ato da autoridade de trânsito, que deve registrar como a infração foi constatada. Não existe, hoje, regulamentação específica sobre o uso de IA nessa fiscalização — o que empurra a responsabilidade pela qualidade da detecção para o desenho do próprio sistema e para a etapa de validação humana.</p>
 
+<p style="margin:0 0 10pt;padding:8pt 12pt;background:#fff9e0;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;break-inside:avoid;"><strong>Atenção:</strong> este sistema identifica o veículo pela placa, não a pessoa por biometria — leitura de placa não é dado biométrico. E detecta um ato flagrado na imagem, não a propensão de alguém a infringir. A distinção importa juridicamente: tanto a identificação biométrica à distância em espaço público quanto a avaliação de comportamento pregresso para prever infrações estão entre as hipóteses de risco excessivo discutidas no PL 2338/2023. Acoplar o sistema a reconhecimento facial, ou usá-lo para rastrear o deslocamento de uma pessoa determinada — uso que a seção 2.2 já veda —, muda o patamar da avaliação.</p>
+
 <h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;break-before:page;">Parte II — Avaliação de impacto preenchida</h2>
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.1 Escopo e critérios da avaliação (cl. 5)</h3>
 <ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
-  <li style="margin-bottom:4pt;">Objeto avaliado: o módulo de visão computacional que pré-seleciona cenas e a fila de validação usada pelo agente.</li>
-  <li style="margin-bottom:4pt;">Fora do escopo: o sistema de emissão e cobrança de multas e o parque de câmeras contratado.</li>
-  <li style="margin-bottom:4pt;">Gatilho da avaliação: sistema em produção que produz efeito sancionatório sobre o cidadão.</li>
-  <li style="margin-bottom:4pt;">Limiar de uso sensível: qualquer configuração que dispense a validação humana antes da autuação exige nova avaliação e decisão formal da autoridade.</li>
+  <li style="margin-bottom:4pt;"><strong>Objeto avaliado:</strong> o módulo de visão computacional que pré-seleciona cenas, a fila de validação usada pelo agente e o conteúdo da notificação enviada ao autuado.</li>
+  <li style="margin-bottom:4pt;"><strong>Fora do escopo:</strong> cobrança de multas e o parque de câmeras contratado.</li>
+  <li style="margin-bottom:4pt;"><strong>Gatilho da avaliação:</strong> sistema em produção que produz efeito sancionatório sobre o cidadão. Reavaliar a cada nova versão do modelo, a cada ampliação do rol de infrações detectadas e sempre que a taxa de descarte na validação humana variar mais de cinco pontos percentuais entre trimestres.</li>
+  <li style="margin-bottom:4pt;"><strong>Limiar de uso sensível:</strong> qualquer configuração que dispense a validação humana antes da autuação exige nova avaliação e decisão formal da autoridade.</li>
 </ul>
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.2 Informações sobre o sistema (cl. 6.2)</h3>
@@ -82,11 +84,11 @@ doc-page:not(:defined){visibility:hidden;}
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.3 Informações sobre os dados (cl. 6.3)</h3>
 <ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
-  <li style="margin-bottom:4pt;">Origem: vídeo contínuo de via pública, leitura automática de placas (ALPR) e consulta à base de veículos.</li>
-  <li style="margin-bottom:4pt;">Dados pessoais: imagem de condutor e passageiro, placa e vínculo com o proprietário. Imagem do interior do veículo é dado sensível pelo contexto.</li>
-  <li style="margin-bottom:4pt;">Qualidade: o desempenho cai à noite, com chuva, com película nos vidros e com placas sujas ou danificadas.</li>
-  <li style="margin-bottom:4pt;">Retenção: imagens sem indício de infração devem ser descartadas em prazo curto e declarado; as demais seguem o prazo do processo administrativo.</li>
-  <li style="margin-bottom:4pt;">Base legal: exercício de competência de fiscalização de trânsito, com os limites da LGPD para tratamento por órgão público.</li>
+  <li style="margin-bottom:4pt;"><strong>Origem:</strong> vídeo contínuo de via pública, leitura automática de placas (ALPR) e consulta à base de veículos.</li>
+  <li style="margin-bottom:4pt;"><strong>Dados pessoais:</strong> imagem de condutor e passageiro, placa e vínculo com o proprietário. São dados pessoais, e não dados sensíveis na lista do art. 11 da LGPD. A imagem de rosto só passaria a ser dado biométrico se fosse usada para identificar a pessoa, o que não ocorre aqui: quem é identificado é o veículo, pela placa.</li>
+  <li style="margin-bottom:4pt;"><strong>Qualidade:</strong> o desempenho cai à noite, com chuva, com película nos vidros e com placas sujas ou danificadas.</li>
+  <li style="margin-bottom:4pt;"><strong>Retenção:</strong> imagens sem indício de infração devem ser descartadas em prazo curto e declarado; as demais seguem o prazo do processo administrativo.</li>
+  <li style="margin-bottom:4pt;"><strong>Base legal:</strong> exercício de competência de fiscalização de trânsito, com os limites da LGPD para tratamento por órgão público.</li>
 </ul>
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.4 Informações sobre o algoritmo e o modelo (cl. 6.4)</h3>
@@ -106,9 +108,9 @@ doc-page:not(:defined){visibility:hidden;}
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.6 Benefícios reais e potenciais (cl. 6.7)</h3>
 <ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
-  <li style="margin-bottom:4pt;">Para as pessoas: fiscalização de condutas que antes só eram flagradas por acaso, como uso de celular ao volante.</li>
-  <li style="margin-bottom:4pt;">Para a organização: uma câmera opera de forma contínua e separa, entre milhares de veículos, apenas as cenas suspeitas — ganho direto de produtividade da equipe.</li>
-  <li style="margin-bottom:4pt;">Para a sociedade: dados de fluxo que apoiam decisões de engenharia de tráfego.</li>
+  <li style="margin-bottom:4pt;"><strong>Para as pessoas:</strong> fiscalização de condutas que antes só eram flagradas por acaso, como uso de celular ao volante.</li>
+  <li style="margin-bottom:4pt;"><strong>Para a organização:</strong> uma câmera opera de forma contínua e separa, entre milhares de veículos, apenas as cenas suspeitas — ganho direto de produtividade da equipe.</li>
+  <li style="margin-bottom:4pt;"><strong>Para a sociedade:</strong> dados de fluxo que apoiam decisões de engenharia de tráfego.</li>
 </ul>
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.7 Danos reais e potenciais (cl. 6.8)</h3>
@@ -128,7 +130,7 @@ doc-page:not(:defined){visibility:hidden;}
   <li style="margin-bottom:4pt;">Queda de desempenho não detectada após troca de lente, mudança de ângulo ou de iluminação da via.</li>
   <li style="margin-bottom:4pt;">Erro de leitura de placa que atribui a infração a veículo de terceiro.</li>
   <li style="margin-bottom:4pt;">Uso indevido previsível: consulta ao histórico de passagens de um veículo específico sem autorização.</li>
-  <li style="margin-bottom:4pt;">Uso indevido previsível: ativação de detecção automática sem validação para “desafogar a fila”.</li>
+  <li style="margin-bottom:4pt;">Uso indevido previsível: ativação de detecção automática sem validação para "desafogar a fila".</li>
 </ul>
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.9 Verificação por tema de documentação (cl. 6)</h3>
@@ -146,15 +148,7 @@ doc-page:not(:defined){visibility:hidden;}
   </tbody>
 </table>
 
-<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.10 Resultado da avaliação</h3>
-<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
-  <tr><td style="width:34%;padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Grau de risco (pré-triagem AIE)</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto</td></tr>
-  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Justificativa</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Produz efeito sancionatório sobre o cidadão, opera sobre imagem de pessoas em espaço público e funciona de forma contínua.</td></tr>
-  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Enquadramento no PL 2338/2023</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto risco — uso pela administração pública com efeito direto sobre direitos.</td></tr>
-  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Impacto residual após medidas</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Médio</td></tr>
-</table>
-
-<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.11 Medidas de tratamento</h3>
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.10 Medidas de tratamento</h3>
 <table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
   <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:48%;">Medida</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:30%;">Responsável</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Prazo</th></tr></thead>
   <tbody>
@@ -166,8 +160,20 @@ doc-page:not(:defined){visibility:hidden;}
   </tbody>
 </table>
 
-<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.12 Aprovação e monitoramento</h3>
-<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">Reavaliar a cada nova versão do modelo, a cada ampliação do rol de infrações detectadas e sempre que a taxa de descarte na validação humana variar mais de cinco pontos percentuais entre trimestres.</p>
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.11 Risco residual</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">O que permanece depois das medidas previstas:</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Autuação indevida:</strong> a taxa de descarte mostra quanto o sistema erra antes da validação, não quantas autuações erradas passaram por ela. Isso só apareceria no resultado das defesas, que ninguém mede.</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Custo de defesa desigual:</strong> anexar a imagem à notificação facilita contestar, e não muda quem tem tempo, acesso digital e advogado para fazê-lo.</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Vigilância excessiva:</strong> o descarte automático reduz o acervo, e a captura contínua da imagem de quem não cometeu infração permanece — é condição de funcionamento do sistema.</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Desvio de finalidade:</strong> a 2.9 aponta a falta de trilha de auditoria para consulta por placa, e nenhuma medida a cria.</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Validação de fachada:</strong> o limite de cenas por turno reduz o volume, e nada verifica a qualidade da validação. O agente que confirma tudo rapidamente cumpre a meta.</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Queda de desempenho não detectada:</strong> a auditoria independente é pontual, em 180 dias. Nenhuma medida prevê reteste após troca de lente, mudança de ângulo ou de iluminação da via.</p>
 
 </doc-page>
 <!-- caso-toc:start -->

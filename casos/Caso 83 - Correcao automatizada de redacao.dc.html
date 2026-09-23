@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/fonts.css">
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/colors.css">
+<link rel="stylesheet" href="../_ds/gov-br-design-system-da444b41-291b-46cb-a7c3-62d4fe732180/tokens/semantic.css">
+<script src="./doc-page.js"></script>
+<style>
+body{margin:0;}
+doc-page:not(:defined){visibility:hidden;}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+</style>
+</helmet>
+<doc-page margin="0.75in">
+<div slot="footer" style="display:flex;justify-content:space-between;font-family:'rawline',sans-serif;font-size:8.5pt;color:#767676;border-top:1px solid #e6e6e6;padding-top:6pt;">
+  <span>Oficina AIE · Conexão SISP</span>
+  <span>Caso 83 · Correção automatizada de redação</span>
+</div>
+
+<p style="margin:0 0 6pt;font-family:'rawline',sans-serif;font-size:9.5pt;font-weight:600;color:#1351b4;letter-spacing:.04em;">Avaliação de impacto do sistema de IA</p>
+<h1 style="margin:0 0 8pt;font-family:'rawline',sans-serif;font-size:24pt;font-weight:700;color:#0c326f;line-height:1.15;">Correção automatizada de redação em exame público de larga escala</h1>
+<p style="margin:0 0 18pt;font-family:'Raleway',sans-serif;font-size:11pt;color:#555555;line-height:1.4;">Caso 83 · modelo de documentação da ABNT NBR ISO/IEC 42005:2025</p>
+<p style="margin:0 0 18pt;padding:10pt 12pt;background:#e8eefb;font-family:'Raleway',sans-serif;font-size:9.5pt;color:#555555;line-height:1.5;font-style:italic;break-inside:avoid;">Documento de simulação, produzido para a oficina de Autoavaliação de Impacto Ético (AIE) do Conexão SISP. O caso de uso é adaptado da ABNT ISO/IEC TR 24030:2024 e o preenchimento é fictício: não representa a avaliação oficial de nenhum órgão nem descreve um sistema em operação.</p>
+
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 16pt;">
+  <tr><td style="width:32%;padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Modelo de referência</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">ABNT NBR ISO/IEC 42005:2025 — Anexo com modelo de documento de avaliação de impacto</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Caso de uso</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">ABNT ISO/IEC TR 24030:2024 — Caso 83</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Domínio de aplicação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Educação</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Versão e data</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">1.0 — versão de oficina · 18/09/2026</td></tr>
+  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Aprovação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Pendente — a aprovação real cabe ao responsável pelo sistema no órgão</td></tr>
+</table>
+
+<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;">Parte I — O caso de uso, conforme a ISO/IEC TR 24030</h2>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.1 Descrição</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">O sistema corrige, de forma automatizada, a redação de um exame público de larga escala, depois que a folha manuscrita é digitalizada. Ele atribui uma nota a cada critério de avaliação e uma nota final, seguindo um padrão de pontuação único para todos os candidatos. Uma amostra das correções é comparada com a correção feita por avaliador humano, para monitorar a qualidade do sistema em operação. O texto também é verificado quanto a cópia de conteúdo externo. A nota é usada diretamente na classificação do exame, sem segunda correção humana da maioria dos textos.</p>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.2 Retrato do sistema em seis respostas</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:38%;">Pergunta</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Resposta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">O que o sistema faz, em uma frase?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Atribui nota à redação de um exame público, a partir do texto digitalizado da folha manuscrita.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem é afetado pela saída dele?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Candidatos ao exame, avaliadores humanos e a instituição responsável pela classificação.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Que dados usa, e de onde vêm?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Imagem digitalizada da folha manuscrita e o texto reconhecido a partir dela.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A saída é sugestão ou decisão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Atribui a nota que compõe a classificação; não há segunda correção humana da maioria dos textos.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Em que fase está?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Produção.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem responde por ele no órgão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Instituição responsável pela organização do exame.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.3 Por que este caso importa no Brasil</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">Exame de larga escala no Brasil significa alto volume em prazo curto: mais de três milhões de inscritos no Enem em anos recentes, cada um entregando uma redação manuscrita que hoje passa por dois corretores humanos independentes, com um terceiro em caso de divergência relevante. Substituir parte dessa correção por um sistema automatizado promete padronização e velocidade — o mesmo problema de escala real de custo e de tempo que motivou o caso na fonte internacional. Mas nota de redação em exame de larga escala decide vaga em universidade pública, faixa de financiamento estudantil e, em concursos, o próprio acesso ao cargo. Divergir da nota automatizada, sem saber por qual critério ela foi atribuída, tem um custo concreto e imediato para quem foi avaliado.</p>
+
+<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;break-before:page;">Parte II — Avaliação de impacto preenchida</h2>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.1 Escopo e critérios da avaliação (cl. 5)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;"><strong>Objeto avaliado:</strong> o modelo de correção automatizada, o padrão de pontuação por critério e o processo de amostragem para controle de qualidade.</li>
+  <li style="margin-bottom:4pt;"><strong>Fora do escopo:</strong> a digitalização das folhas de resposta e o sistema de inscrição e convocação do exame.</li>
+  <li style="margin-bottom:4pt;"><strong>Gatilho da avaliação:</strong> sistema em produção cuja saída compõe diretamente a classificação de candidatos em exame público. Reavaliar a cada retreinamento do modelo, a cada mudança no padrão de pontuação ou a cada edição do exame.</li>
+  <li style="margin-bottom:4pt;"><strong>Limiar de uso sensível:</strong> qualquer redução no percentual de textos submetidos a segunda correção humana exige nova avaliação e decisão formal da autoridade responsável pelo exame.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.2 Informações sobre o sistema (cl. 6.2)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:28%;">Item</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Descrição</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Finalidade pretendida</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Aplicar, de forma padronizada e em grande volume, os critérios de avaliação da redação, reduzindo o tempo e o custo da correção humana.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Uso pretendido</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Correção principal de todos os textos, com verificação por amostragem contra correção humana para controle de qualidade.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Usos não pretendidos</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Uso da nota automatizada para outra finalidade além da classificação do exame; ajuste de critério de pontuação sem nova avaliação de impacto; dispensa total da correção humana amostral.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Contexto de implantação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Exame público de larga escala, com redação manuscrita digitalizada.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Grau de autonomia</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto. O sistema atribui a nota que compõe a classificação; a correção humana alcança apenas uma amostra, não a totalidade dos textos.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.3 Informações sobre os dados (cl. 6.3)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;"><strong>Origem:</strong> imagem digitalizada da folha de redação manuscrita, produzida no processo de aplicação do exame.</li>
+  <li style="margin-bottom:4pt;"><strong>Dados pessoais:</strong> o texto da redação não costuma ser identificado ao candidato durante a correção, por desenho do processo de exame. A caligrafia, por si, pode permitir identificação indireta em caso de vazamento da imagem.</li>
+  <li style="margin-bottom:4pt;"><strong>Qualidade:</strong> letra pouco legível, rasura, mudança de tinta ou de caligrafia ao longo do texto degrada o reconhecimento e pode afetar a nota atribuída.</li>
+  <li style="margin-bottom:4pt;"><strong>Retenção:</strong> imagens e notas mantidas pelo prazo do processo de recurso e de auditoria do exame.</li>
+  <li style="margin-bottom:4pt;"><strong>Base legal:</strong> execução de política pública de avaliação e seleção em exame público, com tratamento limitado à finalidade de correção e classificação.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.4 Informações sobre o algoritmo e o modelo (cl. 6.4)</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">Modelo de processamento de linguagem natural e aprendizado profundo, treinado para reconhecer o texto manuscrito e para avaliar a qualidade da redação segundo critérios como coerência, coesão, domínio da norma culta e atendimento ao tema. O modelo também sinaliza trecho muito semelhante a conteúdo já publicado, como indício de possível cópia. A nota final resulta da combinação das notas por critério, segundo pesos definidos previamente. Não há um único "erro" a apontar quando a nota diverge da que um avaliador humano daria: a divergência pode vir do reconhecimento do texto manuscrito, da avaliação de cada critério ou dos pesos entre eles, e essas três fontes não são visíveis separadamente na nota final.</p>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.5 Partes interessadas (cl. 6.6)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:34%;">Parte interessada</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Interesse no sistema</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Candidatos ao exame</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Receber uma nota que reflita o texto escrito e poder contestar com base em critério claro.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Avaliadores humanos</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Ter clareza sobre seu novo papel: corrigir a amostra de controle, não a maioria dos textos.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Instituição responsável pelo exame</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Sustentar a nota diante de recurso administrativo e de contestação judicial.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Universidades e órgãos que usam a nota</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Confiar que a nota reflete o desempenho do candidato na redação.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Órgãos de controle e Defensoria</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Verificar a igualdade de tratamento entre candidatos.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.6 Benefícios reais e potenciais (cl. 6.7)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;"><strong>Para as pessoas:</strong> padrão único de pontuação para todos os candidatos, sem a variação que existe entre avaliadores humanos diferentes.</li>
+  <li style="margin-bottom:4pt;"><strong>Para a organização:</strong> redução relevante do custo e do tempo de correção em exame de milhões de textos, permitindo divulgar o resultado mais rápido.</li>
+  <li style="margin-bottom:4pt;"><strong>Para a sociedade:</strong> possibilidade de aplicar exame em maior escala e com menor custo público por candidato avaliado.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.7 Danos reais e potenciais (cl. 6.8)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:26%;">Dano</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:24%;">Quem sofre</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Como se manifesta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Nota que não reflete o texto</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Candidato</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Reconhecimento de caligrafia falha ou avaliação de critério discorda do que um leitor humano concluiria.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Recurso sem informação para sustentá-lo</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Candidato</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">O candidato não sabe qual critério pesou na nota, e não tem como argumentar contra algo que não conhece.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Padronização que penaliza estilo legítimo</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Candidato com escrita fora do padrão mais comum</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Registro de oralidade, forma de argumentar ou repertório cultural pouco frequente no material de treinamento é lido como desvio.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Falso indício de cópia</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Candidato</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Sinalização de plágio a partir de repertório ou de expressão comum ao tema, não de cópia real.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Perda de capacidade de correção humana</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Instituição do exame</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Reduzir a correção humana a uma amostra pequena esvazia, com o tempo, a capacidade da instituição de corrigir em escala sem o sistema.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.8 Falhas do sistema e uso indevido previsível (cl. 6.8.3)</h3>
+<ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
+  <li style="margin-bottom:4pt;">Queda de desempenho não detectada em digitalização de baixa qualidade, letra de difícil leitura ou uso de caneta fora do padrão esperado.</li>
+  <li style="margin-bottom:4pt;">Divergência entre a nota automatizada e a nota humana na amostra de controle, sem que a causa da divergência seja apurada por texto.</li>
+  <li style="margin-bottom:4pt;">Uso indevido previsível: redução do percentual de correção humana amostral para acelerar a divulgação do resultado, sem nova avaliação.</li>
+  <li style="margin-bottom:4pt;">Uso indevido previsível: uso do sinalizador de cópia como prova definitiva de fraude, sem revisão humana do caso concreto.</li>
+</ul>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.9 Verificação por tema de documentação (cl. 6)</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:22%;">Tema</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:39%;">Situação hoje</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">O que falta</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Responsabilização</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Instituição do exame responde pela nota atribuída.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Registrar, para cada nota contestada, se ela veio da correção automatizada ou da amostra humana.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Transparência</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Critérios de avaliação publicados no edital do exame.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Publicar, para o candidato, a nota por critério, não apenas a nota final.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Equidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Comparação com amostra de correção humana mede acurácia geral.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Medir divergência entre nota automatizada e nota humana por perfil de escrita, região e tipo de escola.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Privacidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Correção sem identificação nominal do candidato, por desenho do processo.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Avaliar o risco de identificação indireta pela caligrafia, em caso de acesso não autorizado à imagem.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Confiabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Amostra de correção humana mede a acurácia geral do sistema.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Publicar a divergência entre nota automatizada e humana, sem agregar todos os textos em uma média única.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Segurança</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Acesso restrito às imagens digitalizadas.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Trilha de auditoria para acesso à imagem e à nota individual de cada candidato.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Explicabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Nota final divulgada ao candidato.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Entregar a nota por critério junto com a nota final, no boletim de resultado.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Impacto ambiental</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Processamento em lote, concentrado no período de correção do exame.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Estimar o consumo do processamento de milhões de textos em curto intervalo de tempo.</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.10 Medidas de tratamento</h3>
+<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
+  <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:48%;">Medida</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:30%;">Responsável</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Prazo</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Publicar a nota por critério junto com a nota final</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Coordenação do exame</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">90 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Medir e publicar a divergência entre nota automatizada e humana por perfil de escrita e por região</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Equipe de avaliação e estatística</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">180 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Canal de recurso com acesso à nota por critério antes do prazo de contestação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Ouvidoria do exame</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">90 dias</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Revisão humana obrigatória de todo caso sinalizado como possível cópia, antes de qualquer consequência</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Coordenação de integridade do exame</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Imediato</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Definir e publicar o percentual mínimo de correção humana amostral, sem redução sem nova avaliação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Instituição responsável pelo exame</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">60 dias</td></tr>
+  </tbody>
+</table>
+
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.11 Risco residual</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">O que permanece depois das medidas previstas:</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Nota que não reflete o texto:</strong> publicar a nota por critério explica a nota, e não corrige o reconhecimento de caligrafia ou a avaliação que gerou o erro.</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Recurso sem informação para sustentá-lo:</strong> o canal de recurso passa a ter a nota por critério, e o candidato ainda não tem acesso ao texto corrigido com as marcações do avaliador, humano ou automatizado.</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Padronização que penaliza estilo legítimo:</strong> medir divergência por perfil de escrita identifica o problema, e não muda o padrão de pontuação nem o material usado para treinar o modelo.</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Falso indício de cópia:</strong> a revisão humana obrigatória reduz a consequência indevida, e o texto continua sinalizado no histórico do candidato até essa revisão ocorrer.</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Perda de capacidade de correção humana:</strong> nenhuma medida prevista mantém em exercício a capacidade de correção humana em escala, além da amostra de controle.</p>
+
+<p style="margin:14pt 0 0;font-family:'Raleway',sans-serif;font-size:9pt;color:#767676;line-height:1.4;">Fonte: adaptado da ABNT ISO/IEC TR 24030:2024, caso de uso 83 — "Um sistema de correção inteligente".</p>
+
+</doc-page>
+<!-- caso-toc:start -->
+<style>
+  x-dc h1, x-dc h2, x-dc h3, #dc-root h1, #dc-root h2, #dc-root h3 { scroll-margin-top: 12px; }
+  #caso-toc-toggle { position: fixed; top: 14px; left: 14px; z-index: 1001; font-family: 'rawline', sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; background: #1351b4; border: 0; border-radius: 20px; padding: 8px 14px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+  #caso-toc-toggle:hover { background: #0c326f; }
+  #caso-toc { position: fixed; top: 54px; left: 14px; z-index: 1000; width: 260px; max-height: calc(100vh - 70px); overflow-y: auto; background: #ffffff; border: 1px solid #e6e6e6; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.18); padding: 8px 0 10px; font-family: 'rawline', 'Raleway', sans-serif; }
+  #caso-toc.caso-toc-fechado { display: none; }
+  #caso-toc .caso-toc-titulo { margin: 4px 14px 6px; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #767676; }
+  #caso-toc a { display: block; padding: 4px 14px; font-size: 12.5px; line-height: 1.35; color: #333333; text-decoration: none; border-left: 3px solid transparent; }
+  #caso-toc a.caso-toc-h1 { font-weight: 700; color: #0c326f; }
+  #caso-toc a.caso-toc-h2 { font-weight: 700; color: #0c326f; margin-top: 6px; }
+  #caso-toc a.caso-toc-h3 { padding-left: 24px; }
+  #caso-toc a:hover { background: #e8eefb; }
+  #caso-toc a.caso-toc-ativo { border-left-color: #1351b4; background: #e8eefb; color: #1351b4; }
+  @media print { #caso-toc, #caso-toc-toggle { display: none !important; } }
+</style>
+<script>
+(function () {
+  // O runtime (support.js) pode re-montar o documento (substitui <x-dc> por #dc-root via React).
+  // Por isso os titulos sao resolvidos NO MOMENTO do clique/rolagem, no DOM atual, por posicao+texto.
+  var SEL = 'x-dc h1, x-dc h2, x-dc h3, #dc-root h1, #dc-root h2, #dc-root h3';
+  function norm(t) { return (t || '').replace(/\s+/g, ' ').trim(); }
+  function resolveHeads() { return Array.prototype.slice.call(document.querySelectorAll(SEL)); }
+  var items = null;
+  function slug(text, i) { return 'sec-' + i + '-' + text.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60); }
+  function buildNav() {
+    if (document.getElementById('caso-toc')) return true;
+    var heads = resolveHeads();
+    if (!heads.length) return false;
+    items = heads.map(function (h) { return { text: norm(h.textContent), tag: h.tagName.toLowerCase() }; });
+    var nav = document.createElement('nav'); nav.id = 'caso-toc'; nav.setAttribute('aria-label', 'Sumário');
+    var title = document.createElement('p'); title.className = 'caso-toc-titulo'; title.textContent = 'Sumário'; nav.appendChild(title);
+    items.forEach(function (it, i) {
+      var a = document.createElement('a');
+      a.href = '#' + slug(it.text, i);
+      a.textContent = it.text;
+      a.className = 'caso-toc-' + it.tag;
+      a.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        var hs = resolveHeads();
+        var target = (hs[i] && norm(hs[i].textContent) === it.text) ? hs[i] : hs.filter(function (x) { return norm(x.textContent) === it.text; })[0];
+        if (!target) return;
+        if (!target.id) target.id = slug(it.text, i);
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', '#' + target.id);
+      });
+      nav.appendChild(a);
+    });
+    var btn = document.createElement('button'); btn.id = 'caso-toc-toggle'; btn.type = 'button'; btn.textContent = 'Sumário';
+    btn.setAttribute('aria-expanded', 'true');
+    btn.addEventListener('click', function () { var fechado = nav.classList.toggle('caso-toc-fechado'); btn.setAttribute('aria-expanded', String(!fechado)); });
+    if (window.innerWidth < 1100) { nav.classList.add('caso-toc-fechado'); btn.setAttribute('aria-expanded', 'false'); }
+    document.body.appendChild(btn); document.body.appendChild(nav);
+    return true;
+  }
+  var spyScheduled = false;
+  function spyNow() {
+    spyScheduled = false;
+    var nav = document.getElementById('caso-toc');
+    if (!nav || !items) return;
+    var heads = resolveHeads();
+    if (!heads.length) return;
+    var cur = 0;
+    for (var i = 0; i < heads.length; i++) { var r = heads[i].getBoundingClientRect(); if (r.height > 0 && r.top <= 90) cur = i; }
+    var links = nav.querySelectorAll('a');
+    for (var j = 0; j < links.length; j++) links[j].classList.toggle('caso-toc-ativo', j === cur);
+  }
+  function spy() { if (spyScheduled) return; spyScheduled = true; setTimeout(spyNow, 60); }
+  function start() {
+    buildNav();
+    // capture: pega o scroll da janela E de scrollers internos (o evento scroll nao borbulha, mas captura desce)
+    document.addEventListener('scroll', spy, { capture: true, passive: true });
+    window.addEventListener('resize', spy);
+    window.addEventListener('load', function () { buildNav(); spy(); });
+    // re-montagem pelo runtime: reconsti o painel se sumir e reavalia o destaque (childList apenas; sem loop com classes)
+    if (window.MutationObserver) new MutationObserver(function () { buildNav(); spy(); }).observe(document.body, { childList: true, subtree: true });
+    setTimeout(function () { buildNav(); spy(); }, 800);
+    setTimeout(function () { buildNav(); spy(); }, 2400);
+    spy();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
+<!-- caso-toc:end -->
+</x-dc>
+</body>
+</html>

@@ -46,10 +46,10 @@ doc-page:not(:defined){visibility:hidden;}
 <table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
   <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:38%;">Pergunta</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Resposta</th></tr></thead>
   <tbody>
-    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">O que o sistema faz, em uma frase?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Prevê o nível dos rios nas próximas horas a partir de chuva, vazão e histórico.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">O que o sistema faz, em uma frase?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A cada 10 minutos, prevê o nível do rio para até 6 horas à frente e publica um mapa de perigo por estação.</td></tr>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem é afetado pela saída dele?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Moradores de área de risco, defesa civil e prefeituras.</td></tr>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Que dados usa, e de onde vêm?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Estações telemétricas, radar meteorológico e série histórica.</td></tr>
-    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A saída é sugestão ou decisão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Produz a previsão que embasa o alerta; a decisão de evacuar é humana.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A saída é sugestão ou decisão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Produz o mapa de perigo que embasa o aviso; a decisão de evacuar é humana.</td></tr>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Em que fase está?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Produção.</td></tr>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem responde por ele no órgão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Centro de monitoramento e alertas de desastres.</td></tr>
   </tbody>
@@ -62,10 +62,10 @@ doc-page:not(:defined){visibility:hidden;}
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.1 Escopo e critérios da avaliação (cl. 5)</h3>
 <ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
-  <li style="margin-bottom:4pt;">Objeto avaliado: o modelo de previsão de nível e a regra de disparo do alerta a partir da previsão.</li>
-  <li style="margin-bottom:4pt;">Fora do escopo: a rede de estações telemétricas e os canais de comunicação com a população.</li>
-  <li style="margin-bottom:4pt;">Gatilho da avaliação: sistema em produção cuja saída embasa decisão sobre vida e integridade física.</li>
-  <li style="margin-bottom:4pt;">Limiar de uso sensível: qualquer mudança de limiar de disparo do alerta exige nova avaliação e registro da decisão.</li>
+  <li style="margin-bottom:4pt;"><strong>Objeto avaliado:</strong> o modelo de previsão de nível, a regra de disparo do alerta e a forma do mapa de perigo entregue a quem decide.</li>
+  <li style="margin-bottom:4pt;"><strong>Fora do escopo:</strong> a rede de estações telemétricas e a infraestrutura dos canais de comunicação com a população.</li>
+  <li style="margin-bottom:4pt;"><strong>Gatilho da avaliação:</strong> sistema em produção cuja saída embasa decisão sobre vida e integridade física. Reavaliar a cada retreinamento do modelo, a cada inclusão de nova bacia, após todo evento extremo em que a previsão divergiu do observado, ou a cada 12 meses.</li>
+  <li style="margin-bottom:4pt;"><strong>Limiar de uso sensível:</strong> qualquer mudança de limiar de disparo do alerta exige nova avaliação e registro da decisão.</li>
 </ul>
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.2 Informações sobre o sistema (cl. 6.2)</h3>
@@ -73,20 +73,21 @@ doc-page:not(:defined){visibility:hidden;}
   <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:28%;">Item</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Descrição</th></tr></thead>
   <tbody>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Finalidade pretendida</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Ampliar o tempo de reação da defesa civil e da população antes da cheia.</td></tr>
-    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Uso pretendido</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Previsão horária de nível por estação, com faixa de incerteza, para apoiar a decisão de alerta.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Uso pretendido</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Previsão a cada 10 minutos, com horizonte de 6 horas e faixa de incerteza, apresentada como mapa de perigo para apoiar a decisão de alerta.</td></tr>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Usos não pretendidos</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Uso da previsão para autorizar ou negar licenciamento e para decidir cobertura de seguro; uso fora das bacias em que o modelo foi validado.</td></tr>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Contexto de implantação</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Bacias monitoradas com estação telemétrica ativa e cobertura de radar.</td></tr>
-    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Grau de autonomia</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Baixo na decisão, alto na influência: na urgência, a previsão costuma ser aceita sem contestação.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Grau de autonomia</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alta automação no cálculo: previsão e mapa são gerados sem intervenção, a cada 10 minutos. A decisão de evacuar é humana, mas na urgência a previsão costuma ser aceita sem contestação.</td></tr>
   </tbody>
 </table>
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.3 Informações sobre os dados (cl. 6.3)</h3>
 <ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
-  <li style="margin-bottom:4pt;">Origem: estações telemétricas de nível e chuva, radar meteorológico e séries históricas de vazão.</li>
-  <li style="margin-bottom:4pt;">Dados pessoais: não há. O impacto recai sobre territórios e populações, não sobre indivíduos identificados.</li>
-  <li style="margin-bottom:4pt;">Qualidade: estação com falha, assoreamento ou corrosão degrada a entrada sem aviso; bacias sem estação ficam sem previsão.</li>
-  <li style="margin-bottom:4pt;">Cobertura desigual: as bacias mais instrumentadas tendem a ser as de maior interesse econômico, não necessariamente as de maior vulnerabilidade social.</li>
-  <li style="margin-bottom:4pt;">Retenção: séries mantidas de forma permanente, por valor científico e operacional.</li>
+  <li style="margin-bottom:4pt;"><strong>Origem:</strong> estações telemétricas de nível e chuva, radar meteorológico e séries históricas de vazão.</li>
+  <li style="margin-bottom:4pt;"><strong>Dados pessoais:</strong> não há. O impacto recai sobre territórios e populações, não sobre indivíduos identificados.</li>
+  <li style="margin-bottom:4pt;"><strong>Dependência externa:</strong> a chuva prevista vem de outro órgão. Erro ou atraso na origem entra na previsão sem que o centro de monitoramento tenha controle sobre isso.</li>
+  <li style="margin-bottom:4pt;"><strong>Qualidade:</strong> estação com falha, assoreamento ou corrosão degrada a entrada sem aviso; bacias sem estação ficam sem previsão.</li>
+  <li style="margin-bottom:4pt;"><strong>Cobertura desigual:</strong> as bacias mais instrumentadas tendem a ser as de maior interesse econômico, não necessariamente as de maior vulnerabilidade social.</li>
+  <li style="margin-bottom:4pt;"><strong>Retenção:</strong> séries mantidas de forma permanente, por valor científico e operacional.</li>
 </ul>
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.4 Informações sobre o algoritmo e o modelo (cl. 6.4)</h3>
@@ -100,15 +101,17 @@ doc-page:not(:defined){visibility:hidden;}
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Defesa civil municipal</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Saber o grau de confiança da previsão antes de acionar a evacuação.</td></tr>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Prefeituras</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Planejar abrigo, rota e transporte.</td></tr>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Órgão de monitoramento</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Manter a credibilidade do sistema de alerta ao longo do tempo.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Agência meteorológica, como fornecedora de dados</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Entregar a previsão de chuva em tempo e formato utilizáveis.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Desenvolvedor do modelo</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Manter e retreinar o modelo conforme as bacias mudam.</td></tr>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Comunidade científica</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Reproduzir e criticar o modelo.</td></tr>
   </tbody>
 </table>
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.6 Benefícios reais e potenciais (cl. 6.7)</h3>
 <ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
-  <li style="margin-bottom:4pt;">Para as pessoas: horas de antecedência que permitem sair de casa com documentos e com os idosos da família.</li>
-  <li style="margin-bottom:4pt;">Para a organização: priorização das equipes de campo onde o risco é maior.</li>
-  <li style="margin-bottom:4pt;">Para a sociedade: redução de perdas materiais e de mortes evitáveis em eventos extremos.</li>
+  <li style="margin-bottom:4pt;"><strong>Para as pessoas:</strong> horas de antecedência que permitem sair de casa com documentos e com os idosos da família.</li>
+  <li style="margin-bottom:4pt;"><strong>Para a organização:</strong> priorização das equipes de campo onde o risco é maior.</li>
+  <li style="margin-bottom:4pt;"><strong>Para a sociedade:</strong> redução de perdas materiais e de mortes evitáveis em eventos extremos.</li>
 </ul>
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.7 Danos reais e potenciais (cl. 6.8)</h3>
@@ -126,7 +129,8 @@ doc-page:not(:defined){visibility:hidden;}
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.8 Falhas do sistema e uso indevido previsível (cl. 6.8.3)</h3>
 <ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">
   <li style="margin-bottom:4pt;">Degradação silenciosa por sensor descalibrado ou submerso.</li>
-  <li style="margin-bottom:4pt;">Extrapolação do modelo para bacia em que não foi validado.</li>
+  <li style="margin-bottom:4pt;">Chuva acima do que o modelo encontrou no histórico, com erro maior justamente no evento extremo.</li>
+  <li style="margin-bottom:4pt;">Interrupção ou atraso na previsão de chuva fornecida pela agência meteorológica.</li>
   <li style="margin-bottom:4pt;">Uso indevido previsível: divulgação da previsão bruta ao público sem tradução e sem faixa de incerteza.</li>
   <li style="margin-bottom:4pt;">Uso indevido previsível: uso do histórico de alertas para negar responsabilidade do poder público em ação judicial.</li>
 </ul>
@@ -140,21 +144,13 @@ doc-page:not(:defined){visibility:hidden;}
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Equidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Não avaliado por território.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Mapear as áreas de risco sem cobertura de estação e priorizar instalação.</td></tr>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Privacidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Sem dado pessoal.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Sem ação.</td></tr>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Confiabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Desempenho medido em bacias selecionadas.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Publicar acerto por bacia e por faixa de antecedência, separando eventos extremos.</td></tr>
-    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Segurança</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Infraestrutura crítica com redundância parcial.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Plano de contingência para queda da telemetria durante o evento.</td></tr>
-    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Explicabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Saída numérica.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Entregar a previsão sempre com a faixa de incerteza associada.</td></tr>
-    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Impacto ambiental</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Processamento contínuo em nuvem.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Estimar consumo do treinamento e da operação.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Segurança</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Infraestrutura crítica com redundância parcial.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Plano de contingência para queda da telemetria ou da previsão externa durante o evento.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Explicabilidade</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Mapa de perigo por estação, com o nível previsto.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Entregar a previsão sempre com a faixa de incerteza associada.</td></tr>
+    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Impacto ambiental</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Operação em servidor de porte modesto, local ou em nuvem.</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Estimar consumo do treinamento e da operação.</td></tr>
   </tbody>
 </table>
 
-<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.10 Resultado da avaliação</h3>
-<table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
-  <tr><td style="width:34%;padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Grau de risco (pré-triagem AIE)</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto</td></tr>
-  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Justificativa</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A saída embasa decisão sobre vida e integridade física de população em área de risco e opera em infraestrutura crítica.</td></tr>
-  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Enquadramento no PL 2338/2023</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Alto risco — gestão e operação de infraestrutura crítica e proteção da vida.</td></tr>
-  <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;font-weight:600;color:#0c326f;">Impacto residual após medidas</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Médio</td></tr>
-</table>
-
-<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.11 Medidas de tratamento</h3>
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.10 Medidas de tratamento</h3>
 <table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
   <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:48%;">Medida</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:30%;">Responsável</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Prazo</th></tr></thead>
   <tbody>
@@ -166,8 +162,16 @@ doc-page:not(:defined){visibility:hidden;}
   </tbody>
 </table>
 
-<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.12 Aprovação e monitoramento</h3>
-<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">Reavaliar a cada retreinamento do modelo, a cada inclusão de nova bacia e após todo evento extremo em que a previsão divergiu do observado.</p>
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.11 Risco residual</h3>
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">O que permanece depois das medidas previstas:</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Alerta que não vem:</strong> o desempenho é medido em bacias selecionadas, e nenhuma medida cria medição própria para eventos extremos, que são raros por definição.</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Alerta em excesso:</strong> a faixa de incerteza ajuda quem decide, mas nenhuma medida acompanha a adesão da população ao alerta ao longo do tempo.</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Excesso de confiança no número:</strong> a faixa de incerteza passa a ser entregue, e nada garante que ela seja usada na decisão.</p>
+
+<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;"><strong>Falha em cascata:</strong> o protocolo de contingência diz o que fazer quando a previsão de chuva externa cai, mas não repõe o dado que faltou. Sem uma segunda fonte, a previsão degrada durante o evento.</p>
 
 </doc-page>
 <!-- caso-toc:start -->

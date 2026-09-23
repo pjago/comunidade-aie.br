@@ -58,6 +58,16 @@ apontou que a versão anterior era "ler informações → ler informações → 
 | Inscrições | Botões de chamada para ação |
 | Rodapé | Condução, contexto e contato |
 
+## Casos de uso da oficina AIE (`casos/`)
+
+As páginas `casos/Caso N - ….dc.html` são geradas a partir dos arquivos `casos/fonte/caso-N.md`
+por `python casos/fonte/gerar.py` (só Python 3, sem dependências). Edite o `.md`, rode o script e
+publique; o índice `casos/index.html` é atualizado junto. Cada `.md` tem um bloco inicial com
+título, rótulo, subtítulo, resumo (para o índice) e, opcionalmente, a foto de capa (`imagem`,
+`alt`, `credito`). O texto segue o modelo de documentação da ABNT NBR ISO/IEC 42005:2025, com a
+numeração de seções que os mapas do facilitador usam como referência, e é escrito em linguagem
+simples.
+
 ## Pendências marcadas no código
 
 Procure por `TODO` no `index.html`:

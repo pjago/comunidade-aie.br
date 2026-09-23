@@ -10,26 +10,19 @@ credito:
 ---
 > Documento de simulação para a oficina de Autoavaliação de Impacto Ético (AIE) do Conexão SISP. Caso adaptado da ABNT ISO/IEC TR 24030:2024. O preenchimento é fictício e não descreve um sistema em operação.
 
-## Parte I — O caso de uso, conforme a ISO/IEC TR 24030
+## O sistema de IA, conforme a ISO/IEC TR 24030
 
 ### 1.1 Descrição
 O sistema analisa as imagens das centenas de câmeras de CCTV de uma estação de grande circulação. Ele reconhece ações com alta probabilidade de furto em curso e alerta a equipe de segurança, que confere a cena na câmera antes de decidir se aborda alguém. Como cada câmera tem ângulo, iluminação e fundo próprios, o modelo é treinado com milhares de horas de vídeo real de cada uma. Esse acervo inclui a imagem de milhares de pessoas que só passaram pelo local.
 
-### 1.2 Retrato do sistema em seis respostas
+### 1.2 Descrição do sistema em quatro respostas
 | Pergunta | Resposta |
 | O que o sistema faz, em uma frase? | Reconhece, em imagens de CCTV, ações com alta probabilidade de serem furto em curso. |
 | Quem é afetado pela saída dele? | Quem circula na estação, a equipe de segurança, as pessoas abordadas e todas as pessoas cuja imagem está no acervo de treinamento. |
 | Que dados usa, e de onde vêm? | Vídeo das câmeras da estação e um acervo de treino de milhares de horas, com cenas de furto encenadas ou reais. |
 | A saída é sugestão ou decisão? | Emite alerta para a equipe, que decide abordar. |
-| Em que fase está? | Desenvolvimento. |
-| Quem responde por ele no órgão? | Gerência de segurança da operadora da estação. |
 
-### 1.3 Por que este caso importa no Brasil
-Furto é um problema cotidiano nas grandes redes de transporte público. As estações já operam com centenas de câmeras, instaladas para acompanhar o fluxo, apurar acidentes e instruir ocorrências. O acervo de vídeo já existe e cresce todos os dias. A pergunta do caso é se vale reaproveitar esse acervo para treinar um sistema, e por quanto tempo guardar o material.
-
-!!! **Atenção:** o sistema detecta um ato em curso. Não faz identificação biométrica e não estima a propensão de ninguém a cometer crime. Dado biométrico é sensível (LGPD, art. 11). Identificação biométrica à distância em espaço público e previsão de infrações pelo comportamento anterior estão entre as hipóteses de risco excessivo discutidas no PL 2338/2023. Acoplar o alerta a reconhecimento facial ou a base de mandados muda o patamar da avaliação.
-
-## Parte II — Avaliação de impacto preenchida
+## Avaliação de impacto, conforme a ISO/IEC 42005:2025
 
 ### 2.1 Escopo e critérios da avaliação (cl. 5)
 - **Objeto avaliado:** o módulo de detecção de anomalia, a regra de emissão de alerta, o protocolo de verificação pela equipe e o acervo de vídeo do treinamento.

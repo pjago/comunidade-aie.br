@@ -10,24 +10,19 @@ credito:
 ---
 > Documento de simulação para a oficina de Autoavaliação de Impacto Ético (AIE) do Conexão SISP. Caso adaptado da ABNT ISO/IEC TR 24030:2024. O preenchimento é fictício e não descreve um sistema em operação.
 
-## Parte I — O caso de uso, conforme a ISO/IEC TR 24030
+## O sistema de IA, conforme a ISO/IEC TR 24030
 
 ### 1.1 Descrição
 O sistema corrige a redação de um exame público de larga escala a partir da folha manuscrita digitalizada. Ele dá uma nota a cada critério e uma nota final, com um padrão único para todos os candidatos. Uma amostra das correções é comparada com a correção humana, para controle de qualidade. O texto também é verificado quanto a cópia. A nota entra diretamente na classificação do exame; a maioria dos textos não tem segunda correção humana.
 
-### 1.2 Retrato do sistema em seis respostas
+### 1.2 Descrição do sistema em quatro respostas
 | Pergunta | Resposta |
 | O que o sistema faz, em uma frase? | Atribui nota à redação de um exame público, a partir do texto digitalizado da folha manuscrita. |
 | Quem é afetado pela saída dele? | Candidatos, avaliadores humanos e a instituição responsável pela classificação. |
 | Que dados usa, e de onde vêm? | Imagem digitalizada da folha manuscrita e o texto reconhecido a partir dela. |
 | A saída é sugestão ou decisão? | Atribui a nota que compõe a classificação. Não há segunda correção humana da maioria dos textos. |
-| Em que fase está? | Produção. |
-| Quem responde por ele no órgão? | Instituição responsável pela organização do exame. |
 
-### 1.3 Por que este caso importa no Brasil
-Exame de larga escala significa alto volume em prazo curto: o Enem teve mais de três milhões de inscritos em anos recentes. Hoje cada redação passa por dois corretores humanos, com um terceiro em caso de divergência. A correção automatizada promete padronização e velocidade. Mas a nota de redação decide vaga em universidade pública, financiamento estudantil e, em concursos, o acesso ao cargo. Quem discorda da nota precisa saber por qual critério ela foi dada.
-
-## Parte II — Avaliação de impacto preenchida
+## Avaliação de impacto, conforme a ISO/IEC 42005:2025
 
 ### 2.1 Escopo e critérios da avaliação (cl. 5)
 - **Objeto avaliado:** o modelo de correção, o padrão de pontuação por critério e a amostragem de controle de qualidade.

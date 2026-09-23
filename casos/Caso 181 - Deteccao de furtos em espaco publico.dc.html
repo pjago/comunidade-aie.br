@@ -29,12 +29,12 @@ doc-page:not(:defined){visibility:hidden;}
 <p style="margin:0 0 14pt;font-family:'Raleway',sans-serif;font-size:11pt;color:#555555;line-height:1.4;">Caso 181 · modelo de documentação da ABNT NBR ISO/IEC 42005:2025 · versão de oficina 1.0, 12/08/2026</p>
 <p style="margin:0 0 18pt;padding:10pt 12pt;background:#e8eefb;font-family:'Raleway',sans-serif;font-size:9.5pt;color:#555555;line-height:1.5;font-style:italic;break-inside:avoid;">Documento de simulação para a oficina de Autoavaliação de Impacto Ético (AIE) do Conexão SISP. Caso adaptado da ABNT ISO/IEC TR 24030:2024. O preenchimento é fictício e não descreve um sistema em operação.</p>
 
-<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;">Parte I — O caso de uso, conforme a ISO/IEC TR 24030</h2>
+<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;">O sistema de IA, conforme a ISO/IEC TR 24030</h2>
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.1 Descrição</h3>
 <p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">O sistema analisa as imagens das centenas de câmeras de CCTV de uma estação de grande circulação. Ele reconhece ações com alta probabilidade de furto em curso e alerta a equipe de segurança, que confere a cena na câmera antes de decidir se aborda alguém. Como cada câmera tem ângulo, iluminação e fundo próprios, o modelo é treinado com milhares de horas de vídeo real de cada uma. Esse acervo inclui a imagem de milhares de pessoas que só passaram pelo local.</p>
 
-<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.2 Retrato do sistema em seis respostas</h3>
+<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.2 Descrição do sistema em quatro respostas</h3>
 <table style="width:100%;border-collapse:collapse;font-family:'Raleway',sans-serif;font-size:10pt;margin:0 0 12pt;">
   <thead><tr><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;width:38%;">Pergunta</th><th style="text-align:left;padding:6pt 8pt;background:#e8eefb;color:#0c326f;">Resposta</th></tr></thead>
   <tbody>
@@ -42,17 +42,10 @@ doc-page:not(:defined){visibility:hidden;}
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem é afetado pela saída dele?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem circula na estação, a equipe de segurança, as pessoas abordadas e todas as pessoas cuja imagem está no acervo de treinamento.</td></tr>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Que dados usa, e de onde vêm?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Vídeo das câmeras da estação e um acervo de treino de milhares de horas, com cenas de furto encenadas ou reais.</td></tr>
     <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">A saída é sugestão ou decisão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Emite alerta para a equipe, que decide abordar.</td></tr>
-    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Em que fase está?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Desenvolvimento.</td></tr>
-    <tr><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Quem responde por ele no órgão?</td><td style="padding:6pt 8pt;border-bottom:1px solid #e6e6e6;">Gerência de segurança da operadora da estação.</td></tr>
   </tbody>
 </table>
 
-<h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">1.3 Por que este caso importa no Brasil</h3>
-<p style="margin:0 0 10pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">Furto é um problema cotidiano nas grandes redes de transporte público. As estações já operam com centenas de câmeras, instaladas para acompanhar o fluxo, apurar acidentes e instruir ocorrências. O acervo de vídeo já existe e cresce todos os dias. A pergunta do caso é se vale reaproveitar esse acervo para treinar um sistema, e por quanto tempo guardar o material.</p>
-
-<p style="margin:0 0 10pt;padding:8pt 12pt;background:#fff9e0;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;break-inside:avoid;"><strong>Atenção:</strong> o sistema detecta um ato em curso. Não faz identificação biométrica e não estima a propensão de ninguém a cometer crime. Dado biométrico é sensível (LGPD, art. 11). Identificação biométrica à distância em espaço público e previsão de infrações pelo comportamento anterior estão entre as hipóteses de risco excessivo discutidas no PL 2338/2023. Acoplar o alerta a reconhecimento facial ou a base de mandados muda o patamar da avaliação.</p>
-
-<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;break-before:page;">Parte II — Avaliação de impacto preenchida</h2>
+<h2 style="margin:22pt 0 8pt;font-family:'rawline',sans-serif;font-size:16pt;font-weight:700;color:#0c326f;break-before:page;">Avaliação de impacto, conforme a ISO/IEC 42005:2025</h2>
 
 <h3 style="margin:14pt 0 6pt;font-family:'rawline',sans-serif;font-size:12pt;font-weight:600;color:#1351b4;">2.1 Escopo e critérios da avaliação (cl. 5)</h3>
 <ul style="margin:0 0 10pt;padding-left:16pt;font-family:'Raleway',sans-serif;font-size:10.5pt;line-height:1.55;color:#333333;">

@@ -10,24 +10,19 @@ credito:
 ---
 > Documento de simulação para a oficina de Autoavaliação de Impacto Ético (AIE) do Conexão SISP. Caso adaptado da ABNT ISO/IEC TR 24030:2024. O preenchimento é fictício e não descreve um sistema em operação.
 
-## Parte I — O caso de uso, conforme a ISO/IEC TR 24030
+## O sistema de IA, conforme a ISO/IEC TR 24030
 
 ### 1.1 Descrição
 O sistema prevê o nível dos rios para as próximas horas a partir da chuva observada, da vazão e da série histórica. A previsão embasa o alerta enviado às prefeituras e à defesa civil. A decisão de evacuar uma área é sempre humana.
 
-### 1.2 Retrato do sistema em seis respostas
+### 1.2 Descrição do sistema em quatro respostas
 | Pergunta | Resposta |
 | O que o sistema faz, em uma frase? | A cada 10 minutos, prevê o nível do rio para até 6 horas à frente e publica um mapa de perigo por estação. |
 | Quem é afetado pela saída dele? | Moradores de área de risco, defesa civil e prefeituras. |
 | Que dados usa, e de onde vêm? | Estações telemétricas, radar meteorológico e série histórica. |
 | A saída é sugestão ou decisão? | Produz o mapa de perigo que embasa o aviso. A decisão de evacuar é humana. |
-| Em que fase está? | Produção. |
-| Quem responde por ele no órgão? | Centro de monitoramento e alertas de desastres. |
 
-### 1.3 Por que este caso importa no Brasil
-Neste caso, o erro é grave nos dois sentidos. O alerta que não vem custa vidas. O alerta sem necessidade custa credibilidade, e a próxima evacuação encontra menos gente disposta a sair de casa. Pesquisa recente do Cemaden, do INPE e do Serpro incorpora a análise de incerteza aos modelos, para que o alerta informe o nível previsto e o grau de confiança da previsão.
-
-## Parte II — Avaliação de impacto preenchida
+## Avaliação de impacto, conforme a ISO/IEC 42005:2025
 
 ### 2.1 Escopo e critérios da avaliação (cl. 5)
 - **Objeto avaliado:** o modelo de previsão de nível, a regra de disparo do alerta e a forma do mapa de perigo entregue a quem decide.

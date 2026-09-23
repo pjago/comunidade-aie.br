@@ -120,7 +120,7 @@ def pagina(meta, corpo, cabeca, cauda):
                    % (S['fig'], html.escape(meta['imagem']), html.escape(meta.get('alt', '')), S['img'], S['figcap'], inline(meta.get('credito', ''))))
     for tipo, dados in blocos(corpo):
         if tipo == 'note': out.append('<p style="%s">%s</p>\n' % (S['note'], inline(dados)))
-        elif tipo == 'h2': out.append('<h2 style="%s%s">%s</h2>\n' % (S['h2'], 'break-before:page;' if dados.startswith('Parte II') else '', inline(dados)))
+        elif tipo == 'h2': out.append('<h2 style="%s%s">%s</h2>\n' % (S['h2'], 'break-before:page;' if dados.startswith('Avaliação de impacto') else '', inline(dados)))
         elif tipo == 'h3': out.append('<h3 style="%s">%s</h3>' % (S['h3'], inline(dados)))
         elif tipo == 'p': out.append('<p style="%s">%s</p>\n' % (S['p'], inline(dados)))
         elif tipo == 'callout': out.append('<p style="%s">%s</p>\n' % (S['callout'], inline(dados)))

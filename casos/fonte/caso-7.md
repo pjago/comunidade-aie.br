@@ -10,24 +10,19 @@ credito:
 ---
 > Documento de simulação para a oficina de Autoavaliação de Impacto Ético (AIE) do Conexão SISP. Caso adaptado da ABNT ISO/IEC TR 24030:2024. O preenchimento é fictício e não descreve um sistema em operação.
 
-## Parte I — O caso de uso, conforme a ISO/IEC TR 24030
+## O sistema de IA, conforme a ISO/IEC TR 24030
 
 ### 1.1 Descrição
 O sistema ordena e distribui as vagas de creche entre as crianças inscritas. Ele cruza os critérios de prioridade da norma municipal, o endereço da família, a capacidade de cada unidade e as preferências da inscrição. O resultado é uma lista de encaminhamento, no lugar da fila montada à mão em cada unidade.
 
-### 1.2 Retrato do sistema em seis respostas
+### 1.2 Descrição do sistema em quatro respostas
 | Pergunta | Resposta |
 | O que o sistema faz, em uma frase? | Ordena e distribui as vagas de creche entre as crianças inscritas. |
 | Quem é afetado pela saída dele? | Famílias inscritas, crianças, unidades de ensino e servidores da secretaria. |
 | Que dados usa, e de onde vêm? | Cadastro das famílias, marcador de vulnerabilidade do CadÚnico, endereço e capacidade das unidades. |
 | A saída é sugestão ou decisão? | Gera a lista de alocação. Um servidor homologa antes da publicação. |
-| Em que fase está? | Produção, em uma capital. |
-| Quem responde por ele no órgão? | Secretaria municipal de educação. |
 
-### 1.3 Por que este caso importa no Brasil
-Mais da metade das redes municipais mantém lista de espera por creche sem critério de prioridade publicado (Gaepe-Brasil, 2024). Sem critério, a fila avança por ordem de inscrição ou por decisão judicial, o que favorece quem tem acesso a advogado. O sistema aplica o que o Gaepe-Brasil recomenda: fila única, transparente e com prioridade para as crianças mais vulneráveis.
-
-## Parte II — Avaliação de impacto preenchida
+## Avaliação de impacto, conforme a ISO/IEC 42005:2025
 
 ### 2.1 Escopo e critérios da avaliação (cl. 5)
 - **Objeto avaliado:** o componente que ordena e encaminha as vagas, com as regras de prioridade e a interface da secretaria.
